@@ -1,0 +1,188 @@
+#!/usr/bin/python
+
+import os
+import time
+import sys
+import Queue
+import subprocess
+import multiprocessing as mp
+from multiprocessing import Pool, cpu_count
+from multiprocessing.pool import ApplyResult
+
+PATH="/home/pi/Digital_Signage"
+MOVIES_FOLDER = "movies"
+ADS_FOLDER = "ads"
+
+#Ad queue
+q_ads = Queue.Queue(maxsize=0)
+
+# Movie queue
+q_movies = Queue.Queue(maxsize=0)
+
+class AdsInVideos:
+	
+	def __init__(self):
+		self.MOVIES_PATH = PATH + "/" + MOVIES_FOLDER
+		self.ADS_PATH = PATH + "/" + ADS_FOLDER
+
+	def put_ads_in_queue(self):
+	    if q_ads.empty():
+		ads_list = os.listdir(self.ADS_PATH)
+		for ad in ads_list:
+		    print "ad in queue",ad
+		    q_ads.put(self.ADS_PATH + "/" + ad)
+	    return q_ads
+
+
+	def put_movies_in_queue(self):
+	    if q_movies.empty():
+		movies_list = os.listdir(self.MOVIES_PATH)
+		for movie in movies_list:
+		    print "movie in queue" ,movie
+		    q_movies.put(self.MOVIES_PATH + "/" + movie)
+	    return q_movies
+
+
+	def play_movies(self,movie):
+		print "I am in play movie ()"
+		movie_pipe = subprocess.Popen(['omxplayer', '-p', '-o', 'hdmi', movie], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+		return movie_pipe
+
+	def play_ads(self,ad):
+		ad_pipe = subprocess.Popen(['omxplayer', '-p', '-o', 'hdmi', ad], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+		out, err = ad_pipe.communicate()
+		print "out",out
+		print "err",err
+		if err is not "":
+		    print "Error :%s in playing ad : %s " % (err,ad)
+		    raise Exception()
+
+	def my_callback(self,x):
+		print "x",x
+		print "x[0]",x[0]
+		movie_pipe=x[0]
+		print "movie_pipe.returncode" ,movie_pipe.returncode
+		if movie_pipe.returncode == 0 :
+			return 0
+			
+
+	def play_content_in_player(self,movie):
+		try:
+			pool = mp.Pool(processes=2)
+			movie_pipe=self.play_movies(movie)
+			print "POLLING 1"
+			movie_pipe.poll()
+			#result = [pool.apply_async(self.play_movies, args=(movie, ), callback = self.my_callback)]
+			#pool.close()
+			#map(ApplyResult.wait, movie_pipe)
+			#print "movie_pipe.returncode1",movie_pipe.returncode
+			if movie_pipe.returncode == 0:
+				return
+			while movie_pipe.returncode != 0:
+			#while True:
+				#print "result",result
+				time.sleep(30)
+				print "Pause"
+				#sys.exit(0)
+				print "POLLING b4 writing pause"
+				movie_pipe.poll()
+				if movie_pipe.returncode == 0:
+					return
+				movie_pipe.stdin.write('p')
+				q_ads=self.put_ads_in_queue()
+				print "q_Ads SIZE",q_ads.qsize()
+				print "Getting ad from queue"
+				ad=q_ads.get()
+				print "ad from queue", ad
+				print "Playing Add"
+				self.play_ads(ad)
+				print "Played Add"
+				print "POLLING 2"
+				movie_pipe.poll()
+				if movie_pipe.returncode == 0:
+					return
+				print "Unpause"
+				movie_pipe.stdin.write('p')
+				print "movie_pipe.returncode2",movie_pipe.returncode
+			print "COMMUNICATING"
+			out, err = movie_pipe.communicate()
+			print "POLLING 3"
+			movie_pipe.poll()
+			if movie_pipe.returncode == 0:
+				print "RETURNING"
+				return
+			print "movie_pipe.returncode",movie_pipe.returncode
+			print "out",out
+			print "err",err
+			if err is not "":
+			    print "Error :%s in playing content : %s " % (err, movie)
+			    raise Exception()
+		except Exception, e:
+			print "EXCEPTION IN PLAYING CONTENT %s" % e
+			raise
+
+
+	# Function to enable sharding for customer and shard it's collections
+	def play_one_in_list(self,movie):
+	    try:
+		print "***  MOVIE ****" ,movie
+		self.play_content_in_player(movie)
+
+	    except Exception, e:
+		print "Exception: [%s], Unable to play movie : [%s]" % (e,movie) 
+		raise
+
+	# Reads postgreSQL table and enables sharding for all customer ids in postgreSQL table
+	def play_all_in_list(self):
+	    try:
+		q_movies = self.put_movies_in_queue()
+		print "MOVIE SIZE : " ,q_movies.qsize()
+		while q_movies.qsize() > 0 :
+		    movie=q_movies.get()
+		    print "STARTING MOVIE :",movie
+		    self.play_one_in_list(movie)
+		    print "MOVIE ENDS :",movie
+	    except Exception, e:
+		print "Exception: [%s], Unable to play all the movies in the list" % e 
+		raise
+
+	def play_all_repeatedly_in_list(self):
+	    try:
+		while True:
+		    self.play_all_in_list()
+	    except Exception,e:
+		print "Exception: [%s], Unable to repeat play list" % e
+		raise
+
+	def check_if_movie_is_valid(self, arg):
+		movies_list = os.listdir(self.MOVIES_PATH)
+		if arg not in movies_list:
+			raise Exception ("Invalid Movie .. Exiting")
+			
+
+	def play_list(self,arg):
+	    try:
+		if arg == "repeat":
+		    self.play_all_repeatedly_in_list()
+		elif arg == "all":
+		    self.play_all_in_list()
+		else: 
+		    # Movie name
+		    self.check_if_movie_is_valid(arg)
+		    self.play_one_in_list(arg)
+	    except Exception, e:
+		print "Exception : [%s], Unable to play list with parameter:[%s]" % (e, arg)
+		raise
+
+
+if __name__ == "__main__":
+    try:
+
+	ad_obj=AdsInVideos()
+        print "Command line argument:" , sys.argv[1]
+        arg = str(sys.argv[1])
+        print arg
+        ad_obj.play_list(arg)
+    except Exception, e:
+        print "Exception[%s]" % e
+        raise

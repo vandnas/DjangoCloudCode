@@ -1,0 +1,28 @@
+>sudo su - postgres
+>psql
+>create user pinut;
+>create database pinut owner pinut with password pinut;
+>\c pinut
+
+--------------------------
+GRANT ALL PRIVILEGES ON TABLE pinut_devices TO pinut;
+ALTER USER pinut with password pinut;
+
+-----------------------------
+CREATE TABLE customer(cid integer NOT NULL, cust_name text, active integer);
+INSERT INTO customer values(1,'ola',1);
+INSERT INTO customer values(2,'uber',1);
+
+CREATE TABLE pinut_devices(pid integer NOT NULL,pinut_mac macaddr,lid integer,cid integer,data_transferred integer,support_3g_4g integer,content_version text);
+INSERT INTO pinut_devices values(1,'d1:f5:c6:0c:b9:ff',1,1,2048,0,'v1.0');
+INSERT INTO pinut_devices values(2,'d2:f5:c6:0c:b9:ff',1,1,2048,0,'v1.0');
+INSERT INTO pinut_devices values(3,'d3:f5:c6:0c:b9:ff',1,1,2048,0,'v1.0');
+
+CREATE TABLE location (lid integer NOT NULL , location text);
+INSERT INTO location values(1,'Pune');
+INSERT INTO location values(2,'Bangalore');
+INSERT INTO location values(3,'Mumbai');
+
+
+
+
