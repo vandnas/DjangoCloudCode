@@ -48,7 +48,13 @@ def processmongodata(request):
 #POST REQUEST
 def popularmovies(lid_dict):
 	print "Inside popularmovies"
-        popular_movie_list=lid_dict['popular_movie_list']
+        for lid, data in lid_dict.iteritems():
+            popular_movie_list=data['popular_movie_list']
         print "popular_movie_list", popular_movie_list
-        print(json.dumps(popular_movie_list).encode('utf-8'))
-		
+        return (json.dumps(popular_movie_list).encode('utf-8'))
+	
+def uploadjsonfiles():	
+	print "Inside uploadjsonfiles"
+	if request.method == "POST":
+            msg=request.body;
+            print "msg",msg

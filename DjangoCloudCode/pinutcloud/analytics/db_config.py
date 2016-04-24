@@ -7,7 +7,7 @@ import logging
 
 class DB_Config(object):
     def __init__(self):
-        self.db_config_file = "/home/ec2-user/DjangoCloudCode/pinutcloud/conf/db_info.cfg"
+        self.db_config_file = "/home/ec2-user/DjangoCloudCode/DjangoCloudCode/pinutcloud/conf/db_info.cfg"
 
     def add_db_info(self, section, db_name, db_username, db_password):
         configParser = ConfigParser.RawConfigParser()
