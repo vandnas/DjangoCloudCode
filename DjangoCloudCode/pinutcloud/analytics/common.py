@@ -10,7 +10,7 @@ FAILURE = -1
 
 JSON_PATH="/home/ec2-user/PinutJsonFiles"
 PROCESSED_JSON_PATH="/home/ec2-user/ProcessedJsonFiles"
-CODE_PATH="/home/ec2-user/DjangoCloudCode/DjangoCloudCode/pinutcloud"
+CODE_PATH="/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud"
 
 LOG_CONF_PATH = CODE_PATH+"/"+"conf/logger.conf"
 DB_INFO_CFG = CODE_PATH+"/"+"conf/db_info.cfg"

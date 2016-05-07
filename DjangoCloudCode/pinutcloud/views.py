@@ -6,7 +6,9 @@ from django.http import HttpResponse
 import time
 import json
 import os
-from pinutcloud import GLOBAL_PATH_ANALYTICS
+import datetime
+import zipfile
+from pinutcloud.analytics import utility_script
 
 print "CWD:",os.getcwd()
 def byteify(input):
@@ -34,7 +36,8 @@ def processmongodata(request):
                 end_date="03-03-2016"
                 end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
 
-                lid_dict = GLOBAL_PATH_ANALYTICS.get_data_per_location(cust_name ,start_date_obj ,end_date_obj)
+                #lid_dict = GLOBAL_PATH_ANALYTICS.get_data_per_location(cust_name ,start_date_obj ,end_date_obj)
+                lid_dict = utility_script.get_data_per_location(cust_name ,start_date_obj ,end_date_obj)
                 print "******************************************************"
                 print "lid_dict", lid_dict
                 popular_movie_list=popularmovies(lid_dict)
@@ -52,9 +55,33 @@ def popularmovies(lid_dict):
             popular_movie_list=data['popular_movie_list']
         print "popular_movie_list", popular_movie_list
         return (json.dumps(popular_movie_list).encode('utf-8'))
+
+def write_into_file(write_file_path, file_content):
+    try:
+        with open(write_file_path, 'w') as fp:
+            fp.write(file_content)
+    except Exception, e:
+        raise Exception("Error : [%s] in writing zipped file to %s", e, write_file_path)
+
+def extract_zipped_files(write_file_path, extract_file_path):
+    try:
+        zip_ref = zipfile.ZipFile(write_file_path, 'r')
+        zip_ref.extractall(extract_file_path)
+        zip_ref.close()
+    except Exception, e:
+        raise Exception("Error : [%s] in extracting zipped file : %s to %s", e, write_file_path, extract_file_path)
 	
-def uploadjsonfiles():	
+def uploadjsonfiles(request):	
+    try:
+        write_file_path = "/home/ec2-user/a.zip"
+        extract_file_path = "/home/ec2-user/PinutJsonFiles"
 	print "Inside uploadjsonfiles"
 	if request.method == "POST":
-            msg=request.body;
-            print "msg",msg
+            file_content=request.body;
+            write_into_file(write_file_path, file_content)
+            extract_zipped_files(write_file_path, extract_file_path)
+        return HttpResponse(status=200)
+    except Exception, e:
+        print "Exception : %s", e
+        return HttpResponse(status=500)
+        

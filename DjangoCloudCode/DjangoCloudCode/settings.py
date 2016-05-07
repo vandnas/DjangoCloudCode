@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-GLOBAL_PATH=""
 # Application definition
 
 INSTALLED_APPS = [
