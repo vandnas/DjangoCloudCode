@@ -9,6 +9,7 @@ import os
 import datetime
 import zipfile
 from pinutcloud.analytics import utility_script
+import shutil
 
 print "CWD:",os.getcwd()
 def byteify(input):
@@ -61,6 +62,7 @@ def write_into_file(write_file_path, file_content):
         with open(write_file_path, 'w') as fp:
             fp.write(file_content)
     except Exception, e:
+        os.remove(write_file_path)
         raise Exception("Error : [%s] in writing zipped file to %s", e, write_file_path)
 
 def extract_zipped_files(write_file_path, extract_file_path):
@@ -68,9 +70,39 @@ def extract_zipped_files(write_file_path, extract_file_path):
         zip_ref = zipfile.ZipFile(write_file_path, 'r')
         zip_ref.extractall(extract_file_path)
         zip_ref.close()
+        os.remove(write_file_path)
     except Exception, e:
-        raise Exception("Error : [%s] in extracting zipped file : %s to %s", e, write_file_path, extract_file_path)
-	
+        raise Exception("Error in extracting zipped file : %s to %s . Error: %s"%(write_file_path, extract_file_path, e))
+
+def check_if_file_already_exist_in_folder(filename, file_path, folder_name, extract_file_path):
+    try:
+        folder_path=extract_file_path+"/"+folder_name
+        if filename not in os.listdir(folder_path):
+            shutil.move(file_path, folder_path)
+        else:
+            os.remove(file_path)
+    except Exception, e:
+        raise Exception("File: %s already exists in folder: %s , Error: %s"%(file_path, folder_name, e))
+
+def move_files_to_json_folders(extract_file_path):
+    try:
+        for filename in os.listdir(extract_file_path):
+            file_path=os.path.join(extract_file_path, filename)
+            if os.path.isfile(file_path):
+                file_prefix=filename.split("_")
+                if file_prefix[0] == "PinutUserIntro":
+                    check_if_file_already_exist_in_folder(filename, file_path, "PinutUserIntroFiles", extract_file_path)
+                elif file_prefix[0] == "PinutUser":
+                    check_if_file_already_exist_in_folder(filename, file_path, "PinutUserFiles", extract_file_path)
+                elif file_prefix[0] == "PinutConnection":
+                    check_if_file_already_exist_in_folder(filename, file_path, "PinutConnectionFiles", extract_file_path)
+                elif file_prefix[0] == "PinutFeedback":
+                    check_if_file_already_exist_in_folder(filename, file_path, "PinutFeedbackFiles", extract_file_path)
+                else:
+                    print "Invalid file prefix",file_prefix	
+    except Exception, e:
+        raise Exception("Error in moving files to json folders: %s "% e)
+
 def uploadjsonfiles(request):	
     try:
         write_file_path = "/home/ec2-user/a.zip"
@@ -80,8 +112,9 @@ def uploadjsonfiles(request):
             file_content=request.body;
             write_into_file(write_file_path, file_content)
             extract_zipped_files(write_file_path, extract_file_path)
+            move_files_to_json_folders(extract_file_path)
         return HttpResponse(status=200)
     except Exception, e:
-        print "Exception : %s", e
+        print "Exception :", e
         return HttpResponse(status=500)
         
