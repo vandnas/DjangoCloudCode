@@ -36,34 +36,40 @@ PROCESSED_CONNECTION_FILE_PATH=PROCESSED_JSON_PATH+"/"+"PinutConnectionFiles"
 GET_CUSTID_LOCID_CONTENTVERSION_FROM_PINUT_MAC="SELECT cid,lid,content_version from pinut_devices where pinut_mac=%s"
 GET_CUST_NAME_FROM_CID="SELECT cust_name from customer where cid=%s"
 
+
 def mkgmtime(x):
-    ltime_sec = time.mktime(x)
-    ltime = time.localtime(ltime_sec)
-    if ltime.tm_isdst and time.daylight:
-        ret_time = ltime_sec - time.altzone
-    else:
-        ret_time = ltime_sec - time.timezone
-    return ret_time
+	ltime_sec = time.mktime(x)
+	ltime = time.localtime(ltime_sec)
+	if ltime.tm_isdst and time.daylight:
+		ret_time = ltime_sec - time.altzone
+	else:
+		ret_time = ltime_sec - time.timezone
+	return ret_time
+
 
 def convert_date_str_to_timestamp(date_str):
-    return (mkgmtime(time.strptime(date_str, '%d-%m-%Y')))
+	return (mkgmtime(time.strptime(date_str, '%d-%m-%Y')))
+
 
 def convert_timestamp_to_date_str(date_time):
-    return (time.strftime(' %d-%m-%Y', time.gmtime(date_time)))
+	return (time.strftime(' %d-%m-%Y', time.gmtime(date_time)))
 
 
 def get_pinut_device_timestamp():
-        #Check if local Or UTC needs to be sent ??
-        return time.time()
+	#Check if local Or UTC needs to be sent ??
+	return time.time()
+
 
 def get_pinut_device_date():
-        #Check if local Or UTC needs to be sent ??(cron job -local , filenames , in mongo , in postgres)
-        return time.strftime("%d_%m_%Y")
+	#Check if local Or UTC needs to be sent ??(cron job -local , filenames , in mongo , in postgres)
+	return time.strftime("%d_%m_%Y")
+
 
 def remove_colons_from_mac_address(mac_addr):
-        mac_list=mac_addr.split(':')
-        MAC = ''.join([str(mac) for mac in mac_list])
-        return MAC
+	mac_list=mac_addr.split(':')
+	MAC = ''.join([str(mac) for mac in mac_list])
+	return MAC
+
 
 def get_params_from_pinutuser_file(filename):
 	try:
@@ -106,13 +112,20 @@ def get_params_from_pinut_mac(pinut_mac):
 			cid = int(pinut_row['cid'])
 			lid = int(pinut_row['lid'])
 			content_version = str(pinut_row['content_version'])
-		return cid,lid,content_version 
+		return cid,lid,content_version
+	except db_analytics.Query_Error, e:
+		logging.exception("Error in query:%s"% e)
+		raise
+	except db_analytics.No_Data_Found, e:
+		logging.exception("No data found for query:%s"% e)
+		raise
 	except Exception, e:
 		logging.exception("Exception [%s] in getting params for pinut mac[%s] ", e, pinut_mac)
 		raise
 	finally:
 		if db_obj:
 			db_obj.close_connection()
+
 
 def get_cust_name_from_cid(cid):
 	db_obj=None
@@ -121,7 +134,13 @@ def get_cust_name_from_cid(cid):
 		pinut_rows = db_obj.select_query(GET_CUST_NAME_FROM_CID, int(cid))
 		for pinut_row in pinut_rows:
 			cust_name = str(pinut_row['cust_name'])
-		return cust_name 
+		return cust_name
+	except db_analytics.Query_Error, e:
+		logging.exception("Error in query:%s"% e)
+		raise
+	except db_analytics.No_Data_Found, e:
+		logging.exception("No data found for query:%s"% e)
+		raise
 	except Exception, e:
 		logging.exception("Exception [%s] in getting cust_name from cid[%s] ", e, cid)
 		raise

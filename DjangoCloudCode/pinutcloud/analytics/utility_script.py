@@ -26,7 +26,7 @@ def get_data_per_device(cust_name, start_date, end_date):
         mongo_db_obj = MongoDBAnalytics()
 
         if mongo_db_obj.mongo_select_one(cust_name, "pinut_summarized_data") == None:
-            print "MONGO COLLECTION doesnt exist"
+            logging.debug("MONGO COLLECTION doesnt exist")
 
         #TODO: At the end of below line , instead of blank {}, there will be a query : get all rows which below to January month or Feb .A parameter will be passed to this function month/All . In case of All there will be no query {} i.e. fetch all rows otherwise get all dates belonging to that month.
         content = mongo_db_obj.mongo_select(cust_name, "pinut_summarized_data", {"date" : {"$gte" : start_date , "$lte" : end_date}})
@@ -111,7 +111,7 @@ def get_data_per_device(cust_name, start_date, end_date):
 
  
     except Exception, e:
-        print "Exception, in processing data across pinut_device", e
+        logging.exception("Exception, in processing data across pinut_device %s" % e)
         raise
 
 def get_data_per_location(cust_name ,start_date_obj ,end_date_obj):
@@ -166,11 +166,15 @@ def get_data_per_location(cust_name ,start_date_obj ,end_date_obj):
     
         
     except Exception, e:
-        print "Exception, in processing data across location", e
+        logging.exception("Exception, in processing data across location : %s" % e)
         raise
 
 if __name__ == '__main__':
-    cust_name = "ola"
+    
+    #Configure logger
+    logging.config.fileConfig(common.LOG_CONF_PATH)
+    logging.Formatter.converter = time.gmtime
+    cust_name="ola"
     start_date="24-02-2016"
     #To compare this date with mongo date we have converted to date_obj [string to time]
     start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
