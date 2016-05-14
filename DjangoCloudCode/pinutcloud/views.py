@@ -8,7 +8,7 @@ import json
 import os
 import datetime
 import zipfile
-#from pinutcloud.analytics import utility_script
+from pinutcloud.analytics import utility_script
 import shutil
 import sys
 import logging
