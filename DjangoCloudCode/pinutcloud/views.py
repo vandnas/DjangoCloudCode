@@ -8,8 +8,12 @@ import json
 import os
 import datetime
 import zipfile
-from pinutcloud.analytics import utility_script
+#from pinutcloud.analytics import utility_script
 import shutil
+import sys
+import logging
+
+logging = logging.getLogger(__name__)
 
 
 def byteify(input):
@@ -27,9 +31,9 @@ def byteify(input):
 #Dump into User Json Files
 #POST REQUEST
 def processmongodata(request):
-	print "Inside processmongodata"
+	logging.debug( "Inside processmongodata")
 	if request.method == "GET":
-		print "Inside GET request"
+		logging.debug( "Inside GET request")
 		cust_name = "ola"
 		start_date="24-02-2016"
 		#To compare this date with mongo date we have converted to date_obj [string to time]
@@ -38,22 +42,22 @@ def processmongodata(request):
 		end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
 		lid_dict = GLOBAL_PATH_ANALYTICS.get_data_per_location(cust_name ,start_date_obj ,end_date_obj)
 		lid_dict = utility_script.get_data_per_location(cust_name ,start_date_obj ,end_date_obj)
-		print "******************************************************"
-		print "lid_dict", lid_dict
+		logging.debug( "******************************************************")
+		logging.debug("lid_dict: %s" % lid_dict)
 		popular_movie_list=popularmovies(lid_dict)
-		print "popular_movie_list1", popular_movie_list
+		logging.debug( "popular_movie_list1: %s" % popular_movie_list)
 		return HttpResponse("You're in GET request.")
 	else:
-		print "Its a POST request"
+		logging.debug( "Its a POST request")
 		return HttpResponse("You're in POST request.")
 
 #Dump into User Json Files
 #POST REQUEST
 def popularmovies(lid_dict):
-	print "Inside popularmovies"
+	logging.debug("Inside popularmovies")
 	for lid, data in lid_dict.iteritems():
 		popular_movie_list=data['popular_movie_list']
-		print "popular_movie_list", popular_movie_list
+		logging.debug( "popular_movie_list : %s" % popular_movie_list)
 	return (json.dumps(popular_movie_list).encode('utf-8'))
 
 def write_into_file(write_file_path, file_content):
@@ -62,7 +66,8 @@ def write_into_file(write_file_path, file_content):
 			fp.write(file_content)
 	except Exception, e:
 		os.remove(write_file_path)
-		raise Exception("Error : [%s] in writing zipped file to %s", e, write_file_path)
+                logging.error("Error : [%s] in writing zipped file to %s", e, write_file_path)
+		raise
 
 def extract_zipped_files(write_file_path, extract_file_path):
 	try:
@@ -71,7 +76,8 @@ def extract_zipped_files(write_file_path, extract_file_path):
 		zip_ref.close()
 		os.remove(write_file_path)
 	except Exception, e:
-		raise Exception("Error in extracting zipped file : %s to %s . Error: %s"%(write_file_path, extract_file_path, e))
+                logging.error("Error in extracting zipped file : %s to %s . Error: %s"%(write_file_path, extract_file_path, e))
+		raise
 
 def check_if_file_already_exist_in_folder(filename, file_path, folder_name, extract_file_path):
 	try:
@@ -81,7 +87,8 @@ def check_if_file_already_exist_in_folder(filename, file_path, folder_name, extr
 		else:
 			os.remove(file_path)
 	except Exception, e:
-		raise Exception("File: %s already exists in folder: %s , Error: %s"%(file_path, folder_name, e))
+                logging.error("File: %s already exists in folder: %s , Error: %s"%(file_path, folder_name, e))
+		raise
 
 def move_files_to_json_folders(extract_file_path):
 	try:
@@ -98,15 +105,17 @@ def move_files_to_json_folders(extract_file_path):
 				elif file_prefix[0] == "PinutFeedback":
 					check_if_file_already_exist_in_folder(filename, file_path, "PinutFeedbackFiles", extract_file_path)
 				else:
-					print "Invalid file prefix",file_prefix
+					logging.debug("Invalid file prefix: %s" % file_prefix)
 	except Exception, e:
-		raise Exception("Error in moving files to json folders: %s "% e)
+                logging.error("Error in moving files to json folders: %s "% e)
+		raise
 
 def uploadjsonfiles(request):	
 	try:
+                
 		write_file_path = "/home/ec2-user/a.zip"
 		extract_file_path = "/home/ec2-user/PinutJsonFiles"
-		print "Inside uploadjsonfiles"
+		logging.debug("Inside uploadjsonfiles")
 		if request.method == "POST":
 			file_content=request.body;
 			write_into_file(write_file_path, file_content)
@@ -114,6 +123,6 @@ def uploadjsonfiles(request):
 			move_files_to_json_folders(extract_file_path)
 			return HttpResponse(status=200)
 	except Exception, e:
-		print "Exception :", e
+                logging.error("Exception : %s " % e)
 		return HttpResponse(status=500)
 
