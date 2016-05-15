@@ -292,3 +292,12 @@ ImportError: No module named DjangoCloudCode.wsgi
 [2016-05-14 14:02:11 +0000] [25131] [INFO] Booting worker with pid: 25131
 [2016-05-14 14:02:11 +0000] [25132] [INFO] Booting worker with pid: 25132
 [2016-05-14 14:02:11 +0000] [25135] [INFO] Booting worker with pid: 25135
+[2016-05-14 16:30:29 +0000] [26675] [INFO] Booting worker with pid: 26675
+[2016-05-14 16:30:29 +0000] [26676] [INFO] Booting worker with pid: 26676
+[2016-05-14 16:30:29 +0000] [25126] [INFO] Handling signal: hup
+[2016-05-14 16:30:29 +0000] [25126] [INFO] Hang up: Master
+[2016-05-14 16:30:29 +0000] [26677] [INFO] Booting worker with pid: 26677
+[2016-05-14 16:30:29 +0000] [26678] [INFO] Booting worker with pid: 26678
+[2016-05-14 16:30:29 +0000] [26679] [INFO] Booting worker with pid: 26679
+[2016-05-14 16:30:30 +0000] [26676] [INFO] Worker exiting (pid: 26676)
+[2016-05-14 16:30:30 +0000] [26675] [INFO] Worker exiting (pid: 26675)

@@ -175,10 +175,10 @@ if __name__ == '__main__':
     logging.config.fileConfig(common.LOG_CONF_PATH)
     logging.Formatter.converter = time.gmtime
     cust_name="ola"
-    start_date="24-02-2016"
+    start_date="24-02-2015"
     #To compare this date with mongo date we have converted to date_obj [string to time]
     start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
-    end_date="03-03-2016"
+    end_date="03-03-2017"
     end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
     lid_devicemac_dict = get_data_per_device(cust_name ,start_date_obj ,end_date_obj)
     print "lid_devicemac_dict" ,lid_devicemac_dict
