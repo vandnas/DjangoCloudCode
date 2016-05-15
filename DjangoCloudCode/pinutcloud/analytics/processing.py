@@ -57,14 +57,12 @@ def process_json_files():
 
 				for line in iter(f_in):
 					try:
-						movie_viewership_percentage = 0
 						row = json.loads(line, 'utf-8')
 						#row={"cl_mac":"c1:f5:c6:0c:b9:ef","phone":8000678800,"email_id":"c1@gmail.com","data":"bajrangi bhaijan.mp4","category":movie,"device_timestamp":1450846193,"data_length":180,""view_length":120}
 						data_length = row['data_length']
                                                 if data_length == 0:
                                                     continue
 						view_length = row['view_length']
-						movie_viewership_percentage = (view_length*100)/data_length
 						cl_mac = str(row['cl_mac'])
 						phone = int(row['phone'])
 						email_id = row['email_id']
@@ -86,12 +84,16 @@ def process_json_files():
 					if user_cache.has_key(tuple(user_cache_key)):
 						user_cache_value=user_cache[tuple(user_cache_key)]
 						viewership_dict=user_cache_value["viewership"]
-						if data not in viewership_dict.iteritems():
-							viewership_dict[str(data)]=movie_viewership_percentage
+						if str(data) not in viewership_dict.keys():
+                                                        view_dict={}
+                                                        view_dict["view_length"]=view_length
+                                                        view_dict["data_length"]=data_length
+                                                        viewership_dict[str(data)]=view_dict
 						else:
-							existing_movie_viewership_percentage=viewership_dict[str(data)]
-							#TODO:Average ?? ...divide by 2?? because both these numbers are %
-							viewership_dict[str(data)]=movie_viewership_percentage + existing_movie_viewership_percentage
+							existing_view_dict=viewership_dict[str(data)]
+                                                        existing_view_length=existing_view_dict["view_length"]
+                                                        existing_view_dict["view_length"]=existing_view_length+view_length
+							viewership_dict[str(data)]=existing_view_dict
 						user_cache_value["viewership"]=viewership_dict
 
 						if category == "movie":
@@ -115,11 +117,14 @@ def process_json_files():
 						music_list=[]
 						others_list=[]
 						user_cache_value={}
+                                                view_dict={}
 						viewership_dict={}
 						user_cache_value["phone"]=phone
 						user_cache_value["email_id"]=email_id
 						user_cache_value["content_version"]=content_version
-						viewership_dict[str(data)]=movie_viewership_percentage
+                                                view_dict["view_length"]=view_length
+                                                view_dict["data_length"]=data_length
+						viewership_dict[str(data)]=view_dict
 						user_cache_value["viewership"]=viewership_dict
 
 						if category == "movie":
