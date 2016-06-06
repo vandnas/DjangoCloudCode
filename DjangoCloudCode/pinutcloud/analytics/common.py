@@ -2,6 +2,7 @@
 
 import time
 import logging
+import db_analytics
 from db_analytics import DB_Analytics
 
 # Return Values(For callback processes)
@@ -25,14 +26,14 @@ PINUT_USER_FILE_NAME="PinutUser"
 #PINUT USER INTRO FILE
 #Dump these record into json files PinutUserIntro_d1f5c60cb9ff_18_01_2016.json
 #{"email_id": "pranetazvision@yahoo.co.in", "phone": "7022895195", "name": "preety", "cl_mac": "5c:51:88:07:8f:15"}
-PINUT_USER_FILE_PATH=JSON_PATH+"/"+"PinutUserIntroFiles"
-PINUT_USER_FILE_NAME="PinutUserIntro"
+PINUT_USER_INTRO_FILE_PATH=JSON_PATH+"/"+"PinutUserIntroFiles"
+PINUT_USER_INTRO_FILE_NAME="PinutUserIntro"
 
 #PINUT FEEDBACK FILE
 #Dump these record into json files PinutFeedback_d1f5c60cb9ff_18_01_2016.json
 #{"comment": "Good ", "pinut_experience": 5, "name": "preety", "cl_mac": "5c:51:88:07:8f:15", "email_id": "pranetazvision@yahoo.co.in", "phone": "7022895195", "ride_experience": 5}
-PINUT_USER_FILE_PATH=JSON_PATH+"/"+"PinutFeedbackFiles"
-PINUT_USER_FILE_NAME="PinutFeedback"
+PINUT_FEEDBACK_FILE_PATH=JSON_PATH+"/"+"PinutFeedbackFiles"
+PINUT_FEEDBACK_FILE_NAME="PinutFeedback"
 
 #PINUT CONNECTION FILE
 #{c1:f5:c6:0c:b9:ef:{"connection":1}}
