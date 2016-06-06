@@ -15,22 +15,40 @@ CODE_PATH="/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud
 LOG_CONF_PATH = CODE_PATH+"/"+"conf/logger.conf"
 DB_INFO_CFG = CODE_PATH+"/"+"conf/db_info.cfg"
 
+#==============================================================
 #PINUT USER FILE
 #Dump these record into json files PinutUser_d1f5c60cb9ff_18_01_2016.json
 #{"cl_mac":"c1:f5:c6:0c:b9:ef","phone":8000678800,"email_id":"c1@gmail.com","data":"bajrangi bhaijan.mp4","category":"movie","device_timestamp":14508461}
 PINUT_USER_FILE_PATH=JSON_PATH+"/"+"PinutUserFiles"
 PINUT_USER_FILE_NAME="PinutUser"
 
+#PINUT USER INTRO FILE
+#Dump these record into json files PinutUserIntro_d1f5c60cb9ff_18_01_2016.json
+#{"email_id": "pranetazvision@yahoo.co.in", "phone": "7022895195", "name": "preety", "cl_mac": "5c:51:88:07:8f:15"}
+PINUT_USER_FILE_PATH=JSON_PATH+"/"+"PinutUserIntroFiles"
+PINUT_USER_FILE_NAME="PinutUserIntro"
+
+#PINUT FEEDBACK FILE
+#Dump these record into json files PinutFeedback_d1f5c60cb9ff_18_01_2016.json
+#{"comment": "Good ", "pinut_experience": 5, "name": "preety", "cl_mac": "5c:51:88:07:8f:15", "email_id": "pranetazvision@yahoo.co.in", "phone": "7022895195", "ride_experience": 5}
+PINUT_USER_FILE_PATH=JSON_PATH+"/"+"PinutFeedbackFiles"
+PINUT_USER_FILE_NAME="PinutFeedback"
+
 #PINUT CONNECTION FILE
 #{c1:f5:c6:0c:b9:ef:{"connection":1}}
 PINUT_CONNECTION_FILE_PATH=JSON_PATH+"/"+"PinutConnectionFiles"
 PINUT_CONNECTION_FILE_NAME="PinutConnection"
+#=========================================================
 
 #PROCESSED USER FILE (After the files will be processed, they'll be moved from PinutJsonFiles folder to ProcessedJsonFiles folder)
 PROCESSED_USER_FILE_PATH=PROCESSED_JSON_PATH+"/"+"PinutUserFiles"
+#PROCESSED USER INTRO FILE
+PROCESSED_USER_INTRO_FILE_PATH=PROCESSED_JSON_PATH+"/"+"PinutUserIntroFiles"
+#PROCESSED FEEDBACK FILE
+PROCESSED_FEEDBACK_FILE_PATH=PROCESSED_JSON_PATH+"/"+"PinutFeedbackFiles"
 #PROCESSED CONNECTION FILE
 PROCESSED_CONNECTION_FILE_PATH=PROCESSED_JSON_PATH+"/"+"PinutConnectionFiles"
-
+#===========================================================
 
 #Queries:
 GET_CUSTID_LOCID_CONTENTVERSION_FROM_PINUT_MAC="SELECT cid,lid,content_version from pinut_devices where pinut_mac=%s"
