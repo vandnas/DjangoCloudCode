@@ -10676,3 +10676,2053 @@ Traceback (most recent call last):
   File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
     (bit, current))  # missing attribute
 VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 12:35:36] WARNING [django.request:182] Not Found: /manager/html
+[06/Jun/2016 12:35:36] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 12:35:36] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 12:54:58] WARNING [django.request:182] Not Found: /
+[06/Jun/2016 12:54:58] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 12:54:58] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 12:54:58] WARNING [django.request:182] Not Found: /HNAP1/
+[06/Jun/2016 12:54:58] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 12:54:58] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 12:56:35] WARNING [django.request:182] Not Found: /table.py
+[06/Jun/2016 12:56:35] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 12:56:35] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 12:56:58] WARNING [django.request:182] Not Found: /table.py
+[06/Jun/2016 12:56:58] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 12:56:58] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 12:57:17] WARNING [django.request:182] Not Found: /table.py
+[06/Jun/2016 12:57:17] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 12:57:17] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 13:14:54] WARNING [django.request:182] Not Found: /script
+[06/Jun/2016 13:14:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 13:14:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 14:29:50] WARNING [django.request:182] Not Found: /table.py
+[06/Jun/2016 14:29:50] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 14:29:50] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 14:30:12] WARNING [django.request:182] Not Found: /
+[06/Jun/2016 14:30:12] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 14:30:12] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 14:32:30] WARNING [django.request:182] Not Found: /
+[06/Jun/2016 14:32:30] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 14:32:30] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 14:32:31] WARNING [django.request:182] Not Found: /
+[06/Jun/2016 14:32:32] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 14:32:32] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 14:32:32] WARNING [django.request:182] Not Found: /
+[06/Jun/2016 14:32:32] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 14:32:32] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 14:32:33] WARNING [django.request:182] Not Found: /
+[06/Jun/2016 14:32:33] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 14:32:33] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 14:38:06] WARNING [django.request:182] Not Found: /
+[06/Jun/2016 14:38:06] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 14:38:06] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 14:38:08] WARNING [django.request:182] Not Found: /
+[06/Jun/2016 14:38:08] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 14:38:08] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 15:39:42] DEBUG [django.db.backends:89] (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[06/Jun/2016 15:39:42] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[06/Jun/2016 15:39:48] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:39:48] ERROR [pinutcloud.views:79] Error in extracting zipped file : /home/ec2-user/a.zip to /home/ec2-user/PinutJsonFiles . Error: File is not a zip file
+[06/Jun/2016 15:39:48] ERROR [pinutcloud.views:126] Exception : File is not a zip file 
+[06/Jun/2016 15:40:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:03] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:03] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:03] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:03] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:04] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:04] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:04] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:04] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:05] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:05] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:05] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:05] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:05] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:06] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:06] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:06] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:06] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:07] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:07] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:07] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:07] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:08] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:08] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:08] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:08] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:08] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:09] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:09] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:09] ERROR [pinutcloud.views:79] Error in extracting zipped file : /home/ec2-user/a.zip to /home/ec2-user/PinutJsonFiles . Error: File is not a zip file
+[06/Jun/2016 15:40:09] ERROR [pinutcloud.views:126] Exception : File is not a zip file 
+[06/Jun/2016 15:40:09] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:09] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:19] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:40:19] ERROR [pinutcloud.views:79] Error in extracting zipped file : /home/ec2-user/a.zip to /home/ec2-user/PinutJsonFiles . Error: File is not a zip file
+[06/Jun/2016 15:40:19] ERROR [pinutcloud.views:126] Exception : File is not a zip file 
+[06/Jun/2016 15:41:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:42:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:43:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:43:03] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:44:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:44:21] WARNING [django.request:182] Not Found: /pinutcloud/
+[06/Jun/2016 15:44:21] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 15:44:21] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 15:45:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:45:15] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:45:15] ERROR [django.request:284] Internal Server Error: /pinutcloud/uploadjsonfiles/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view pinutcloud.views.uploadjsonfiles didn't return an HttpResponse object. It returned None instead.
+[06/Jun/2016 15:46:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:47:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 15:48:28] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[06/Jun/2016 15:48:28] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[06/Jun/2016 15:48:32] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:00:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:00:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:00:03] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:00:03] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:00:03] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:00:04] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:00:04] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:00:04] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:00:05] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:00:05] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:00:05] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:00:05] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:00:06] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:00:25] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:00:52] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:01:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:01:11] WARNING [django.request:182] Not Found: /
+[06/Jun/2016 16:01:11] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 16:01:11] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:01:13] WARNING [django.request:182] Not Found: /
+[06/Jun/2016 16:01:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 16:01:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:02:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:02:42] WARNING [django.request:182] Not Found: /
+[06/Jun/2016 16:02:42] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 16:02:42] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:02:47] WARNING [django.request:182] Not Found: /
+[06/Jun/2016 16:02:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 16:02:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:03:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:04:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:05:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:06:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:07:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:08:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:09:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:10:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:11:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:12:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:13:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:14:01] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:15:01] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:16:01] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:17:01] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:18:01] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:19:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:20:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:21:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:22:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:23:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:24:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:25:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:26:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:27:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:28:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:29:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:29:20] WARNING [django.request:182] Not Found: /manager/html
+[06/Jun/2016 16:29:20] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 16:29:20] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:30:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:31:01] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:31:20] WARNING [django.request:182] Not Found: /
+[06/Jun/2016 16:31:20] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 16:31:20] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:31:28] WARNING [django.request:182] Not Found: /index
+[06/Jun/2016 16:31:28] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 16:31:28] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:31:32] WARNING [django.request:182] Not Found: /index/
+[06/Jun/2016 16:31:32] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 16:31:32] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:31:51] WARNING [django.request:182] Not Found: /pinutcloud/index
+[06/Jun/2016 16:31:51] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:31:51] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:32:00] WARNING [django.request:182] Not Found: /pinutcloud/index/
+[06/Jun/2016 16:32:00] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:32:00] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:32:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:32:46] WARNING [django.request:182] Not Found: /pinutcloud/index/
+[06/Jun/2016 16:32:46] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:32:46] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:32:49] WARNING [django.request:182] Not Found: /pinutcloud/index/
+[06/Jun/2016 16:32:49] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:32:49] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:33:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:34:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:34:54] WARNING [django.request:182] Not Found: /pinutcloud/index/
+[06/Jun/2016 16:34:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:34:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:34:55] WARNING [django.request:182] Not Found: /pinutcloud/index/
+[06/Jun/2016 16:34:55] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:34:55] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:35:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:36:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:37:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:37:52] WARNING [django.request:182] Not Found: /index.html
+[06/Jun/2016 16:37:52] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 16:37:52] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:38:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:39:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:39:09] WARNING [django.request:182] Not Found: /index.html
+[06/Jun/2016 16:39:09] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 16:39:09] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:39:11] WARNING [django.request:182] Not Found: /index.html
+[06/Jun/2016 16:39:11] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 16:39:11] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:39:12] WARNING [django.request:182] Not Found: /index.html
+[06/Jun/2016 16:39:12] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 16:39:12] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:39:14] WARNING [django.request:182] Not Found: /index.html
+[06/Jun/2016 16:39:14] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 16:39:14] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:40:01] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:40:21] WARNING [django.request:182] Not Found: /index.html
+[06/Jun/2016 16:40:21] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 16:40:21] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:40:22] WARNING [django.request:182] Not Found: /index.html
+[06/Jun/2016 16:40:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 16:40:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jun/2016 16:41:59] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:42:03] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:44:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:44:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:45:01] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:46:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:47:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:48:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:49:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:50:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:51:03] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:52:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:53:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:54:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:55:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:56:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:57:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:58:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 16:59:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:00:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:01:01] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:02:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:03:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:04:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:05:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:06:03] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:07:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:08:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:09:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:10:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:11:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:12:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:13:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:14:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:15:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:16:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:17:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:18:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:19:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:20:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:21:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:22:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:23:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:24:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:25:01] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:26:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:27:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:28:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:29:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:30:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:31:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:32:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:33:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:34:01] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:35:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:36:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:37:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:38:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:39:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:40:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:41:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:42:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:43:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:44:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:45:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:46:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:47:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:48:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:49:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:50:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:51:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:52:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:53:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:54:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:55:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:56:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:57:01] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:58:01] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 17:59:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 18:00:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 18:01:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 18:02:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 18:03:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 18:04:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 18:05:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 18:06:02] DEBUG [pinutcloud.views:118] Inside uploadjsonfiles
+[06/Jun/2016 18:17:01] WARNING [django.request:182] Not Found: /
+[06/Jun/2016 18:17:01] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jun/2016 18:17:01] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 06:08:01] WARNING [django.request:182] Not Found: /manager/html
+[07/Jun/2016 06:08:01] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.py'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 06:08:01] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 07:15:34] WARNING [django.request:182] Not Found: /index.html
+[07/Jun/2016 07:15:34] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 07:15:34] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 07:39:26] WARNING [django.request:182] Not Found: /pinutcloud/index/
+[07/Jun/2016 07:39:26] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 07:39:26] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 07:39:32] WARNING [django.request:182] Not Found: /pinutcloud/
+[07/Jun/2016 07:39:32] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 07:39:32] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 07:39:37] WARNING [django.request:182] Not Found: /pinutcloud/index/
+[07/Jun/2016 07:39:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 07:39:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 07:39:58] DEBUG [pinutcloud.views:121] Inside uploadjsonfiles
+[07/Jun/2016 07:40:14] DEBUG [pinutcloud.views:121] Inside uploadjsonfiles
+[07/Jun/2016 07:40:20] ERROR [django.request:284] Internal Server Error: /pinutcloud/index/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 90, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/loader.py", line 74, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+TemplateDoesNotExist: pinutcloud.templates.index.html
+[07/Jun/2016 07:41:45] WARNING [django.request:182] Not Found: /pinutcloud/index/
+[07/Jun/2016 07:41:45] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 07:41:45] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 07:54:44] WARNING [django.request:182] Not Found: /
+[07/Jun/2016 07:54:44] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 07:54:44] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:03:14] WARNING [django.request:182] Not Found: /index.html
+[07/Jun/2016 08:03:14] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.py'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 08:03:14] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:03:15] WARNING [django.request:182] Not Found: /index.html
+[07/Jun/2016 08:03:15] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.py'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 08:03:15] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:03:47] WARNING [django.request:182] Not Found: /index.html
+[07/Jun/2016 08:03:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.py'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 08:03:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:03:51] WARNING [django.request:182] Not Found: /index.html
+[07/Jun/2016 08:03:51] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 08:03:51] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:04:07] ERROR [django.request:284] Internal Server Error: /pinutcloud/index/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 90, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/loader.py", line 74, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+TemplateDoesNotExist: pinutcloud.templates.index.html
+[07/Jun/2016 08:06:45] ERROR [django.request:284] Internal Server Error: /pinutcloud/index/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 90, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/loader.py", line 74, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+TemplateDoesNotExist: pinutcloud.templates.index.html
+[07/Jun/2016 08:07:20] WARNING [django.request:182] Not Found: /pinutcloud/index/
+[07/Jun/2016 08:07:20] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:07:20] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:08:46] ERROR [django.request:284] Internal Server Error: /pinutcloud/index/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 90, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/loader.py", line 74, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+TemplateDoesNotExist: pinutcloud.templates.index.html
+[07/Jun/2016 08:14:22] WARNING [django.request:182] Not Found: /pinutcloud/index/
+[07/Jun/2016 08:14:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:14:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:14:31] ERROR [django.request:284] Internal Server Error: /pinutcloud/index/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 90, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/loader.py", line 74, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+TemplateDoesNotExist: pinutcloud.templates.index.html
+[07/Jun/2016 08:17:37] WARNING [django.request:182] Not Found: /pinutcloud/index/
+[07/Jun/2016 08:17:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:17:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:17:41] WARNING [django.request:182] Not Found: /pinutcloud/index/
+[07/Jun/2016 08:17:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:17:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:18:00] WARNING [django.request:182] Not Found: /pinutcloud/index/
+[07/Jun/2016 08:18:00] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:18:00] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:18:02] ERROR [django.request:284] Internal Server Error: /pinutcloud/index/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 90, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/loader.py", line 74, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+TemplateDoesNotExist: pinutcloud.templates.index.html
+[07/Jun/2016 08:18:16] ERROR [django.request:284] Internal Server Error: /pinutcloud/index/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 90, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/loader.py", line 74, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+TemplateDoesNotExist: pinutcloud.templates.index.html
+[07/Jun/2016 08:18:20] ERROR [django.request:284] Internal Server Error: /pinutcloud/index/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 90, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/loader.py", line 74, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+TemplateDoesNotExist: pinutcloud.templates.index.html
+[07/Jun/2016 08:18:25] ERROR [django.request:284] Internal Server Error: /pinutcloud/index/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 90, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/loader.py", line 74, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+TemplateDoesNotExist: pinutcloud.templates.index.html
+[07/Jun/2016 08:20:33] ERROR [django.request:284] Internal Server Error: /pinutcloud/index/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 90, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/loader.py", line 74, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+TemplateDoesNotExist: pinutcloud.templates.index.html
+[07/Jun/2016 08:20:52] ERROR [django.request:284] Internal Server Error: /pinutcloud/index/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 90, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/loader.py", line 74, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+TemplateDoesNotExist: pinutcloud.templates.index.html
+[07/Jun/2016 08:21:33] WARNING [django.request:182] Not Found: /pinutcloud/index/
+[07/Jun/2016 08:21:33] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:21:33] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:22:44] ERROR [django.request:284] Internal Server Error: /pinutcloud/index/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 90, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/loader.py", line 74, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+TemplateDoesNotExist: pinutcloud.templates.index.html
+[07/Jun/2016 08:23:00] ERROR [django.request:284] Internal Server Error: /pinutcloud/index/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 90, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/loader.py", line 74, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+TemplateDoesNotExist: pinutcloud.templates.index.html
+[07/Jun/2016 08:23:41] ERROR [django.request:284] Internal Server Error: /pinutcloud/index/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 90, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/loader.py", line 74, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+TemplateDoesNotExist: pinutcloud.templates.index.html
+[07/Jun/2016 08:24:51] DEBUG [pinutcloud.views:121] Inside uploadjsonfiles
+[07/Jun/2016 08:25:27] ERROR [django.request:284] Internal Server Error: /pinutcloud/index/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 135, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 90, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/loader.py", line 74, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+TemplateDoesNotExist: pinutcloud.templates.index.html
+[07/Jun/2016 08:26:35] WARNING [django.request:182] Not Found: /pinutcloud/displayhtmlfiles/
+[07/Jun/2016 08:26:35] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:26:35] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:27:26] WARNING [django.request:182] Not Found: /pinutcloud/displayhtmlfiles/
+[07/Jun/2016 08:27:26] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:27:26] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:29:04] WARNING [django.request:182] Not Found: /manager/html
+[07/Jun/2016 08:29:04] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 08:29:04] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:30:12] WARNING [django.request:182] Not Found: /pinutcloud/displayhtmlfiles/
+[07/Jun/2016 08:30:12] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:30:12] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:30:16] WARNING [django.request:182] Not Found: /pinutcloud/displayhtmlfiles/
+[07/Jun/2016 08:30:16] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:30:16] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 08:32:51] ERROR [pinutcloud.views:148] Exception : index.html 
+[07/Jun/2016 08:32:54] ERROR [pinutcloud.views:148] Exception : index.html 
+[07/Jun/2016 08:32:58] ERROR [pinutcloud.views:148] Exception : index.html 
+[07/Jun/2016 08:34:54] ERROR [pinutcloud.views:148] Exception : index.html 
+[07/Jun/2016 08:34:56] ERROR [pinutcloud.views:148] Exception : index.html 
+[07/Jun/2016 08:36:36] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 08:36:36] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 08:37:00] ERROR [pinutcloud.views:148] Exception : index.html 
+[07/Jun/2016 08:37:01] ERROR [pinutcloud.views:148] Exception : index.html 
+[07/Jun/2016 08:37:05] ERROR [pinutcloud.views:148] Exception : index.html 
+[07/Jun/2016 08:38:33] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 08:38:33] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 08:59:50] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 08:59:50] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 09:01:23] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 09:01:23] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 09:17:42] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 09:17:42] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 09:29:01] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 09:29:01] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 10:01:33] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 10:01:33] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 10:01:41] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/bootstrap/dist/css/bootstrap.min.css
+[07/Jun/2016 10:01:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:41] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/metisMenu/dist/metisMenu.min.css
+[07/Jun/2016 10:01:41] WARNING [django.request:182] Not Found: /pinutcloud/dist/css/sb-admin-2.css
+[07/Jun/2016 10:01:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:41] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/font-awesome/css/font-awesome.min.css
+[07/Jun/2016 10:01:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:41] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/jquery/dist/jquery.min.js
+[07/Jun/2016 10:01:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:41] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/bootstrap/dist/js/bootstrap.min.js
+[07/Jun/2016 10:01:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:41] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/metisMenu/dist/metisMenu.min.js
+[07/Jun/2016 10:01:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:41] WARNING [django.request:182] Not Found: /pinutcloud/dist/js/sb-admin-2.js
+[07/Jun/2016 10:01:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:49] WARNING [django.request:182] Not Found: /pinutcloud/displayhtmlfiles/index.html
+[07/Jun/2016 10:01:49] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:49] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:54] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/bootstrap/dist/css/bootstrap.min.css
+[07/Jun/2016 10:01:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:54] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/metisMenu/dist/metisMenu.min.css
+[07/Jun/2016 10:01:54] WARNING [django.request:182] Not Found: /pinutcloud/dist/css/sb-admin-2.css
+[07/Jun/2016 10:01:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:54] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/jquery/dist/jquery.min.js
+[07/Jun/2016 10:01:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:54] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/font-awesome/css/font-awesome.min.css
+[07/Jun/2016 10:01:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:54] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/bootstrap/dist/js/bootstrap.min.js
+[07/Jun/2016 10:01:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:54] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/metisMenu/dist/metisMenu.min.js
+[07/Jun/2016 10:01:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:54] WARNING [django.request:182] Not Found: /pinutcloud/dist/js/sb-admin-2.js
+[07/Jun/2016 10:01:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:01:54] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:16:02] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 10:16:02] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 10:16:07] WARNING [django.request:182] Not Found: /home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/templates/startbootstrap-sb-admin-2/bower_components/bootstrap/dist/css/bootstrap.min.css
+[07/Jun/2016 10:16:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 10:16:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:16:07] WARNING [django.request:182] Not Found: /home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/templates/startbootstrap-sb-admin-2/bower_components/metisMenu/dist/metisMenu.min.css
+[07/Jun/2016 10:16:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 10:16:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:16:07] WARNING [django.request:182] Not Found: /home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/templates/startbootstrap-sb-admin-2/dist/css/sb-admin-2.css
+[07/Jun/2016 10:16:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 10:16:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:16:07] WARNING [django.request:182] Not Found: /home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/templates/startbootstrap-sb-admin-2/bower_components/jquery/dist/jquery.min.js
+[07/Jun/2016 10:16:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 10:16:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:16:07] WARNING [django.request:182] Not Found: /home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/templates/startbootstrap-sb-admin-2/bower_components/font-awesome/css/font-awesome.min.css
+[07/Jun/2016 10:16:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 10:16:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:16:07] WARNING [django.request:182] Not Found: /home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/templates/startbootstrap-sb-admin-2/bower_components/bootstrap/dist/js/bootstrap.min.js
+[07/Jun/2016 10:16:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 10:16:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:16:07] WARNING [django.request:182] Not Found: /home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/templates/startbootstrap-sb-admin-2/bower_components/metisMenu/dist/metisMenu.min.js
+[07/Jun/2016 10:16:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 10:16:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:16:07] WARNING [django.request:182] Not Found: /home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/templates/startbootstrap-sb-admin-2/dist/js/sb-admin-2.js
+[07/Jun/2016 10:16:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 10:16:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:23:43] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 10:23:43] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 10:24:43] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 10:24:43] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 10:29:14] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 10:29:14] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 10:29:17] WARNING [django.request:182] Not Found: /home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/static/pinutcloud/style.css
+[07/Jun/2016 10:29:17] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 10:29:17] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:30:54] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 10:30:54] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 10:30:56] WARNING [django.request:182] Not Found: /pinutcloud/displayhtmlfiles/pinutcloud/static/pinutcloud/style.css
+[07/Jun/2016 10:30:56] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:30:56] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:31:38] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 10:31:38] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 10:31:41] WARNING [django.request:182] Not Found: /pinutcloud/static/pinutcloud/style.css
+[07/Jun/2016 10:31:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:31:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 10:37:10] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 10:37:10] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 11:10:10] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 11:10:10] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 11:12:05] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 11:12:05] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 11:12:33] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 11:12:33] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 11:13:05] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 11:13:05] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 11:14:04] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 11:14:04] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 11:14:41] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 11:14:41] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 11:23:05] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 11:23:05] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 11:23:13] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/bootstrap/dist/css/bootstrap.min.css
+[07/Jun/2016 11:23:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:23:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:23:13] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/metisMenu/dist/metisMenu.min.css
+[07/Jun/2016 11:23:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:23:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:23:13] WARNING [django.request:182] Not Found: /pinutcloud/dist/css/sb-admin-2.css
+[07/Jun/2016 11:23:13] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/jquery/dist/jquery.min.js
+[07/Jun/2016 11:23:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:23:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:23:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:23:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:23:13] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/bootstrap/dist/js/bootstrap.min.js
+[07/Jun/2016 11:23:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:23:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:23:13] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/font-awesome/css/font-awesome.min.css
+[07/Jun/2016 11:23:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:23:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:23:13] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/metisMenu/dist/metisMenu.min.js
+[07/Jun/2016 11:23:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:23:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:23:13] WARNING [django.request:182] Not Found: /pinutcloud/dist/js/sb-admin-2.js
+[07/Jun/2016 11:23:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:23:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:24:49] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 11:24:49] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 11:24:53] WARNING [django.request:182] Not Found: /home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/templates/startbootstrap-sb-admin-2/bower_components/bootstrap/dist/css/bootstrap.min.css
+[07/Jun/2016 11:24:53] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 11:24:53] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:24:53] WARNING [django.request:182] Not Found: /home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/templates/startbootstrap-sb-admin-2/bower_components/metisMenu/dist/metisMenu.min.css
+[07/Jun/2016 11:24:53] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 11:24:53] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:24:53] WARNING [django.request:182] Not Found: /home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/templates/startbootstrap-sb-admin-2/dist/css/sb-admin-2.css
+[07/Jun/2016 11:24:53] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 11:24:53] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:24:53] WARNING [django.request:182] Not Found: /home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/templates/startbootstrap-sb-admin-2/bower_components/font-awesome/css/font-awesome.min.css
+[07/Jun/2016 11:24:53] WARNING [django.request:182] Not Found: /home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/templates/startbootstrap-sb-admin-2/bower_components/jquery/dist/jquery.min.js
+[07/Jun/2016 11:24:53] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 11:24:53] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:24:53] WARNING [django.request:182] Not Found: /home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/templates/startbootstrap-sb-admin-2/bower_components/bootstrap/dist/js/bootstrap.min.js
+[07/Jun/2016 11:24:53] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 11:24:53] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:24:53] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 11:24:53] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:24:53] WARNING [django.request:182] Not Found: /home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/templates/startbootstrap-sb-admin-2/bower_components/metisMenu/dist/metisMenu.min.js
+[07/Jun/2016 11:24:53] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 11:24:53] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:24:53] WARNING [django.request:182] Not Found: /home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/templates/startbootstrap-sb-admin-2/dist/js/sb-admin-2.js
+[07/Jun/2016 11:24:53] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[07/Jun/2016 11:24:53] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:44:36] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 11:44:36] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 11:45:25] WARNING [django.request:182] Not Found: /pinutcloud/displayhtmlfiles/index.html
+[07/Jun/2016 11:45:25] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:45:25] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:49:29] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 11:49:29] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 11:49:33] WARNING [django.request:182] Not Found: /pinutcloud/displayhtmlfiles/pages/index.html
+[07/Jun/2016 11:49:33] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:49:33] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:51:55] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 11:51:55] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 11:51:57] WARNING [django.request:182] Not Found: /pinutcloud/displayhtmlfiles/pages/index.html
+[07/Jun/2016 11:51:57] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:51:57] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:52:02] WARNING [django.request:182] Not Found: /pinutcloud/displayhtmlfiles/pages/index.html
+[07/Jun/2016 11:52:02] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 11:52:02] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:40:34] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 12:40:34] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 12:40:46] WARNING [django.request:182] Not Found: /pinutcloud/displayhtmlfiles/pages/index.html
+[07/Jun/2016 12:40:46] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:40:46] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:42:03] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 12:42:03] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 12:42:11] ERROR [django.request:284] Internal Server Error: /pinutcloud/displayhtmlfiles/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view pinutcloud.views.displayhtmlfiles didn't return an HttpResponse object. It returned None instead.
+[07/Jun/2016 12:43:23] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 12:43:23] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 12:43:28] WARNING [django.request:182] Not Found: /pinutcloud/displayhtmlfiles/index.html
+[07/Jun/2016 12:43:28] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:43:28] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:08] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 12:44:08] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 12:44:12] ERROR [django.request:284] Internal Server Error: /pinutcloud/displayhtmlfiles/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view pinutcloud.views.displayhtmlfiles didn't return an HttpResponse object. It returned None instead.
+[07/Jun/2016 12:44:19] ERROR [django.request:284] Internal Server Error: /pinutcloud/displayhtmlfiles/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view pinutcloud.views.displayhtmlfiles didn't return an HttpResponse object. It returned None instead.
+[07/Jun/2016 12:44:44] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 12:44:44] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 12:44:47] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/bootstrap/dist/css/bootstrap.min.css
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] WARNING [django.request:182] Not Found: /pinutcloud/dist/css/timeline.css
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/metisMenu/dist/metisMenu.min.css
+[07/Jun/2016 12:44:47] WARNING [django.request:182] Not Found: /pinutcloud/dist/css/sb-admin-2.css
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/morrisjs/morris.css
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/font-awesome/css/font-awesome.min.css
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/bootstrap/dist/js/bootstrap.min.js
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/jquery/dist/jquery.min.js
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/metisMenu/dist/metisMenu.min.js
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/raphael/raphael-min.js
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] WARNING [django.request:182] Not Found: /pinutcloud/bower_components/morrisjs/morris.min.js
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] WARNING [django.request:182] Not Found: /pinutcloud/js/morris-data.js
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] WARNING [django.request:182] Not Found: /pinutcloud/dist/js/sb-admin-2.js
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:44:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:55:18] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 12:55:18] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 12:55:23] WARNING [django.request:182] Not Found: /pinutcloud/displayhtmlfiles/pages/index.html
+[07/Jun/2016 12:55:23] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:55:23] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:56:11] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 12:56:11] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 12:56:17] WARNING [django.request:182] Not Found: /pinutcloud/displayhtmlfiles/pages/index.html
+[07/Jun/2016 12:56:17] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:56:17] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:57:01] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Jun/2016 12:57:01] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Jun/2016 12:57:20] WARNING [django.request:182] Not Found: /pinutcloud/displayhtmlfiles/login.html
+[07/Jun/2016 12:57:20] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:57:20] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:57:56] WARNING [django.request:182] Not Found: /pinutcloud/displayhtmlfiles/login.html
+[07/Jun/2016 12:57:56] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[07/Jun/2016 12:57:56] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'

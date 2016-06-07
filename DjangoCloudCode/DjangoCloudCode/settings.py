@@ -74,10 +74,11 @@ MIDDLEWARE_CLASSES = [
 
 ROOT_URLCONF = 'DjangoCloudCode.urls'
 
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/templates', ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -139,8 +140,19 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
+#STATIC_ROOT = '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/static'
+
+#STATICFILES_DIRS = (
+#'/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/static',
+#)
 
 STATIC_URL = '/static/'
+
+#STATICFILES_FINDERS = (
+#'django.contrib.staticfiles.finders.FileSystemFinder',
+#'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+#'django.contrib.staticfiles.finders.DefaultStorageFinder',
+#)
 
 LOGGING = {
     'version': 1,

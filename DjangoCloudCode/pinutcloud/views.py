@@ -8,7 +8,7 @@ import json
 import os
 import datetime
 import zipfile
-from pinutcloud.analytics import utility_script
+from pinutcloud.analytics import utility_script_user_info
 import shutil
 import sys
 import logging
@@ -27,6 +27,7 @@ def byteify(input):
 	   return input
 
 
+#==========================================================================
 
 #Dump into User Json Files
 #POST REQUEST
@@ -59,6 +60,8 @@ def popularmovies(lid_dict):
 		popular_movie_list=data['popular_movie_list']
 		logging.debug( "popular_movie_list : %s" % popular_movie_list)
 	return (json.dumps(popular_movie_list).encode('utf-8'))
+
+#==========================================================================
 
 def write_into_file(write_file_path, file_content):
 	try:
@@ -122,7 +125,26 @@ def uploadjsonfiles(request):
 			extract_zipped_files(write_file_path, extract_file_path)
 			move_files_to_json_folders(extract_file_path)
 			return HttpResponse(status=200)
+                else:
+                    return HttpResponse("You're in GET request.")
 	except Exception, e:
                 logging.error("Exception : %s " % e)
 		return HttpResponse(status=500)
 
+#==========================================================================
+def displayhtmlfiles(request):	
+	try:
+		print "Inside displayhtmlfiles"
+		if request.method == "POST":
+                    return HttpResponse("You're in POST request.")
+                else:
+                    #return HttpResponse("You're in GET request.")
+                    #return render(request, "index.html", {'time' : datetime.datetime.now()})
+                    print "RENDERING INDEX.HTML"
+                    #return render(request, "pinutcloud/index.html")
+                    #return render(request, "startbootstrap-sb-admin-2/pages/login.html")
+                    #return render(request, "pinutcloud/pages/login.html")
+                    return render(request, "pinutcloud/pages/index.html")
+	except Exception, e:
+                logging.error("Exception : %s " % e)
+		return HttpResponse(status=500)

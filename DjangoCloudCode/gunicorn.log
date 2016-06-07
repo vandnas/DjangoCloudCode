@@ -301,3 +301,104 @@ ImportError: No module named DjangoCloudCode.wsgi
 [2016-05-14 16:30:29 +0000] [26679] [INFO] Booting worker with pid: 26679
 [2016-05-14 16:30:30 +0000] [26676] [INFO] Worker exiting (pid: 26676)
 [2016-05-14 16:30:30 +0000] [26675] [INFO] Worker exiting (pid: 26675)
+[2016-06-06 14:40:11 +0000] [31796] [INFO] Starting gunicorn 19.4.5
+[2016-06-06 14:40:11 +0000] [31796] [INFO] Listening at: unix:/home/ec2-user/Virtual_Env/DjangoCloudCode/test.sock (31796)
+[2016-06-06 14:40:11 +0000] [31796] [INFO] Using worker: sync
+[2016-06-06 14:40:11 +0000] [31801] [INFO] Booting worker with pid: 31801
+[2016-06-06 14:40:11 +0000] [31801] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+ImportError: No module named DjangoCloudCode.wsgi
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+ImportError: No module named DjangoCloudCode.wsgi
+[2016-06-06 14:40:11 +0000] [31801] [INFO] Worker exiting (pid: 31801)
+[2016-06-06 14:40:11 +0000] [31796] [INFO] Shutting down: Master
+[2016-06-06 14:40:11 +0000] [31796] [INFO] Reason: Worker failed to boot.
+[2016-06-06 15:59:14 +0000] [32386] [INFO] Starting gunicorn 19.4.5
+[2016-06-06 15:59:14 +0000] [32386] [INFO] Listening at: unix:/home/ec2-user/Virtual_Env/DjangoCloudCode/test.sock (32386)
+[2016-06-06 15:59:14 +0000] [32386] [INFO] Using worker: sync
+[2016-06-06 15:59:14 +0000] [32391] [INFO] Booting worker with pid: 32391
+[2016-06-06 15:59:14 +0000] [32391] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+ImportError: No module named DjangoCloudCode.wsgi
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+ImportError: No module named DjangoCloudCode.wsgi
+[2016-06-06 15:59:14 +0000] [32391] [INFO] Worker exiting (pid: 32391)
+[2016-06-06 15:59:14 +0000] [32386] [INFO] Shutting down: Master
+[2016-06-06 15:59:14 +0000] [32386] [INFO] Reason: Worker failed to boot.
+[2016-06-06 15:59:51 +0000] [32400] [INFO] Starting gunicorn 19.4.5
+[2016-06-06 15:59:51 +0000] [32400] [INFO] Listening at: unix:/home/ec2-user/Virtual_Env/DjangoCloudCode/test.sock (32400)
+[2016-06-06 15:59:51 +0000] [32400] [INFO] Using worker: sync
+[2016-06-06 15:59:51 +0000] [32405] [INFO] Booting worker with pid: 32405
+[2016-06-06 15:59:51 +0000] [32406] [INFO] Booting worker with pid: 32406
+[2016-06-06 15:59:51 +0000] [32407] [INFO] Booting worker with pid: 32407
+[2016-06-06 18:51:35 +0000] [683] [INFO] Booting worker with pid: 683
+[2016-06-06 18:51:35 +0000] [684] [INFO] Booting worker with pid: 684
+[2016-06-06 18:51:35 +0000] [32400] [INFO] Handling signal: hup
+[2016-06-06 18:51:35 +0000] [32400] [INFO] Hang up: Master
+[2016-06-06 18:51:35 +0000] [685] [INFO] Booting worker with pid: 685
+[2016-06-06 18:51:35 +0000] [687] [INFO] Booting worker with pid: 687
+[2016-06-06 18:51:35 +0000] [686] [INFO] Booting worker with pid: 686
+[2016-06-06 18:51:36 +0000] [683] [INFO] Worker exiting (pid: 683)
+[2016-06-06 18:51:36 +0000] [684] [INFO] Worker exiting (pid: 684)
+[2016-06-07 08:31:34 +0000] [6522] [INFO] Starting gunicorn 19.4.5
+[2016-06-07 08:31:34 +0000] [6522] [INFO] Listening at: unix:/home/ec2-user/Virtual_Env/DjangoCloudCode/test.sock (6522)
+[2016-06-07 08:31:34 +0000] [6522] [INFO] Using worker: sync
+[2016-06-07 08:31:34 +0000] [6527] [INFO] Booting worker with pid: 6527
+[2016-06-07 08:31:34 +0000] [6528] [INFO] Booting worker with pid: 6528
+[2016-06-07 08:31:34 +0000] [6532] [INFO] Booting worker with pid: 6532
