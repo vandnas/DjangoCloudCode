@@ -402,3 +402,26 @@ ImportError: No module named DjangoCloudCode.wsgi
 [2016-06-07 08:31:34 +0000] [6527] [INFO] Booting worker with pid: 6527
 [2016-06-07 08:31:34 +0000] [6528] [INFO] Booting worker with pid: 6528
 [2016-06-07 08:31:34 +0000] [6532] [INFO] Booting worker with pid: 6532
+[2016-06-07 13:47:21 +0000] [9079] [INFO] Starting gunicorn 19.4.5
+[2016-06-07 13:47:21 +0000] [9079] [INFO] Listening at: unix:/home/ec2-user/Virtual_Env/DjangoCloudCode/test.sock (9079)
+[2016-06-07 13:47:21 +0000] [9079] [INFO] Using worker: sync
+[2016-06-07 13:47:21 +0000] [9084] [INFO] Booting worker with pid: 9084
+[2016-06-07 13:47:21 +0000] [9085] [INFO] Booting worker with pid: 9085
+[2016-06-07 13:47:21 +0000] [9088] [INFO] Booting worker with pid: 9088
+[2016-06-07 13:50:53 +0000] [9142] [INFO] Starting gunicorn 19.4.5
+[2016-06-07 13:50:53 +0000] [9142] [INFO] Listening at: unix:/home/ec2-user/Virtual_Env/DjangoCloudCode/test.sock (9142)
+[2016-06-07 13:50:53 +0000] [9142] [INFO] Using worker: sync
+[2016-06-07 13:50:53 +0000] [9147] [INFO] Booting worker with pid: 9147
+[2016-06-07 13:50:53 +0000] [9148] [INFO] Booting worker with pid: 9148
+[2016-06-07 13:50:53 +0000] [9149] [INFO] Booting worker with pid: 9149
+[2016-06-07 16:10:29 +0000] [9931] [INFO] Booting worker with pid: 9931
+[2016-06-07 16:10:29 +0000] [9932] [INFO] Booting worker with pid: 9932
+[2016-06-07 16:10:29 +0000] [9933] [INFO] Booting worker with pid: 9933
+[2016-06-07 16:10:29 +0000] [9142] [INFO] Handling signal: hup
+[2016-06-07 16:10:29 +0000] [9142] [INFO] Hang up: Master
+[2016-06-07 16:10:29 +0000] [9938] [INFO] Booting worker with pid: 9938
+[2016-06-07 16:10:29 +0000] [9939] [INFO] Booting worker with pid: 9939
+[2016-06-07 16:10:29 +0000] [9940] [INFO] Booting worker with pid: 9940
+[2016-06-07 16:10:30 +0000] [9931] [INFO] Worker exiting (pid: 9931)
+[2016-06-07 16:10:30 +0000] [9932] [INFO] Worker exiting (pid: 9932)
+[2016-06-07 16:10:30 +0000] [9933] [INFO] Worker exiting (pid: 9933)

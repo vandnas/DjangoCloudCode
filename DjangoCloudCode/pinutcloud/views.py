@@ -12,6 +12,8 @@ from pinutcloud.analytics import utility_script_user_info
 import shutil
 import sys
 import logging
+from pinutcloud.dashboard import forms
+#from forms import NameForm
 
 logging = logging.getLogger(__name__)
 
@@ -132,19 +134,45 @@ def uploadjsonfiles(request):
 		return HttpResponse(status=500)
 
 #==========================================================================
-def displayhtmlfiles(request):	
-	try:
-		print "Inside displayhtmlfiles"
-		if request.method == "POST":
-                    return HttpResponse("You're in POST request.")
-                else:
-                    #return HttpResponse("You're in GET request.")
-                    #return render(request, "index.html", {'time' : datetime.datetime.now()})
-                    print "RENDERING INDEX.HTML"
-                    #return render(request, "pinutcloud/index.html")
-                    #return render(request, "startbootstrap-sb-admin-2/pages/login.html")
-                    #return render(request, "pinutcloud/pages/login.html")
-                    return render(request, "pinutcloud/pages/index.html")
-	except Exception, e:
-                logging.error("Exception : %s " % e)
-		return HttpResponse(status=500)
+def displayhtmlfiles(request):
+    try:
+        # if this is a POST request we need to process the form data
+        if request.method == 'POST':
+            print "INSIDE POST REQUEST"
+            # create a form instance and populate it with data from the request:
+            form = forms.NameForm(request.POST)
+            print "form",form
+            # check whether it's valid:
+            if form.is_valid():
+                print "form is valid"
+                print form.cleaned_data
+                # process the data in form.cleaned_data as required
+                email = form.cleaned_data['email']
+                print "email",email
+                password = form.cleaned_data['password']
+                print "password",password
+                # redirect to a new URL:
+                #return HttpResponseRedirect('/thanks/')
+                return render(request, "pinutcloud/pages/index.html")
+            else:
+                print "form is invalid"
+
+        # if a GET (or any other method) we'll create a blank form
+        else:
+            print "INSIDE GET REQUEST"
+            form = forms.NameForm()
+            print "form",form
+
+        return render(request, 'pinutcloud/pages/login.html', {'form': form})
+    except Exception, e:
+        logging.error("Exception : %s " % e)
+        return HttpResponse(status=500)
+#=================================================================
+
+def renderloginpage(request):
+    #displayhtmlfiles(request)
+    return render(request, 'pinutcloud/pages/login.html')
+
+def renderindexpage(request):
+    return render(request, "pinutcloud/pages/index.html")
+

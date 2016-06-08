@@ -8,6 +8,8 @@ from . import views
 urlpatterns = [
     url(r'^processmongodata/$', 'pinutcloud.views.processmongodata'),
     url(r'^displayhtmlfiles/$', 'pinutcloud.views.displayhtmlfiles'),
+    url(r'^displayhtmlfiles/login.html/$', 'pinutcloud.views.renderloginpage'),
+    url(r'^displayhtmlfiles/index.html/$', 'pinutcloud.views.renderindexpage'),
     url(r'^uploadjsonfiles/$', 'pinutcloud.views.uploadjsonfiles'),
     url(r'^admin/', admin.site.urls),
 ]
