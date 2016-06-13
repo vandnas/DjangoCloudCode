@@ -12,3 +12,23 @@
 2016-06-06 11:13:30,034 - MainProcess - utility_script_feedback - DEBUG - 26 - No feedback given between your selected dates
 2016-06-06 11:13:30,034 - MainProcess - utility_script_feedback - DEBUG - 115 - FEEDBACK data not available
 2016-06-06 11:13:52,307 - MainProcess - utility_script_feedback - DEBUG - 26 - No feedback given between your selected dates
+2016-06-10 10:01:41,423 - MainProcess - utility_script_user_info - ERROR - 187 - Exception, in processing data across location : name 'w' is not defined
+Traceback (most recent call last):
+  File "pinutcloud/analytics/utility_script_user_info.py", line 182, in <module>
+    with open("/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/processed_user_info.json", w) as f:
+NameError: name 'w' is not defined
+2016-06-10 10:08:35,257 - MainProcess - utility_script_user_info - ERROR - 188 - Exception, in processing data across location : name 'w' is not defined
+Traceback (most recent call last):
+  File "pinutcloud/analytics/utility_script_user_info.py", line 183, in <module>
+    with open("/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/processed_user_info.json", w) as f:
+NameError: name 'w' is not defined
+2016-06-10 10:10:36,930 - MainProcess - utility_script_user_info - ERROR - 195 - Exception, in processing data across location : name 'w' is not defined
+Traceback (most recent call last):
+  File "pinutcloud/analytics/utility_script_user_info.py", line 185, in <module>
+    with open('/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/processed_user_info.json', w) as f:
+NameError: name 'w' is not defined
+2016-06-10 10:12:21,707 - MainProcess - utility_script_user_info - ERROR - 195 - Exception, in processing data across location : 'module' object has no attribute 'exist'
+Traceback (most recent call last):
+  File "pinutcloud/analytics/utility_script_user_info.py", line 188, in <module>
+    if os.path.exist('/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/processed_user_info.json'):
+AttributeError: 'module' object has no attribute 'exist'
