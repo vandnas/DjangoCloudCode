@@ -10,8 +10,18 @@ import logging.config
 import logging.handlers
 import sys
 
-
 def get_number_of_downloads(cust_name, start_date, end_date):
+    try:
+        mongo_db_obj = MongoDBAnalytics()
+        if mongo_db_obj.mongo_select_one(cust_name, "pinut_user_intro_data") == None:
+            logging.debug("MONGO COLLECTION doesnt exist")
+        number_of_downloads = mongo_db_obj.mongo_select(cust_name, "pinut_user_intro_data", {"date" : {"$gte" : start_date , "$lte" : end_date}}).count()
+        return number_of_downloads
+    except Exception, e:
+        logging.exception("Exception, in getting number of downloads from user intro data %s" % e)
+        raise
+
+def get_user_intro_content(cust_name, start_date, end_date):
     try:
         mongo_db_obj = MongoDBAnalytics()
 
@@ -25,8 +35,7 @@ def get_number_of_downloads(cust_name, start_date, end_date):
             for k in entries_to_remove:
                 row.pop(k, None)
             content_list.append(row)
-        number_of_downloads = mongo_db_obj.mongo_select(cust_name, "pinut_user_intro_data", {"date" : {"$gte" : start_date , "$lte" : end_date}}).count()
-        return number_of_downloads, content_list
+        return content_list
     except Exception, e:
         logging.exception("Exception, in processing user intro data %s" % e)
         raise
@@ -44,7 +53,8 @@ if __name__ == '__main__':
         start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
         end_date="03-03-2017"
         end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
-        number_of_downloads, content_list = get_number_of_downloads(cust_name ,start_date_obj ,end_date_obj)
+        number_of_downloads = get_number_of_downloads(cust_name ,start_date_obj ,end_date_obj)
+        content_list = get_user_intro_content(cust_name, start_date_obj, end_date_obj)
         print "number_of_downloads" ,number_of_downloads
         print "content_list" ,content_list
     except Exception, e:

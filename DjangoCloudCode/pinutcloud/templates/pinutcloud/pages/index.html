@@ -410,8 +410,28 @@
                                     <i class="fa fa-comments fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">26</div>
-                                    <div>New Comments!</div>
+                                    <div id="total_downloads" class="huge">
+					<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+					<script type="text/javascript">
+						$(function() {
+							var promise = $.ajax({
+							    url: 'http://54.169.232.88:8080/pinutcloud/getTotalDownloads/',
+							    type: 'GET',
+							    dataType: 'json',
+							   async: false
+						});
+						    promise.done(function(response) {
+							console.log(response);
+							$("#total_downloads").html(response);
+							});
+						    promise.fail(function(xhr) {
+						   console.log("in failure");
+						    });
+						});
+					</script>
+				    </div>
+				   
+                                    <div>Pinut Downloads!</div>
                                 </div>
                             </div>
                         </div>
@@ -432,8 +452,28 @@
                                     <i class="fa fa-tasks fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">12</div>
-                                    <div>New Tasks!</div>
+				<div id="total_feedbacks" class="huge">
+                                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                                        <script type="text/javascript">
+                                                $(function() {
+                                                        var promise = $.ajax({
+                                                            url: 'http://54.169.232.88:8080/pinutcloud/getTotalFeedback/',
+                                                            type: 'GET',
+                                                            dataType: 'json',
+                                                           async: false
+                                                });
+                                                    promise.done(function(response) {
+                                                        console.log(response);
+                                                        $("#total_feedbacks").html(response);
+                                                        });
+                                                    promise.fail(function(xhr) {
+                                                   console.log("in failure");
+                                                    });
+                                                });
+                                        </script>
+                                    </div>
+
+                                    <div>Pinut Feedbacks!</div>
                                 </div>
                             </div>
                         </div>
@@ -454,8 +494,28 @@
                                     <i class="fa fa-shopping-cart fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">124</div>
-                                    <div>New Orders!</div>
+				    <div id="total_travellers" class="huge">
+                                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                                        <script type="text/javascript">
+                                                $(function() {
+                                                        var promise = $.ajax({
+                                                            url: 'http://54.169.232.88:8080/pinutcloud/totalUsersConnected/',
+                                                            type: 'GET',
+                                                            dataType: 'json',
+                                                           async: false
+                                                });
+                                                    promise.done(function(response) {
+                                                        console.log(response);
+                                                        $("#total_travellers").html(response);
+                                                        });
+                                                    promise.fail(function(xhr) {
+                                                   console.log("in failure");
+                                                    });
+                                                });
+                                        </script>
+                                    </div>
+
+                                    <div>Pinut Travellers!</div>
                                 </div>
                             </div>
                         </div>
@@ -476,8 +536,28 @@
                                     <i class="fa fa-support fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">13</div>
-                                    <div>Support Tickets!</div>
+					<div id="total_devices" class="huge">
+                                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                                        <script type="text/javascript">
+                                                $(function() {
+                                                        var promise = $.ajax({
+                                                            url: 'http://54.169.232.88:8080/pinutcloud/totalPinutDevices/',
+                                                            type: 'GET',
+                                                            dataType: 'json',
+                                                           async: false
+                                                });
+                                                    promise.done(function(response) {
+                                                        console.log(response);
+                                                        $("#total_devices").html(response);
+                                                        });
+                                                    promise.fail(function(xhr) {
+                                                   console.log("in failure");
+                                                    });
+                                                });
+                                        </script>
+                                    </div>
+
+                                    <div>Pinut Devices!</div>
                                 </div>
                             </div>
                         </div>

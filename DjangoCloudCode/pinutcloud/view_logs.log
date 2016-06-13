@@ -1372,3 +1372,1278 @@ VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <Regex
 [13/Jun/2016 07:16:58] DEBUG [pinutcloud.views:38] Inside processmongodata
 [13/Jun/2016 07:16:58] DEBUG [pinutcloud.views:40] Inside GET request
 [13/Jun/2016 07:16:59] DEBUG [pinutcloud.views:76] user_dist_time_slot : {u'4pm-8pm': 2, u'11am-1pm': 2, u'1pm-4pm': 1, u'8am-11am': 7}
+[13/Jun/2016 07:22:42] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 07:22:42] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 07:22:45] DEBUG [pinutcloud.views:38] Inside processmongodata
+[13/Jun/2016 07:22:45] DEBUG [pinutcloud.views:40] Inside GET request
+[13/Jun/2016 07:22:45] ERROR [django.request:284] Internal Server Error: /pinutcloud/processmongodata/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 235, in get_response
+    response = middleware_method(request, response)
+  File "/usr/local/lib/python2.7/site-packages/django/middleware/clickjacking.py", line 31, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'tuple' object has no attribute 'get'
+[13/Jun/2016 07:23:02] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 07:23:02] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 07:23:04] DEBUG [pinutcloud.views:38] Inside processmongodata
+[13/Jun/2016 07:23:04] DEBUG [pinutcloud.views:40] Inside GET request
+[13/Jun/2016 07:23:04] DEBUG [pinutcloud.views:76] user_dist_time_slot : {u'4pm-8pm': 2, u'11am-1pm': 2, u'1pm-4pm': 1, u'8am-11am': 7}
+[13/Jun/2016 07:23:10] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 07:23:10] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 07:23:46] WARNING [django.request:182] Not Found: /
+[13/Jun/2016 07:23:46] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[13/Jun/2016 07:23:46] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 07:23:50] WARNING [django.request:182] Not Found: /HNAP1/
+[13/Jun/2016 07:23:50] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[13/Jun/2016 07:23:50] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 07:25:42] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 07:25:42] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 07:38:44] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 07:38:44] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 07:40:11] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 07:40:11] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:06:14] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:06:14] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:06:18] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:06:18] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:06:24] DEBUG [pinutcloud.views:38] Inside processmongodata
+[13/Jun/2016 08:06:24] DEBUG [pinutcloud.views:40] Inside GET request
+[13/Jun/2016 08:06:24] DEBUG [pinutcloud.views:92] total_users_connected : 12
+[13/Jun/2016 08:06:24] WARNING [django.request:182] Not Found: /icons/ubuntu-logo.png
+[13/Jun/2016 08:06:24] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[13/Jun/2016 08:06:24] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 08:06:57] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:06:57] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:06:59] DEBUG [pinutcloud.views:38] Inside processmongodata
+[13/Jun/2016 08:06:59] DEBUG [pinutcloud.views:40] Inside GET request
+[13/Jun/2016 08:06:59] DEBUG [pinutcloud.views:92] total_users_connected : 12
+[13/Jun/2016 08:06:59] WARNING [django.request:182] Not Found: /icons/ubuntu-logo.png
+[13/Jun/2016 08:06:59] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[13/Jun/2016 08:06:59] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 08:07:20] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:07:20] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:07:23] DEBUG [pinutcloud.views:38] Inside processmongodata
+[13/Jun/2016 08:07:23] DEBUG [pinutcloud.views:40] Inside GET request
+[13/Jun/2016 08:07:23] DEBUG [pinutcloud.views:76] user_dist_time_slot : {u'4pm-8pm': 2, u'11am-1pm': 2, u'1pm-4pm': 1, u'8am-11am': 7}
+[13/Jun/2016 08:08:27] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:08:27] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:11:48] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/bootstrap-datepicker.de.js
+[13/Jun/2016 08:11:48] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 08:11:48] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 08:12:37] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/bootstrap-datepicker.de.js
+[13/Jun/2016 08:12:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 08:12:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 08:13:30] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/bootstrap-datepicker.de.js
+[13/Jun/2016 08:13:30] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 08:13:30] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 08:13:33] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/bootstrap-datepicker.de.js
+[13/Jun/2016 08:13:33] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 08:13:33] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 08:13:57] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/bootstrap-datepicker.de.js
+[13/Jun/2016 08:13:57] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 08:13:57] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 08:23:54] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:23:54] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:25:18] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:25:18] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:25:22] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:25:22] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:25:47] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:25:47] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:26:11] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:26:11] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:28:43] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:28:43] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:28:48] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:28:48] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:29:01] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:29:01] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:29:40] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:29:40] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:30:00] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:30:00] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:31:10] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:31:10] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:31:28] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:31:28] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:32:08] WARNING [django.request:182] Not Found: /getTotalDownloads
+[13/Jun/2016 08:32:08] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.py'> (None:pinutcloud) ^pinutcloud/>"
+[13/Jun/2016 08:32:08] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 08:32:35] DEBUG [pinutcloud.views:36] Inside GET request
+[13/Jun/2016 08:32:51] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 08:33:25] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:33:25] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:39:21] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:39:21] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:39:26] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:39:26] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:39:31] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 08:39:31] ERROR [django.request:284] Internal Server Error: /pinutcloud/getUserIntroContent/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 60, in getUserIntroContent
+    return render(request, 'pinutcloud/highcharts/table.html')
+  File "/usr/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: pinutcloud/highcharts/table.html
+[13/Jun/2016 08:40:19] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:40:19] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:40:34] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 08:40:34] ERROR [django.request:284] Internal Server Error: /pinutcloud/getUserIntroContent/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 60, in getUserIntroContent
+    return render(request, 'pinutcloud/highcharts/table.html')
+  File "/usr/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: pinutcloud/highcharts/table.html
+[13/Jun/2016 08:42:07] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 08:42:07] ERROR [django.request:284] Internal Server Error: /pinutcloud/getUserIntroContent/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 60, in getUserIntroContent
+    return render(request, 'pinutcloud/highcharts/table.html')
+  File "/usr/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: pinutcloud/highcharts/table.html
+[13/Jun/2016 08:42:42] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 08:42:42] ERROR [django.request:284] Internal Server Error: /pinutcloud/getUserIntroContent/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 60, in getUserIntroContent
+    return render(request, 'pinutcloud/highcharts/table.html')
+  File "/usr/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: pinutcloud/highcharts/table.html
+[13/Jun/2016 08:45:31] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:45:31] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:45:50] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:45:50] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:45:53] ERROR [django.request:284] Internal Server Error: /pinutcloud/getUserIntroContent/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 66, in rendertable
+    return render(request, "pinutcloud/highcharts/table.html")
+  File "/usr/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: pinutcloud/highcharts/table.html
+[13/Jun/2016 08:46:17] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:46:17] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:46:47] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:46:47] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:46:51] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:46:51] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:46:56] ERROR [django.request:284] Internal Server Error: /pinutcloud/getUserIntroContent/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 67, in rendertable
+    return render(request, "pinutcloud/highcharts/table.html")
+  File "/usr/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: pinutcloud/highcharts/table.html
+[13/Jun/2016 08:47:37] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:47:37] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:50:27] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:50:27] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:50:28] ERROR [django.request:284] Internal Server Error: /pinutcloud/getUserIntroContent/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 67, in rendertable
+    return render(request, "pinutcloud/pages/table.html")
+  File "/usr/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: pinutcloud/pages/table.html
+[13/Jun/2016 08:50:32] ERROR [django.request:284] Internal Server Error: /pinutcloud/getUserIntroContent/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 67, in rendertable
+    return render(request, "pinutcloud/pages/table.html")
+  File "/usr/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: pinutcloud/pages/table.html
+[13/Jun/2016 08:51:23] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:51:23] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:51:55] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:51:55] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:57:43] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:57:43] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:57:57] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:57:57] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 08:58:08] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 08:58:08] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 09:01:02] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 09:01:02] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 09:01:07] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:01:07] WARNING [django.request:182] Not Found: /pinutcloud/getUserIntroContent/js/custom.js
+[13/Jun/2016 09:01:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 09:01:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 09:02:22] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:02:22] WARNING [django.request:182] Not Found: /pinutcloud/getUserIntroContent/js/custom.js
+[13/Jun/2016 09:02:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 09:02:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 09:03:33] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:03:33] WARNING [django.request:182] Not Found: /pinutcloud/getUserIntroContent/js/custom.js
+[13/Jun/2016 09:03:33] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 09:03:33] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 09:03:36] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:03:36] WARNING [django.request:182] Not Found: /pinutcloud/getUserIntroContent/js/custom.js
+[13/Jun/2016 09:03:36] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 09:03:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 09:03:52] DEBUG [pinutcloud.views:36] Inside GET request
+[13/Jun/2016 09:03:54] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:03:55] WARNING [django.request:182] Not Found: /pinutcloud/getUserIntroContent/js/custom.js
+[13/Jun/2016 09:03:55] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 09:03:55] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 09:04:08] WARNING [django.request:182] Not Found: /pinutcloud/getUserIntroContent/js/custom.js
+[13/Jun/2016 09:04:08] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 09:04:08] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 09:05:00] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:05:00] WARNING [django.request:182] Not Found: /pinutcloud/getUserIntroContent/js/custom.js
+[13/Jun/2016 09:05:00] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 09:05:00] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 09:05:50] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:05:55] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:09:38] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:12:45] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:14:02] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:14:24] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:14:24] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:14:34] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:14:34] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:15:15] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:15:15] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:36:07] WARNING [django.request:182] Not Found: /manager/html
+[13/Jun/2016 09:36:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.py'> (None:pinutcloud) ^pinutcloud/>"
+[13/Jun/2016 09:36:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 09:37:47] WARNING [django.request:182] Not Found: /manager/html
+[13/Jun/2016 09:37:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.py'> (None:pinutcloud) ^pinutcloud/>"
+[13/Jun/2016 09:37:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 09:41:38] WARNING [django.request:182] Not Found: /pinutcloud/getUserIntroContent/js/custom.js
+[13/Jun/2016 09:41:38] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 09:41:38] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 09:42:33] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:42:34] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:47:13] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 09:47:13] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 09:50:19] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:50:22] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:50:54] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:51:35] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:51:36] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:51:41] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:51:41] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:52:31] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:52:32] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:54:22] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 09:54:22] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 09:54:31] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 09:54:31] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 09:54:46] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 09:54:46] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 09:54:52] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 09:54:52] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 09:54:59] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:54:59] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 09:55:39] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 09:55:39] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 09:56:29] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 09:56:29] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 09:56:34] DEBUG [pinutcloud.views:52] Inside GET request
+[13/Jun/2016 10:00:38] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 10:00:38] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 10:00:42] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 10:00:42] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 10:00:55] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 10:00:55] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 10:01:27] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 10:01:27] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 10:02:20] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 10:02:20] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 10:02:23] DEBUG [pinutcloud.views:57] Inside GET request
+[13/Jun/2016 10:02:23] DEBUG [pinutcloud.views:57] Inside GET request
+[13/Jun/2016 10:02:38] DEBUG [pinutcloud.views:57] Inside GET request
+[13/Jun/2016 10:02:38] DEBUG [pinutcloud.views:57] Inside GET request
+[13/Jun/2016 10:02:51] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 10:02:51] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 10:03:16] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 10:03:16] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 10:04:35] DEBUG [pinutcloud.views:107] popular_movie_list : {u'Acche Din.mp4': 2, u'Raam Naam Satya Hai.mp4': 1, u'So Much for So Little.mp4': 2, u'Hair Cut.mp4': 1, u'Jolly Little Elves.mp4': 1, u'Betty Boop - Poor Cinderella (Animation).mp4': 1, u'Baiyaan.mp4': 1, u'Popeye Aladdin And His Wonderful Lamp.mp4': 1, u'INTERVAL.mp4': 1, u'Happy Hour.mp4': 4, u'dhadkan.mp4': 1, u'5 ways to kill your dreams.mp4': 5, u'Snacks and More.mp4': 1, u'Superman.mp4': 2, u'Ek Bahut Choti Si Love Story.mp4': 1, u'Oye Teri.mp4': 4, u"55 Popeye the Sailor Meets Ali Baba's Forty Thieves Popeye the Sailor.mp4": 1, u'Dil toh baccha hai ji.mp4': 1, u'dilli.mp4': 2, u'IN THIS CITY.mp4': 2, u'Joota.mp4': 1, u'dil.mp4': 4}
+[13/Jun/2016 10:04:35] DEBUG [pinutcloud.views:107] popular_movie_list : {u'Acche Din.mp4': 2, u'Raam Naam Satya Hai.mp4': 1, u'So Much for So Little.mp4': 2, u'Hair Cut.mp4': 1, u'Jolly Little Elves.mp4': 1, u'Betty Boop - Poor Cinderella (Animation).mp4': 1, u'Baiyaan.mp4': 1, u'Popeye Aladdin And His Wonderful Lamp.mp4': 1, u'INTERVAL.mp4': 1, u'Happy Hour.mp4': 4, u'dhadkan.mp4': 1, u'5 ways to kill your dreams.mp4': 5, u'Snacks and More.mp4': 1, u'Superman.mp4': 2, u'Ek Bahut Choti Si Love Story.mp4': 1, u'Oye Teri.mp4': 4, u"55 Popeye the Sailor Meets Ali Baba's Forty Thieves Popeye the Sailor.mp4": 1, u'Dil toh baccha hai ji.mp4': 1, u'dilli.mp4': 2, u'IN THIS CITY.mp4': 2, u'Joota.mp4': 1, u'dil.mp4': 4}
+[13/Jun/2016 10:04:45] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:04:45] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:05:35] DEBUG [pinutcloud.views:82] Inside processmongodata
+[13/Jun/2016 10:05:35] DEBUG [pinutcloud.views:84] Inside GET request
+[13/Jun/2016 10:05:35] DEBUG [pinutcloud.views:120] user_dist_time_slot : {u'4pm-8pm': 2, u'11am-1pm': 2, u'1pm-4pm': 1, u'8am-11am': 7}
+[13/Jun/2016 10:05:36] DEBUG [pinutcloud.views:82] Inside processmongodata
+[13/Jun/2016 10:05:36] DEBUG [pinutcloud.views:84] Inside GET request
+[13/Jun/2016 10:05:37] DEBUG [pinutcloud.views:120] user_dist_time_slot : {u'4pm-8pm': 2, u'11am-1pm': 2, u'1pm-4pm': 1, u'8am-11am': 7}
+[13/Jun/2016 10:06:02] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 10:06:02] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 10:07:56] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 10:07:56] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 10:07:59] DEBUG [pinutcloud.views:82] Inside processmongodata
+[13/Jun/2016 10:07:59] DEBUG [pinutcloud.views:84] Inside GET request
+[13/Jun/2016 10:08:00] DEBUG [pinutcloud.views:120] user_dist_time_slot : {u'4pm-8pm': 2, u'11am-1pm': 2, u'1pm-4pm': 1, u'8am-11am': 7}
+[13/Jun/2016 10:08:10] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:08:10] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:08:13] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:08:13] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:08:27] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 10:08:27] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 10:11:49] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:12:10] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:12:10] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:12:14] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:12:14] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:12:44] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:12:44] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:12:48] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:12:48] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:13:09] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:13:10] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:13:12] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:13:13] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:14:54] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:14:54] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:17:08] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 10:17:08] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 10:17:42] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 10:17:42] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 10:17:48] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:18:30] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 10:18:30] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 10:20:43] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:20:48] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:20:49] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:21:07] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:21:07] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:21:28] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 10:21:28] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 10:21:30] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 10:21:30] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 10:21:54] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:21:54] DEBUG [pinutcloud.views:58] Inside GET request
+[13/Jun/2016 10:29:42] DEBUG [pinutcloud.views:42] Inside GET request
+[13/Jun/2016 10:30:02] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/bootstrap-datepicker.de.js
+[13/Jun/2016 10:30:02] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 10:30:02] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 10:30:21] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/bootstrap-datepicker.de.js
+[13/Jun/2016 10:30:21] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 10:30:21] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 10:30:56] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/bootstrap-datepicker.de.js
+[13/Jun/2016 10:30:56] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 10:30:56] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 10:30:57] DEBUG [pinutcloud.views:42] Inside GET request
+[13/Jun/2016 10:31:29] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/bootstrap-datepicker.de.js
+[13/Jun/2016 10:31:29] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 10:31:29] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 10:31:30] DEBUG [pinutcloud.views:42] Inside GET request
+[13/Jun/2016 10:41:23] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/bootstrap-datepicker.de.js
+[13/Jun/2016 10:41:23] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 10:41:23] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 10:41:25] DEBUG [pinutcloud.views:42] Inside GET request
+[13/Jun/2016 10:44:17] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/bootstrap-datepicker.de.js
+[13/Jun/2016 10:44:17] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 10:44:17] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 10:44:18] DEBUG [pinutcloud.views:42] Inside GET request
+[13/Jun/2016 10:44:38] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/bootstrap-datepicker.de.js
+[13/Jun/2016 10:44:38] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 10:44:38] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 10:44:39] DEBUG [pinutcloud.views:42] Inside GET request
+[13/Jun/2016 10:48:18] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/bootstrap-datepicker.de.js
+[13/Jun/2016 10:48:18] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 10:48:18] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 10:48:19] DEBUG [pinutcloud.views:42] Inside GET request
+[13/Jun/2016 10:48:25] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/bootstrap-datepicker.de.js
+[13/Jun/2016 10:48:25] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 10:48:25] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 10:48:26] DEBUG [pinutcloud.views:42] Inside GET request
+[13/Jun/2016 10:55:46] WARNING [django.request:182] Not Found: /http:/dhg.pisz.pl/httptest.php
+[13/Jun/2016 11:15:13] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:15:13] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:15:35] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:15:35] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:15:41] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:15:41] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:17:10] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:17:10] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:18:55] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:18:55] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:19:01] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:19:01] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:19:04] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:19:04] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:21:15] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:21:15] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:21:48] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:21:48] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:22:16] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:22:16] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:23:16] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:23:16] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:23:20] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/bootstrap-datepicker.de.js
+[13/Jun/2016 11:23:20] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:23:20] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:23:22] DEBUG [pinutcloud.views:95] Inside GET request
+[13/Jun/2016 11:23:32] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:23:32] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:24:04] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:24:04] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:25:03] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:25:03] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:25:11] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:25:11] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:26:41] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:26:41] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:26:50] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:26:50] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:27:06] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:27:06] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:29:03] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:29:03] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:29:05] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/bootstrap-datepicker.de.js
+[13/Jun/2016 11:29:05] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:29:05] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:29:07] DEBUG [pinutcloud.views:93] Inside GET request
+[13/Jun/2016 11:29:17] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:29:17] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:29:38] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:29:38] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:30:04] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:30:04] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:30:31] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:30:31] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:31:52] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:31:52] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:32:32] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:32:32] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:35:02] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:35:02] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:35:07] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:35:07] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:35:24] ERROR [django.request:284] Internal Server Error: /pinutcloud/getFeedbackContent/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: getFeedbackContent() takes exactly 3 arguments (1 given)
+[13/Jun/2016 11:35:53] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:35:53] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:35:54] DEBUG [pinutcloud.views:70] Inside GET request
+[13/Jun/2016 11:36:02] DEBUG [pinutcloud.views:70] Inside GET request
+[13/Jun/2016 11:36:28] DEBUG [pinutcloud.views:70] Inside GET request
+[13/Jun/2016 11:37:24] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:37:24] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:37:38] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 11:37:54] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:37:54] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:38:37] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:38:37] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:38:39] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 11:44:49] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:44:49] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:49:35] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 11:49:35] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 11:50:04] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 11:50:18] WARNING [django.request:182] Not Found: /pinutcloud/processFeedbackMongoData/js_packages/highcharts.js
+[13/Jun/2016 11:50:18] WARNING [django.request:182] Not Found: /pinutcloud/processFeedbackMongoData/js_packages/jquery.js
+[13/Jun/2016 11:50:18] WARNING [django.request:182] Not Found: /pinutcloud/processFeedbackMongoData/js_packages/highcharts-3d.js
+[13/Jun/2016 11:50:18] WARNING [django.request:182] Not Found: /pinutcloud/processFeedbackMongoData/js_packages/exporting.js
+[13/Jun/2016 11:50:18] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:50:18] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:50:18] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:50:18] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:50:18] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:50:18] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:50:18] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:50:18] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:50:22] WARNING [django.request:182] Not Found: /pinutcloud/processFeedbackMongoData/js_packages/jquery.js
+[13/Jun/2016 11:50:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:50:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:50:22] WARNING [django.request:182] Not Found: /pinutcloud/processFeedbackMongoData/js_packages/highcharts.js
+[13/Jun/2016 11:50:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:50:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:50:22] WARNING [django.request:182] Not Found: /pinutcloud/processFeedbackMongoData/js_packages/highcharts-3d.js
+[13/Jun/2016 11:50:22] WARNING [django.request:182] Not Found: /pinutcloud/processFeedbackMongoData/js_packages/exporting.js
+[13/Jun/2016 11:50:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:50:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:50:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:50:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 11:52:08] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 11:52:14] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 11:52:38] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 11:52:48] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 11:53:50] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 11:53:53] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:28:30] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:32:34] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:32:39] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:34:22] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:34:26] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:39:36] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:40:03] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:41:03] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:44:47] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:44:51] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:46:27] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:46:35] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:48:18] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:49:31] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:50:35] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:51:31] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:53:52] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:55:44] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:57:19] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 12:59:58] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 13:08:55] DEBUG [pinutcloud.views:56] Inside GET request
+[13/Jun/2016 13:24:19] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 13:24:19] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 13:26:54] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 13:26:54] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 13:28:31] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 13:28:31] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 14:51:05] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 14:51:05] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 14:51:21] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 14:51:21] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 14:51:32] DEBUG [pinutcloud.views:130] Inside processmongodata
+[13/Jun/2016 14:51:32] DEBUG [pinutcloud.views:132] Inside GET request
+[13/Jun/2016 14:51:33] DEBUG [pinutcloud.views:168] user_dist_time_slot : {u'4pm-8pm': 2, u'11am-1pm': 2, u'1pm-4pm': 1, u'8am-11am': 7}
+[13/Jun/2016 14:51:55] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/bootstrap-datepicker.de.js
+[13/Jun/2016 14:51:55] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 14:51:55] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 14:51:55] DEBUG [pinutcloud.views:94] Inside GET request
+[13/Jun/2016 15:00:57] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[13/Jun/2016 15:00:57] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[13/Jun/2016 15:01:02] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/bootstrap-datepicker.de.js
+[13/Jun/2016 15:01:02] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 15:01:02] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 15:01:02] DEBUG [pinutcloud.views:94] Inside GET request
+[13/Jun/2016 15:01:02] DEBUG [pinutcloud.views:41] Inside GET request
+[13/Jun/2016 15:01:03] DEBUG [pinutcloud.views:181] total_users_connected : 12
+[13/Jun/2016 15:01:03] DEBUG [pinutcloud.views:194] total_pinut_devices : 1
+[13/Jun/2016 15:01:48] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/index.html/bootstrap-datepicker.de.js
+[13/Jun/2016 15:01:48] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 15:01:48] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 15:01:49] DEBUG [pinutcloud.views:94] Inside GET request
+[13/Jun/2016 15:01:49] DEBUG [pinutcloud.views:41] Inside GET request
+[13/Jun/2016 15:01:49] DEBUG [pinutcloud.views:181] total_users_connected : 12
+[13/Jun/2016 15:01:49] DEBUG [pinutcloud.views:194] total_pinut_devices : 1
+[13/Jun/2016 15:01:55] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/index.html/index.html
+[13/Jun/2016 15:01:55] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 15:01:55] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 15:03:00] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/index.html/tables.html
+[13/Jun/2016 15:03:00] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[13/Jun/2016 15:03:00] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'

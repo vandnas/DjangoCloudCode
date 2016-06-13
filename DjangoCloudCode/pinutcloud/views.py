@@ -8,7 +8,7 @@ import json
 import os
 import datetime
 import zipfile
-from pinutcloud.analytics import utility_script_user_info
+from pinutcloud.analytics import utility_script_user_info, utility_script_user_intro, utility_script_feedback
 import shutil
 import sys
 import logging
@@ -28,12 +28,104 @@ def byteify(input):
    else:
 	   return input
 
+#==========================================================================
+#FEEDBACK API
+
+def processFeedbackMongoData(request):
+	if request.method == "GET":
+            #return render(request, 'pinutcloud/highcharts/feedback_content.html')
+            return render(request, 'pinutcloud/highcharts/feedback_ratings.html')
+
+def getTotalFeedback(request):
+	if request.method == "GET":
+		logging.debug( "Inside GET request")
+		cust_name = "kk"
+		start_date="24-02-2013"
+		#To compare this date with mongo date we have converted to date_obj [string to time]
+		start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
+		end_date="03-03-2017"
+		end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
+		number_of_feedbacks = utility_script_feedback.get_total_feedback(cust_name ,start_date_obj ,end_date_obj)
+                return HttpResponse(number_of_feedbacks)
+	else:
+		logging.debug( "Its a POST request")
+		return HttpResponse("You're in POST request.")
+
+def getAverageFeedback(request):
+	if request.method == "GET":
+		logging.debug( "Inside GET request")
+		cust_name = "kk"
+		start_date="24-02-2013"
+		#To compare this date with mongo date we have converted to date_obj [string to time]
+		start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
+		end_date="03-03-2017"
+		end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
+		feedback_ratings = utility_script_feedback.get_average_feedback(cust_name ,start_date_obj ,end_date_obj)
+                return HttpResponse(json.dumps(feedback_ratings).encode('utf-8'))
+	else:
+		logging.debug( "Its a POST request")
+		return HttpResponse("You're in POST request.")
+
+def getFeedbackContent(request):
+	if request.method == "GET":
+		logging.debug( "Inside GET request")
+		cust_name = "kk"
+		start_date="24-02-2013"
+		#To compare this date with mongo date we have converted to date_obj [string to time]
+		start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
+		end_date="03-03-2017"
+		end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
+		feedback_content = utility_script_feedback.get_feedback_content(cust_name ,start_date_obj ,end_date_obj)
+                return HttpResponse(json.dumps(feedback_content).encode('utf-8'))
+	else:
+		logging.debug( "Its a POST request")
+		return HttpResponse("You're in POST request.")
+
+#==========================================================================
+#USER INTRO API
+def processUserIntroMongoData(request):
+	if request.method == "GET":
+            user_intro_content = getUserIntroContent(request)
+            print user_intro_content
+            return render(request, 'pinutcloud/highcharts/registration_content.html')
+
+def getTotalDownloads(request):
+	if request.method == "GET":
+		logging.debug( "Inside GET request")
+		cust_name = "kk"
+		start_date="24-02-2013"
+		#To compare this date with mongo date we have converted to date_obj [string to time]
+		start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
+		end_date="03-03-2017"
+		end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
+		number_of_downloads = utility_script_user_intro.get_number_of_downloads(cust_name ,start_date_obj ,end_date_obj)
+                return HttpResponse(number_of_downloads)
+	else:
+		logging.debug( "Its a POST request")
+		return HttpResponse("You're in POST request.")
+
+
+def getUserIntroContent(request):
+	if request.method == "GET":
+		logging.debug( "Inside GET request")
+		cust_name = "kk"
+		start_date="24-02-2013"
+		#To compare this date with mongo date we have converted to date_obj [string to time]
+		start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
+		end_date="03-03-2017"
+		end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
+		user_intro_content = utility_script_user_intro.get_user_intro_content(cust_name, start_date_obj, end_date_obj)
+                return HttpResponse(json.dumps(user_intro_content).encode('utf-8'))
+	else:
+		logging.debug( "Its a POST request")
+		return HttpResponse("You're in POST request.")
+
 
 #==========================================================================
 
 #Process utility_script_user_info and Dump its data to process_user_info Json File.
 #This json file will be read by various API's to retrieve data from it.
-#POST REQUEST
+#USER INFO API
 def processUserInfoMongoData(request):
 	logging.debug( "Inside processmongodata")
 	if request.method == "GET":
