@@ -9,6 +9,8 @@ import logging
 import logging.config
 import logging.handlers
 import sys
+import json
+import os
 
 def cal_start_date(n):
         current_date = datetime.datetime.utcnow()
@@ -24,7 +26,9 @@ def get_data_per_device(cust_name, start_date, end_date):
             logging.debug("MONGO COLLECTION doesnt exist")
 
         content = mongo_db_obj.mongo_select(cust_name, "pinut_summarized_data", {"date" : {"$gte" : start_date , "$lte" : end_date}})
+        print "content/device",content
         row_count = mongo_db_obj.mongo_select(cust_name, "pinut_summarized_data", {"date" : {"$gte" : start_date , "$lte" : end_date}}).count()
+        print "row_count",row_count
         lid_devicemac_dict={}
         for row in content:
             users_data={}
@@ -110,12 +114,15 @@ def get_data_per_device(cust_name, start_date, end_date):
 
 def get_data_per_location(cust_name ,start_date_obj ,end_date_obj):
     try:
+        print "start_date_obj",start_date_obj
+        print "end_date_obj",end_date_obj
 #        lids = mongo_db_obj.mongo_find_distinct(cust_name, "pinut_summarized_data", "lid")
 #        pinut_macs = mongo_db_obj.mongo_find_distinct(cust_name, "pinut_summarized_data", "pinut_mac")
 #        lid_devicemac_dict {(1, u'd2:f5:c6:0c:b9:ff'): {'user_dist_time_slot': {'12am-8am': 3}, 'popular_movies': {'c11.mp4': 1, 'c22.mp4': 1, 'c33.mp4': 1}, 'users_connected': 3}, (1, u'd3:f5:c6:0c:b9:ff'): {'user_dist_time_slot': {'4pm-8pm': 1, '12am-8am': 1, '1pm-4pm': 1}, 'popular_movies': {'c11.mp4': 1, 'c22.mp4': 1, 'c33.mp4': 1}, 'users_connected': 3}, (2, u'd1:f5:c6:0c:b9:ff'): {'user_dist_time_slot': {'12am-8am': 11, '1pm-4pm': 1}, 'popular_movies': {'piku.mp4': 4, 'dilli.mp4': 6, 'dilli6.mp4': 3, 'bhaijan.mp4': 4, 'bajrangi.mp4': 4, 'dil.mp4': 3}, 'users_connected': 12}}
 
 
         lid_devicemac_dict = get_data_per_device(cust_name ,start_date_obj ,end_date_obj)
+        print "lid_devicemac_dict",lid_devicemac_dict
         lid_dict={}
         for lid_device_mac_key , data in lid_devicemac_dict.iteritems():
             lid=lid_device_mac_key[0]
@@ -155,7 +162,11 @@ def get_data_per_location(cust_name ,start_date_obj ,end_date_obj):
             
             lid_dict[lid]=data_cache
 
-        return lid_dict
+        with open('/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/processed_user_info.json', 'w') as f:
+            json.dump(lid_dict, f)
+
+        print "lid_dict", lid_dict
+
             
     except Exception, e:
         logging.exception("Exception, in processing data across location : %s" % e)
@@ -165,6 +176,7 @@ if __name__ == '__main__':
 
     try: 
         #Configure logger
+        #TODO: Start date , end date and customer name will come from API
         logging.config.fileConfig(common.LOG_CONF_PATH)
         logging.Formatter.converter = time.gmtime
         cust_name="kk"
@@ -174,10 +186,8 @@ if __name__ == '__main__':
         end_date="03-03-2017"
         end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
         lid_devicemac_dict = get_data_per_device(cust_name ,start_date_obj ,end_date_obj)
-        print "lid_devicemac_dict" ,lid_devicemac_dict
-        lid_dict = get_data_per_location(cust_name ,start_date_obj ,end_date_obj)
-        print "******************************************************"
-        print "lid_dict", lid_dict
+        #print "lid_devicemac_dict" ,lid_devicemac_dict
+        get_data_per_location(cust_name ,start_date_obj ,end_date_obj)
         sys.exit(0)
     except Exception, e:
         logging.exception("Exception, in processing data across location : %s" % e)

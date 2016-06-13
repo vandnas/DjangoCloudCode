@@ -1,0 +1,63 @@
+<html>
+<title> CHART !! </title>
+
+{% load staticfiles %} 
+<script src="{% static 'pinutcloud/js_packages/jquery.js' %}"></script>
+<script src="{% static 'pinutcloud/js_packages/highcharts.js' %}"></script>
+<script src="{% static 'pinutcloud/js_packages/highcharts-3d.js' %}"></script>
+<script src="{% static 'pinutcloud/js_packages/exporting.js' %}"></script>
+
+<div id="container" style="height: 400px"></div>
+<script type="text/javascript">
+$(function() {
+var responseJSON;
+	var promise = $.ajax({
+	    url: 'http://54.169.232.88:8080/pinutcloud/userDistTimeSlot/',
+	    type: 'GET',
+	    dataType: 'json',
+	   async: false
+});
+    promise.done(function(response) {
+	result_list=[];
+	for (var key in response) {
+                internal_list=[];
+    		var value = response[key];
+		internal_list.push(key);
+		internal_list.push(value);
+		result_list.push(internal_list);
+	}
+	console.log(result_list);
+	});
+    promise.fail(function(xhr) {
+    });
+
+
+
+  $('#container').highcharts({
+    chart: {
+      type: 'pie',
+      options3d: {
+        enabled: true,
+        alpha: 45
+      }
+    },
+    title: {
+      text: 'User Distribution Time Slot'
+    },
+    subtitle: {
+      text: 'People travelling'
+    },
+    plotOptions: {
+      pie: {
+        innerSize: 100,
+        depth: 45
+      }
+    },
+    series: [{
+      name: 'Travellers',
+      data: result_list
+    }]
+  });
+});
+</script>
+</html>

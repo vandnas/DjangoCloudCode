@@ -31,38 +31,78 @@ def byteify(input):
 
 #==========================================================================
 
-#Dump into User Json Files
+#Process utility_script_user_info and Dump its data to process_user_info Json File.
+#This json file will be read by various API's to retrieve data from it.
 #POST REQUEST
-def processmongodata(request):
+def processUserInfoMongoData(request):
 	logging.debug( "Inside processmongodata")
 	if request.method == "GET":
 		logging.debug( "Inside GET request")
-		cust_name = "ola"
-		start_date="24-02-2016"
+		cust_name = "kk"
+		start_date="24-02-2013"
 		#To compare this date with mongo date we have converted to date_obj [string to time]
 		start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
-		end_date="03-03-2016"
+		end_date="03-03-2017"
 		end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
-		lid_dict = GLOBAL_PATH_ANALYTICS.get_data_per_location(cust_name ,start_date_obj ,end_date_obj)
-		lid_dict = utility_script.get_data_per_location(cust_name ,start_date_obj ,end_date_obj)
-		logging.debug( "******************************************************")
-		logging.debug("lid_dict: %s" % lid_dict)
-		popular_movie_list=popularmovies(lid_dict)
-		logging.debug( "popular_movie_list1: %s" % popular_movie_list)
-		return HttpResponse("You're in GET request.")
+		utility_script_user_info.get_data_per_location(cust_name ,start_date_obj ,end_date_obj)
+                #return render(request, 'pinutcloud/highcharts/popular_movies.html')
+                return render(request, 'pinutcloud/highcharts/user_dist_time_slot.html')
+		#return HttpResponse("User Info data written to json file successfully")
 	else:
 		logging.debug( "Its a POST request")
 		return HttpResponse("You're in POST request.")
 
-#Dump into User Json Files
-#POST REQUEST
-def popularmovies(lid_dict):
-	logging.debug("Inside popularmovies")
-	for lid, data in lid_dict.iteritems():
-		popular_movie_list=data['popular_movie_list']
-		logging.debug( "popular_movie_list : %s" % popular_movie_list)
-	return (json.dumps(popular_movie_list).encode('utf-8'))
+#PARSE USER_INFO FILE
+def popularMovieList(request):
+    try:
+	if request.method == "GET":
+            with open('/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/processed_user_info.json', 'r') as f:
+                content=json.load(f)
+                for lid, data in content.iteritems():
+                    popular_movie_list=data['popular_movie_list']
+                    logging.debug( "popular_movie_list : %s" % popular_movie_list)
+                    return HttpResponse(json.dumps(popular_movie_list).encode('utf-8'))
+    except Exception, e:
+        logging.debug("Exception in retrieving popular movie list from user info %s" % e)
 
+#PARSE USER_INFO FILE
+def userDistTimeSlot(request):
+    try:
+	if request.method == "GET":
+            with open('/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/processed_user_info.json', 'r') as f:
+                content=json.load(f)
+                for lid, data in content.iteritems():
+                    user_dist_time_slot=data['user_dist_time_slot']
+                    logging.debug( "user_dist_time_slot : %s" % user_dist_time_slot)
+                    return HttpResponse(json.dumps(user_dist_time_slot).encode('utf-8'))
+    except Exception, e:
+        logging.debug("Exception in retrieving user dist time slot from user info %s" % e)
+
+#PARSE USER_INFO FILE
+def totalUsersConnected(request):
+    try:
+	if request.method == "GET":
+            with open('/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/processed_user_info.json', 'r') as f:
+                content=json.load(f)
+                for lid, data in content.iteritems():
+                    total_users_connected=data['total_users_connected']
+                    logging.debug( "total_users_connected : %s" % total_users_connected)
+                    return HttpResponse(json.dumps(total_users_connected).encode('utf-8'))
+    except Exception, e:
+        logging.debug("Exception in retrieving total_users_connected from user info %s" % e)
+
+#PARSE USER_INFO FILE
+def totalPinutDevices(request):
+    try:
+	if request.method == "GET":
+            with open('/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/processed_user_info.json', 'r') as f:
+                content=json.load(f)
+                for lid, data in content.iteritems():
+                    total_pinut_devices=data['total_pinut_devices']
+                    logging.debug( "total_pinut_devices : %s" % total_pinut_devices)
+                    return HttpResponse(json.dumps(total_pinut_devices).encode('utf-8'))
+    except Exception, e:
+        logging.debug("Exception in retrieving total pinut devices from user info %s" % e)
 #==========================================================================
 
 def write_into_file(write_file_path, file_content):
@@ -134,7 +174,7 @@ def uploadjsonfiles(request):
 		return HttpResponse(status=500)
 
 #==========================================================================
-def displayhtmlfiles(request):
+def validatelogin(request):
     try:
         # if this is a POST request we need to process the form data
         if request.method == 'POST':
@@ -168,11 +208,52 @@ def displayhtmlfiles(request):
         logging.error("Exception : %s " % e)
         return HttpResponse(status=500)
 #=================================================================
+def highcharts(request):
+    try:
+        # if this is a POST request we need to process the form data
+        if request.method == 'POST':
+            print "INSIDE POST REQUEST"
+            # create a form instance and populate it with data from the request:
+            form = forms.NameForm(request.POST)
+            print "form",form
+            # check whether it's valid:
+            if form.is_valid():
+                print "form is valid"
+                print form.cleaned_data
+                # process the data in form.cleaned_data as required
+                email = form.cleaned_data['email']
+                print "email",email
+                password = form.cleaned_data['password']
+                print "password",password
+                # redirect to a new URL:
+                #return HttpResponseRedirect('/thanks/')
+                return render(request, "pinutcloud/pages/index.html")
+            else:
+                print "form is invalid"
 
+        # if a GET (or any other method) we'll create a blank form
+        else:
+            print "INSIDE GET REQUEST"
+            form = forms.NameForm()
+            print "form",form
+
+        return render(request, 'pinutcloud/pages/login.html', {'form': form})
+    except Exception, e:
+        logging.error("Exception : %s " % e)
+        return HttpResponse(status=500)
+#=========================================================================
 def renderloginpage(request):
-    #displayhtmlfiles(request)
-    return render(request, 'pinutcloud/pages/login.html')
+    return render(request, "pinutcloud/pages/login.html")
 
 def renderindexpage(request):
     return render(request, "pinutcloud/pages/index.html")
 
+def rendercalendarpage(request):
+    return render(request, "pinutcloud/pages/calendar.html")
+
+def renderpiechart(request):
+    return render(request, "pinutcloud/highcharts/popular_movies.html")
+#===============================================
+
+if __name__ =='__main__':
+    parse_data()
