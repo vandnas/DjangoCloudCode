@@ -1,0 +1,80 @@
+<html>
+<title> CHART !! </title>
+
+<script src="js_packages/jquery.js"></script>
+<script src="js_packages/highcharts.js"></script>
+<script src="js_packages/highcharts-3d.js"></script>
+<script src="js_packages/exporting.js"></script>
+
+<div id="container" style="height: 400px"></div>
+<script type="text/javascript">
+$(function() {
+var responseJSON;
+	var promise = $.ajax({
+	    url: 'http://localhost/bar_chart_without_parsing.py',
+	    type: 'GET',
+	    dataType: 'json',
+	async: false
+	});
+    promise.done(function(response) {
+	responseJSON=response;
+	console.log("responseJSON",responseJSON);
+	});
+    promise.fail(function(xhr) {
+    });
+
+    $('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Stacked column chart'
+        },
+        xAxis: {
+            categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Total fruit consumption'
+            },
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                }
+            }
+        },
+        legend: {
+            align: 'right',
+            x: -30,
+            verticalAlign: 'top',
+            y: 25,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false
+        },
+        tooltip: {
+            headerFormat: '<b>{point.x}</b><br/>',
+            pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+        },
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true,
+                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                    style: {
+                        textShadow: '0 0 3px black'
+                    }
+                }
+            }
+        },
+        series: responseJSON
+    });
+});
+</script>
+</html>
