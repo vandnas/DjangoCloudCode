@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pinut</title>
+
+    {% load staticfiles %}
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'pinutcloud/bower_components/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="{% static 'pinutcloud/bower_components/metisMenu/dist/metisMenu.min.css' %}" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="{% static 'pinutcloud/dist/css/timeline.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'pinutcloud/dist/css/sb-admin-2.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'pinutcloud/bower_components/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+
+<!-- ============================================================================================= -->
+
+    <!--  Calendar Program Start -->
+
+<!-- Include Required Prerequisites -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/latest/css/bootstrap.css" />
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+ 
+<!-- Include Date Range Picker -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+
+
+
+    <!--  Calendar Program Ends -->
+<!-- ============================================================================================= -->
+
+    <!--Total Downloads Widget Javascript Start -->
+	<script type="text/javascript">
+		$(function() {
+			var promise = $.ajax({
+			    url: 'http://54.169.232.88:8080/pinutcloud/getTotalDownloads/',
+			    type: 'GET',
+			    dataType: 'json',
+			   async: false
+		});
+		    promise.done(function(response) {
+			$("#total_downloads").html(response);
+			});
+		    promise.fail(function(xhr) {
+			console.log("total downloads in failure");
+		    });
+		});
+	</script>
+    <!--Total Downloads Widget Javascript End -->
+<!-- ============================================================================================= -->
+
+    <!--Total FeedBacks Widget Javascript Start -->
+	<script type="text/javascript">
+		$(function() {
+		var promise = $.ajax({
+		url: 'http://54.169.232.88:8080/pinutcloud/getTotalFeedback/',
+		type: 'GET',
+		dataType: 'json',
+		async: false
+		});
+		promise.done(function(response) {
+		$("#total_feedbacks").html(response);
+		});
+		promise.fail(function(xhr) {
+		console.log("total feedbacks in failure");
+		});
+		});
+	</script>
+    <!--Total FeedBacks Widget Javascript End -->
+<!-- ============================================================================================= -->
+
+<!--User Info Data Processing -equivalent to 4 API's-->
+<!-- Popular Movies Pie Chart , User Dist Time Slot Pie Chart , Pinut Travellers Widget, Pinut Devices Widget -->
+	<script type="text/javascript">
+		$(function() {
+			var promise = $.ajax({
+			    url: 'http://54.169.232.88:8080/pinutcloud/processUserInfoMongoData/',
+			    type: 'GET',
+			    dataType: 'json',
+			    async: false
+			});
+		    	promise.done(function(response) {
+				for (var lid in response) {
+					user_data = response[lid];
+					popular_movie_list=user_data['popular_movie_list'];
+					console.log(popular_movie_list)
+					user_dist_time_slot=user_data['user_dist_time_slot'];
+					console.log(user_dist_time_slot)
+					total_users_connected=user_data['total_users_connected'];
+					console.log(total_users_connected)
+					total_pinut_devices=user_data['total_pinut_devices'];
+					console.log(total_pinut_devices)
+					$("#total_travellers").html(total_users_connected);
+					$("#total_devices").html(total_pinut_devices);
+				}
+				<!-- HighChart : Popular Movies Watched Script Start-->
+				movie_result_list=[];
+				for (var key in popular_movie_list) {
+					internal_list=[];
+					var value = popular_movie_list[key];
+					internal_list.push(key);
+					internal_list.push(value);
+					movie_result_list.push(internal_list);
+				}
+				  $('#popularmoviechart').highcharts({
+				    chart: {
+				      type: 'pie',
+				      options3d: {
+					enabled: true,
+					alpha: 45
+				      }
+				    },
+				    title: {
+				      text: 'Popular Movies watched'
+				    },
+				    subtitle: {
+				      text: 'in Pinut'
+				    },
+				    plotOptions: {
+				      pie: {
+					innerSize: 100,
+					depth: 50
+				      }
+				    },
+				    series: [{
+				      name: 'Watched',
+				      data: movie_result_list
+				    }]
+				  });
+				<!-- HighChart : Popular Movies Watched Script End-->
+				<!-- HighChart : User Distribution Time Slot Script Start-->
+				user_dist_result_list=[];
+				for (var key in user_dist_time_slot) {
+					internal_list=[];
+					var value = user_dist_time_slot[key];
+					internal_list.push(key);
+					internal_list.push(value);
+					user_dist_result_list.push(internal_list);
+				}
+				  $('#userdistributionchart').highcharts({
+				    chart: {
+				      type: 'pie',
+				      options3d: {
+					enabled: true,
+					alpha: 45
+				      }
+				    },
+				    title: {
+				      text: 'User Distribution Time Slot'
+				    },
+				    subtitle: {
+				      text: 'People travelling'
+				    },
+				    plotOptions: {
+				      pie: {
+					innerSize: 100,
+					depth: 45
+				      }
+				    },
+				    series: [{
+				      name: 'Travellers',
+				      data: user_dist_result_list
+				    }]
+				  });
+				<!-- HighChart : User Distribution Time Slot Script End-->
+			});
+		    promise.fail(function(xhr) {
+			console.log("user_info_data in failure");
+		    });
+		});
+	</script>
+
+<!-- ============================================================================================= -->
+
+
+	<!-- HighChart : FeedBack Ratings Script Start-->
+	<script type="text/javascript">
+		$(function() {
+			var promise = $.ajax({
+			    url: 'http://54.169.232.88:8080/pinutcloud/getFeedbackRatings/',
+			    type: 'GET',
+			    dataType: 'json',
+			   async: false
+		});
+		    promise.done(function(response) {
+			result_list=[];
+			for (var key in response) {
+				internal_list=[];
+				var value = response[key];
+				internal_list.push(key);
+				internal_list.push(value);
+				result_list.push(internal_list);
+			}
+			});
+		    promise.fail(function(xhr) {
+		    });
+
+		  $('#feedbackratingchart').highcharts({
+		    chart: {
+		      type: 'pie',
+		      options3d: {
+			enabled: true,
+			alpha: 45
+		      }
+		    },
+		    title: {
+		      text: 'Users Feedback'
+		    },
+		    subtitle: {
+		      text: 'for different services'
+		    },
+		    plotOptions: {
+		      pie: {
+			innerSize: 100,
+			depth: 45
+		      }
+		    },
+		    series: [{
+		      name: 'Service',
+		      data: result_list
+		    }]
+		  });
+		});
+		</script>
+	<!-- HighChart : FeedBack Ratings Script End-->
+<!-- ============================================================================================= -->
+	<!-- Table : Registration Content Starts-->
+
+	<style>
+		table, th, td
+		{
+		    margin:10px 0;
+		    border:solid 1px #333;
+		    padding:2px 4px;
+		    font:15px Verdana;
+		}
+		th {
+		    font-weight:bold;
+		}
+    	</style>
+
+	<script type="text/javascript">
+
+	$(function() {
+	var responseJson;
+		var promise = $.ajax({
+		    url: 'http://54.169.232.88:8080/pinutcloud/getUserIntroContent/',
+		    type: 'GET',
+		    dataType: 'json',
+		   async: false
+	});
+	    promise.done(function(response) {
+		responseJson=response;
+		});
+	    promise.fail(function(xhr) {
+	    });
+
+
+		var listOfJsonObjects = responseJson;
+
+		// EXTRACT VALUE FOR HTML HEADER. 
+		// ('Book ID', 'Book Name', 'Category' and 'Price')
+		var col = [];
+		for (var i = 0; i < listOfJsonObjects.length; i++) {
+		    for (var key in listOfJsonObjects[i]) {
+			if (col.indexOf(key) === -1) {
+			    col.push(key);
+			}
+		    }
+		}
+
+		// CREATE DYNAMIC TABLE.
+		var table = document.createElement("table");
+
+		// CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+
+		var tr = table.insertRow(-1);                   // TABLE ROW.
+
+		for (var i = 0; i < col.length; i++) {
+		    var th = document.createElement("th");      // TABLE HEADER.
+		    th.innerHTML = col[i];
+		    tr.appendChild(th);
+		}
+
+		// ADD JSON DATA TO THE TABLE AS ROWS.
+		for (var i = 0; i < listOfJsonObjects.length; i++) {
+
+		    tr = table.insertRow(-1);
+
+		    for (var j = 0; j < col.length; j++) {
+			var tabCell = tr.insertCell(-1);
+			tabCell.innerHTML = listOfJsonObjects[i][col[j]];
+		    }
+		}
+
+		// FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+		var divContainer = document.getElementById("registrationdata");
+		divContainer.innerHTML = "";
+		divContainer.appendChild(table);
+	    
+	});
+	</script>
+	<!-- Table : Registration Content End-->
+<!-- ============================================================================================= -->
+	<!-- Table : Feedback Content Starts-->
+	<style>
+	table {
+	    border-collapse: collapse;
+	    width: 96%;
+	}
+
+	th, td {
+	    text-align: left;
+	    padding: 8px;
+	}
+
+	tr:nth-child(even){background-color: #f2f2f2}
+
+	th {
+	    background-color: #4CAF50;
+	    color: white;
+	}
+	</style>
+
+
+	<script type="text/javascript">
+
+	$(function() {
+	var responseJson;
+		var promise = $.ajax({
+		    url: 'http://54.169.232.88:8080/pinutcloud/getFeedbackContent/',
+		    type: 'GET',
+		    dataType: 'json',
+		   async: false
+	});
+	    promise.done(function(response) {
+		responseJson=response;
+		});
+	    promise.fail(function(xhr) {
+	    });
+
+
+		var listOfJsonObjects = responseJson;
+
+		// EXTRACT VALUE FOR HTML HEADER. 
+		// ('Book ID', 'Book Name', 'Category' and 'Price')
+		var col = [];
+		for (var i = 0; i < listOfJsonObjects.length; i++) {
+		    for (var key in listOfJsonObjects[i]) {
+			if (col.indexOf(key) === -1) {
+			    col.push(key);
+			}
+		    }
+		}
+
+		// CREATE DYNAMIC TABLE.
+		var table = document.createElement("table");
+
+		// CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+
+		var tr = table.insertRow(-1);                   // TABLE ROW.
+
+		for (var i = 0; i < col.length; i++) {
+		    var th = document.createElement("th");      // TABLE HEADER.
+		    th.innerHTML = col[i];
+		    tr.appendChild(th);
+		}
+
+		// ADD JSON DATA TO THE TABLE AS ROWS.
+		for (var i = 0; i < listOfJsonObjects.length; i++) {
+
+		    tr = table.insertRow(-1);
+
+		    for (var j = 0; j < col.length; j++) {
+			var tabCell = tr.insertCell(-1);
+			tabCell.innerHTML = listOfJsonObjects[i][col[j]];
+		    }
+		}
+
+		// FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+		var divContainer = document.getElementById("feedbackdata");
+		divContainer.innerHTML = "";
+		divContainer.appendChild(table);
+	    
+	});
+	</script>
+	<!-- Table : Feedback Content End-->
+<!-- ============================================================================================= -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+		<!--<a class="navbar-brand" href="index.html"><strong>Pinut</strong></a>-->
+                <div class="navbar-brand"><strong> Pinut </strong> </div>
+
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+				<!--  Calendar Program Start -->
+				<div class="panel-body">
+					<form role="form" action="/pinutcloud/dashboard/" method="post">
+					    {% csrf_token %}
+					    <fieldset>
+						<div class="form-group">
+						<input id="start_datepicker" placeholder="Start Date:" name="startdate" type="text">
+						</div>
+						<div class="form-group">
+						    <input id="end_datepicker" placeholder="End Date:" name="enddate" type="text" value="">
+						</div>
+						<!-- Change this to a button or input when using this as a form -->
+						<button type="submit" style="font-size:12pt;color:white;background-color:green;border:2px solid #336600;padding:2px;width:170px;">OK</button>
+					    </fieldset>
+					</form>
+				</div>
+				<!--  Calendar Program End -->
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+<!-- ============================================================================================= -->
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Dashboard</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                  <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-comments fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div id="total_downloads" class="huge">
+					<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+				    </div>
+                                    <div>Pinut Downloads!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-tasks fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+				    <div id="total_feedbacks" class="huge">
+                                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                                    </div>
+                                    <div>Pinut Feedbacks!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-yellow">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-shopping-cart fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+				    <div id="total_travellers" class="huge">
+                                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                                    </div>
+
+                                    <div>Pinut Travellers!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-support fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+					<div id="total_devices" class="huge">
+                                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                                    </div>
+                                    <div>Pinut Devices!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+<!-- ============================================================================================= -->
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-8">
+<!-- ============================================================================================= -->
+                    <!--  panel start -->
+                    <div class="panel panel-default" style="width:1000px;">
+                        <div class="panel-heading" style="width:1000px;">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Popular Movies Watched
+                            <div class="pull-right">
+                            </div>
+                        </div>
+                        <!-- panel-heading end -->
+                        <div class="panel-body"> 
+				<div id ="popularmoviechart" style="width:970px;height:400px;">
+				</div>
+                        </div>
+                        <!-- panel-body end -->
+                    </div>
+<!-- ============================================================================================= -->
+                    <!-- panel start -->
+                    <div class="panel panel-default" style="width:1000px;">
+                        <div class="panel-heading" style="width:1000px;">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> User Distribution Time Slot
+                            <div class="pull-right">
+                            </div>
+                        </div>
+                        <!-- panel-heading end -->
+                        <div class="panel-body">
+				<div id ="userdistributionchart" style="width:970px;height:400px;">
+				</div>
+                        </div>
+                        <!-- panel-body end -->
+                    </div>
+<!-- ============================================================================================= -->
+                    <!-- panel start-->
+                    <div class="panel panel-default" style="width:1000px;">
+                        <div class="panel-heading" style="width:1000px;">
+                            <i class="fa fa-clock-o fa-fw"></i> Feedback Ratings
+                            <div class="pull-right">
+                            </div>
+                        </div>
+                        <!-- panel-heading end -->
+                        <div class="panel-body">
+			    <div id ="feedbackratingchart" style="width:970px;height:400px;">
+                                </div>
+                        </div>
+                        <!-- panel-body end -->
+                    </div>
+<!-- ============================================================================================= -->
+                    <!-- panel start-->
+		   <div class="panel panel-default" style="width:1000px;">
+                        <div class="panel-heading" style="width:1000px;">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Registration Details
+                            <div class="pull-right">
+                            </div>
+                        </div>
+                        <!-- panel-heading end -->
+                        <div class="panel-body">
+				<div id ="registrationdata" style="overflow-x:auto;width:1000px;height:400px;">
+				</div>
+                        </div>
+                        <!-- panel-body end-->
+                    </div>
+<!-- ============================================================================================= -->
+		<!-- panel start-->
+                   <div class="panel panel-default" style="width:1000px;">
+                        <div class="panel-heading" style="width:1000px;">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Feedback Details
+                            <div class="pull-right">
+                            </div>
+                        </div>
+                        <!-- panel-heading end -->
+                        <div class="panel-body">
+                                <div id ="feedbackdata" style="overflow-x:auto;width:1000px;height:400px;">
+                                </div>
+                        </div>
+                        <!-- panel-body end-->
+                    </div>
+<!-- ============================================================================================= -->
+                </div>
+
+                <!-- /.col-lg-8 -->
+                        </div>
+                        <!-- /.panel-body -->
+                        <!-- /.panel-footer -->
+                    </div>
+                    <!-- /.panel .chat-panel -->
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+
+    <script src="{% static 'pinutcloud/bower_components/jquery/dist/jquery.min.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'pinutcloud/bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+
+
+    <!--Highcharts Javascript-->
+    <script src="{% static 'pinutcloud/js_packages/jquery.js' %}"></script>
+    <script src="{% static 'pinutcloud/js_packages/highcharts.js' %}"></script>
+    <script src="{% static 'pinutcloud/js_packages/highcharts-3d.js' %}"></script>
+    <script src="{% static 'pinutcloud/js_packages/exporting.js' %}"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="{% static 'pinutcloud/bower_components/metisMenu/dist/metisMenu.min.js' %}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{% static 'pinutcloud/dist/js/sb-admin-2.js' %}"></script>
+
+
+</body>
+
+</html>
