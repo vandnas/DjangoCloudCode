@@ -162,10 +162,7 @@ def get_data_per_location(cust_name ,start_date_obj ,end_date_obj):
             
             lid_dict[lid]=data_cache
 
-        with open('/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/processed_user_info.json', 'w') as f:
-            json.dump(lid_dict, f)
-
-        print "lid_dict", lid_dict
+        return lid_dict
 
             
     except Exception, e:

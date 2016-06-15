@@ -147,6 +147,8 @@ USE_TZ = True
 #)
 
 STATIC_URL = '/static/'
+#STATIC_URL = 'http://54.169.232.88:8080/static/'
+#STATIC_ROOT = '/tmp/static'
 
 #STATICFILES_FINDERS = (
 #'django.contrib.staticfiles.finders.FileSystemFinder',

@@ -448,3 +448,15 @@ ImportError: No module named DjangoCloudCode.wsgi
 [2016-06-10 15:50:43 +0000] [4073] [INFO] Worker exiting (pid: 4073)
 [2016-06-10 15:50:43 +0000] [4074] [INFO] Worker exiting (pid: 4074)
 [2016-06-10 15:50:43 +0000] [4075] [INFO] Worker exiting (pid: 4075)
+[2016-06-15 08:56:33 +0000] [16834] [INFO] Starting gunicorn 19.4.5
+[2016-06-15 08:56:33 +0000] [16834] [INFO] Listening at: unix:/home/ec2-user/Virtual_Env/DjangoCloudCode/test.sock (16834)
+[2016-06-15 08:56:33 +0000] [16834] [INFO] Using worker: sync
+[2016-06-15 08:56:33 +0000] [16840] [INFO] Booting worker with pid: 16840
+[2016-06-15 08:56:33 +0000] [16841] [INFO] Booting worker with pid: 16841
+[2016-06-15 08:56:34 +0000] [16846] [INFO] Booting worker with pid: 16846
+[2016-06-15 10:17:18 +0000] [17502] [INFO] Starting gunicorn 19.4.5
+[2016-06-15 10:17:18 +0000] [17502] [INFO] Listening at: unix:/home/ec2-user/Virtual_Env/DjangoCloudCode/test.sock (17502)
+[2016-06-15 10:17:18 +0000] [17502] [INFO] Using worker: sync
+[2016-06-15 10:17:18 +0000] [17507] [INFO] Booting worker with pid: 17507
+[2016-06-15 10:17:18 +0000] [17508] [INFO] Booting worker with pid: 17508
+[2016-06-15 10:17:18 +0000] [17511] [INFO] Booting worker with pid: 17511

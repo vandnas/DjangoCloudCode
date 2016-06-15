@@ -11,7 +11,7 @@
 <script type="text/javascript">
 $(function() {
         var promise = $.ajax({
-            url: 'http://54.169.232.88:8080/pinutcloud/getAverageFeedback/',
+            url: 'http://54.169.232.88:8080/pinutcloud/getFeedbackRatings/',
             type: 'GET',
             dataType: 'json',
            async: false
@@ -25,7 +25,6 @@ $(function() {
                 internal_list.push(value);
                 result_list.push(internal_list);
         }
-        console.log(result_list);
         });
     promise.fail(function(xhr) {
     });

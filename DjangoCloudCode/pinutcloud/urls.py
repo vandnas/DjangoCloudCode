@@ -6,19 +6,13 @@ from . import views
 #from django.conf.urls.static import static
 
 urlpatterns = [
-    url(r'^processUserIntroMongoData/$', 'pinutcloud.views.processUserIntroMongoData'),
     url(r'^getTotalDownloads/$', 'pinutcloud.views.getTotalDownloads'),
     url(r'^getUserIntroContent/$', 'pinutcloud.views.getUserIntroContent'),
 #=============================================================================================
-    url(r'^processmongodata/$', 'pinutcloud.views.processUserInfoMongoData'),
-    url(r'^popularMovieList/$', 'pinutcloud.views.popularMovieList'),
-    url(r'^userDistTimeSlot/$', 'pinutcloud.views.userDistTimeSlot'),
-    url(r'^totalUsersConnected/$', 'pinutcloud.views.totalUsersConnected'),
-    url(r'^totalPinutDevices/$', 'pinutcloud.views.totalPinutDevices'),
+    url(r'^processUserInfoMongoData/$', 'pinutcloud.views.processUserInfoMongoData'),
 #=============================================================================================
-    url(r'^processFeedbackMongoData/$', 'pinutcloud.views.processFeedbackMongoData'),
     url(r'^getTotalFeedback/$', 'pinutcloud.views.getTotalFeedback'),
-    url(r'^getAverageFeedback/$', 'pinutcloud.views.getAverageFeedback'),
+    url(r'^getFeedbackRatings/$', 'pinutcloud.views.getFeedbackRatings'),
     url(r'^getFeedbackContent/$', 'pinutcloud.views.getFeedbackContent'),
 #=============================================================================================
     url(r'^dashboard/$', 'pinutcloud.views.validatelogin'),

@@ -23,22 +23,16 @@
 
 $(function() {
 var responseJson;
-	   console.log("calling url");
         var promise = $.ajax({
             url: 'http://54.169.232.88:8080/pinutcloud/getFeedbackContent/',
             type: 'GET',
             dataType: 'json',
            async: false
 });
-   console.log("inside function");
     promise.done(function(response) {
-	console.log("in success")
 	responseJson=response;
-        console.log(response);
         });
     promise.fail(function(xhr) {
-   console.log("in failure");
-   console.log(xhr);
     });
 
 
