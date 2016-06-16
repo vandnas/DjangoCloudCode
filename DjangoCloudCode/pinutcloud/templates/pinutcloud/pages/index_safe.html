@@ -15,12 +15,6 @@
     <!-- Bootstrap Core CSS -->
     <link href="{% static 'pinutcloud/bower_components/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
 
-    <!-- MetisMenu CSS -->
-    <link href="{% static 'pinutcloud/bower_components/metisMenu/dist/metisMenu.min.css' %}" rel="stylesheet">
-
-    <!-- Timeline CSS -->
-    <link href="{% static 'pinutcloud/dist/css/timeline.css' %}" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="{% static 'pinutcloud/dist/css/sb-admin-2.css' %}" rel="stylesheet">
 
@@ -31,15 +25,34 @@
 
     <!--  Calendar Program Start -->
 
-<!-- Include Required Prerequisites -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/latest/css/bootstrap.css" />
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
- 
-<!-- Include Date Range Picker -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
-<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
 
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+	<script type="text/javascript">
+	  jQuery(document).ready(function() {
+	    var $j = jQuery.noConflict();
+	    $j("#start_datepicker").datepicker({
+						beforeShow:function(start_datepicker) {
+	    					var $j = jQuery.noConflict();
+        					$j(start_datepicker).css({
+            					"position": "relative",
+            					"z-index": 999999
+        					});
+    						}
+						});
+	    $j("#end_datepicker").datepicker({
+                                                beforeShow:function(end_datepicker) {
+                                                var $j = jQuery.noConflict();
+                                                $j(end_datepicker).css({
+                                                "position": "relative",
+                                                "z-index": 999999
+                                                });
+                                                }
+                                                });
+	  });
+	  </script>
 
 
     <!--  Calendar Program Ends -->
@@ -48,14 +61,15 @@
     <!--Total Downloads Widget Javascript Start -->
 	<script type="text/javascript">
 		$(function() {
-			var promise = $.ajax({
+			var $j = jQuery.noConflict();
+			var promise = $j.ajax({
 			    url: 'http://54.169.232.88:8080/pinutcloud/getTotalDownloads/',
 			    type: 'GET',
 			    dataType: 'json',
 			   async: false
 		});
 		    promise.done(function(response) {
-			$("#total_downloads").html(response);
+			$j("#total_downloads").html(response);
 			});
 		    promise.fail(function(xhr) {
 			console.log("total downloads in failure");
@@ -68,14 +82,15 @@
     <!--Total FeedBacks Widget Javascript Start -->
 	<script type="text/javascript">
 		$(function() {
-		var promise = $.ajax({
+		var $j = jQuery.noConflict();
+		var promise = $j.ajax({
 		url: 'http://54.169.232.88:8080/pinutcloud/getTotalFeedback/',
 		type: 'GET',
 		dataType: 'json',
 		async: false
 		});
 		promise.done(function(response) {
-		$("#total_feedbacks").html(response);
+		$j("#total_feedbacks").html(response);
 		});
 		promise.fail(function(xhr) {
 		console.log("total feedbacks in failure");
@@ -89,7 +104,8 @@
 <!-- Popular Movies Pie Chart , User Dist Time Slot Pie Chart , Pinut Travellers Widget, Pinut Devices Widget -->
 	<script type="text/javascript">
 		$(function() {
-			var promise = $.ajax({
+			var $j = jQuery.noConflict();
+			var promise = $j.ajax({
 			    url: 'http://54.169.232.88:8080/pinutcloud/processUserInfoMongoData/',
 			    type: 'GET',
 			    dataType: 'json',
@@ -106,8 +122,8 @@
 					console.log(total_users_connected)
 					total_pinut_devices=user_data['total_pinut_devices'];
 					console.log(total_pinut_devices)
-					$("#total_travellers").html(total_users_connected);
-					$("#total_devices").html(total_pinut_devices);
+					$j("#total_travellers").html(total_users_connected);
+					$j("#total_devices").html(total_pinut_devices);
 				}
 				<!-- HighChart : Popular Movies Watched Script Start-->
 				movie_result_list=[];
@@ -118,7 +134,7 @@
 					internal_list.push(value);
 					movie_result_list.push(internal_list);
 				}
-				  $('#popularmoviechart').highcharts({
+				  $j('#popularmoviechart').highcharts({
 				    chart: {
 				      type: 'pie',
 				      options3d: {
@@ -153,7 +169,7 @@
 					internal_list.push(value);
 					user_dist_result_list.push(internal_list);
 				}
-				  $('#userdistributionchart').highcharts({
+				  $j('#userdistributionchart').highcharts({
 				    chart: {
 				      type: 'pie',
 				      options3d: {
@@ -192,7 +208,8 @@
 	<!-- HighChart : FeedBack Ratings Script Start-->
 	<script type="text/javascript">
 		$(function() {
-			var promise = $.ajax({
+			var $j = jQuery.noConflict();
+			var promise = $j.ajax({
 			    url: 'http://54.169.232.88:8080/pinutcloud/getFeedbackRatings/',
 			    type: 'GET',
 			    dataType: 'json',
@@ -211,7 +228,7 @@
 		    promise.fail(function(xhr) {
 		    });
 
-		  $('#feedbackratingchart').highcharts({
+		  $j('#feedbackratingchart').highcharts({
 		    chart: {
 		      type: 'pie',
 		      options3d: {
@@ -240,110 +257,101 @@
 		</script>
 	<!-- HighChart : FeedBack Ratings Script End-->
 <!-- ============================================================================================= -->
-	<!-- Table : Registration Content Starts-->
+  <!-- Table : Registration Content Starts-->
 
 	<style>
-		table, th, td
-		{
-		    margin:10px 0;
-		    border:solid 1px #333;
-		    padding:2px 4px;
-		    font:15px Verdana;
+		table {
+		    border-collapse: collapse;
+		    width: 96%;
 		}
+
+		th, td {
+		    text-align: left;
+		    padding: 8px;
+		}
+
+		tr:nth-child(even){background-color: #f2f2f2}
+
 		th {
-		    font-weight:bold;
+		    background-color: #4CAF50;
+		    color: white;
 		}
-    	</style>
-
-	<script type="text/javascript">
-
-	$(function() {
-	var responseJson;
-		var promise = $.ajax({
-		    url: 'http://54.169.232.88:8080/pinutcloud/getUserIntroContent/',
-		    type: 'GET',
-		    dataType: 'json',
-		   async: false
-	});
-	    promise.done(function(response) {
-		responseJson=response;
-		});
-	    promise.fail(function(xhr) {
-	    });
-
-
-		var listOfJsonObjects = responseJson;
-
-		// EXTRACT VALUE FOR HTML HEADER. 
-		// ('Book ID', 'Book Name', 'Category' and 'Price')
-		var col = [];
-		for (var i = 0; i < listOfJsonObjects.length; i++) {
-		    for (var key in listOfJsonObjects[i]) {
-			if (col.indexOf(key) === -1) {
-			    col.push(key);
-			}
-		    }
-		}
-
-		// CREATE DYNAMIC TABLE.
-		var table = document.createElement("table");
-
-		// CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
-
-		var tr = table.insertRow(-1);                   // TABLE ROW.
-
-		for (var i = 0; i < col.length; i++) {
-		    var th = document.createElement("th");      // TABLE HEADER.
-		    th.innerHTML = col[i];
-		    tr.appendChild(th);
-		}
-
-		// ADD JSON DATA TO THE TABLE AS ROWS.
-		for (var i = 0; i < listOfJsonObjects.length; i++) {
-
-		    tr = table.insertRow(-1);
-
-		    for (var j = 0; j < col.length; j++) {
-			var tabCell = tr.insertCell(-1);
-			tabCell.innerHTML = listOfJsonObjects[i][col[j]];
-		    }
-		}
-
-		// FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
-		var divContainer = document.getElementById("registrationdata");
-		divContainer.innerHTML = "";
-		divContainer.appendChild(table);
-	    
-	});
-	</script>
-	<!-- Table : Registration Content End-->
-<!-- ============================================================================================= -->
-	<!-- Table : Feedback Content Starts-->
-	<style>
-	table {
-	    border-collapse: collapse;
-	    width: 96%;
-	}
-
-	th, td {
-	    text-align: left;
-	    padding: 8px;
-	}
-
-	tr:nth-child(even){background-color: #f2f2f2}
-
-	th {
-	    background-color: #4CAF50;
-	    color: white;
-	}
 	</style>
 
+        <script type="text/javascript">
+
+        $(function() {
+        var responseJson;
+		var $t = jQuery.noConflict();
+                var promise = $t.ajax({
+                    url: 'http://54.169.232.88:8080/pinutcloud/getUserIntroContent/',
+                    type: 'GET',
+                    dataType: 'json',
+                   async: false
+        });
+            promise.done(function(response) {
+                responseJson=response;
+                });
+            promise.fail(function(xhr) {
+            });
+
+
+                var listOfJsonObjects = responseJson;
+
+                // EXTRACT VALUE FOR HTML HEADER. 
+                // ('Book ID', 'Book Name', 'Category' and 'Price')
+                var col = [];
+                for (var i = 0; i < listOfJsonObjects.length; i++) {
+                    for (var key in listOfJsonObjects[i]) {
+                        if (col.indexOf(key) === -1) {
+                            col.push(key);
+                        }
+                    }
+                }
+
+                // CREATE DYNAMIC TABLE.
+                var table = document.createElement("table");
+
+                // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+
+                var tr = table.insertRow(-1);                   // TABLE ROW.
+
+                for (var i = 0; i < col.length; i++) {
+                    var th = document.createElement("th");      // TABLE HEADER.
+                    th.innerHTML = col[i];
+                    tr.appendChild(th);
+                }
+
+                // ADD JSON DATA TO THE TABLE AS ROWS.
+                for (var i = 0; i < listOfJsonObjects.length; i++) {
+
+                    tr = table.insertRow(-1);
+
+                    for (var j = 0; j < col.length; j++) {
+                        var tabCell = tr.insertCell(-1);
+                        tabCell.innerHTML = listOfJsonObjects[i][col[j]];
+                    }
+                }
+
+                // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+                var divContainer = document.getElementById("registrationdata");
+                divContainer.innerHTML = "";
+                divContainer.appendChild(table);
+            
+        });
+        </script>
+        <!-- Table : Registration Content End-->
+
+<!-- ============================================================================================= -->
+	<!-- Table : Feedback Content Starts-->
+
 
 	<script type="text/javascript">
 
 	$(function() {
 	var responseJson;
-		var promise = $.ajax({
+		var $r = jQuery.noConflict();
+		var promise = $r.ajax({
 		    url: 'http://54.169.232.88:8080/pinutcloud/getFeedbackContent/',
 		    type: 'GET',
 		    dataType: 'json',
@@ -466,10 +474,9 @@
 				<!--  Calendar Program Start -->
 				<div class="panel-body">
 					<form role="form" action="/pinutcloud/dashboard/" method="post">
-					    {% csrf_token %}
 					    <fieldset>
 						<div class="form-group">
-						<input id="start_datepicker" placeholder="Start Date:" name="startdate" type="text">
+						<input id="start_datepicker" placeholder="Start Date:" name="startdate" type="text" value="">
 						</div>
 						<div class="form-group">
 						    <input id="end_datepicker" placeholder="End Date:" name="enddate" type="text" value="">
@@ -508,7 +515,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div id="total_downloads" class="huge">
-					<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+					<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
 				    </div>
                                     <div>Pinut Downloads!</div>
                                 </div>
@@ -532,7 +539,6 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
 				    <div id="total_feedbacks" class="huge">
-                                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
                                     </div>
                                     <div>Pinut Feedbacks!</div>
                                 </div>
@@ -556,7 +562,6 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
 				    <div id="total_travellers" class="huge">
-                                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
                                     </div>
 
                                     <div>Pinut Travellers!</div>
@@ -581,7 +586,6 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
 					<div id="total_devices" class="huge">
-                                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
                                     </div>
                                     <div>Pinut Devices!</div>
                                 </div>
@@ -697,23 +701,15 @@
 
     <!-- jQuery -->
 
-    <script src="{% static 'pinutcloud/bower_components/jquery/dist/jquery.min.js' %}"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{% static 'pinutcloud/bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
 
 
     <!--Highcharts Javascript-->
-    <script src="{% static 'pinutcloud/js_packages/jquery.js' %}"></script>
     <script src="{% static 'pinutcloud/js_packages/highcharts.js' %}"></script>
     <script src="{% static 'pinutcloud/js_packages/highcharts-3d.js' %}"></script>
     <script src="{% static 'pinutcloud/js_packages/exporting.js' %}"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="{% static 'pinutcloud/bower_components/metisMenu/dist/metisMenu.min.js' %}"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="{% static 'pinutcloud/dist/js/sb-admin-2.js' %}"></script>
 
 
 </body>
