@@ -15,8 +15,14 @@ def get_number_of_downloads(cust_name, start_date, end_date):
         mongo_db_obj = MongoDBAnalytics()
         if mongo_db_obj.mongo_select_one(cust_name, "pinut_user_intro_data") == None:
             logging.debug("MONGO COLLECTION doesnt exist")
+            return 0
         number_of_downloads = mongo_db_obj.mongo_select(cust_name, "pinut_user_intro_data", {"date" : {"$gte" : start_date , "$lte" : end_date}}).count()
-        return number_of_downloads
+        if number_of_downloads == 0:
+            logging.debug("No download done between your selected dates")
+            return 0
+        else:
+            return number_of_downloads
+
     except Exception, e:
         logging.exception("Exception, in getting number of downloads from user intro data %s" % e)
         raise
@@ -27,6 +33,7 @@ def get_user_intro_content(cust_name, start_date, end_date):
 
         if mongo_db_obj.mongo_select_one(cust_name, "pinut_user_intro_data") == None:
             logging.debug("MONGO COLLECTION doesnt exist")
+            return 0
 
         content_list=[]
         content = mongo_db_obj.mongo_select(cust_name, "pinut_user_intro_data", {"date" : {"$gte" : start_date , "$lte" : end_date}})
@@ -48,7 +55,7 @@ if __name__ == '__main__':
         logging.config.fileConfig(common.LOG_CONF_PATH)
         logging.Formatter.converter = time.gmtime
         cust_name="kk"
-        start_date="24-02-2015"
+        start_date="24-02-2013"
         #To compare this date with mongo date we have converted to date_obj [string to time]
         start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
         end_date="03-03-2017"

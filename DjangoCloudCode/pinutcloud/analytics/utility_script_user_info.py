@@ -123,6 +123,8 @@ def get_data_per_location(cust_name ,start_date_obj ,end_date_obj):
 
         lid_devicemac_dict = get_data_per_device(cust_name ,start_date_obj ,end_date_obj)
         print "lid_devicemac_dict",lid_devicemac_dict
+        if lid_devicemac_dict == 0:
+            return 0
         lid_dict={}
         for lid_device_mac_key , data in lid_devicemac_dict.iteritems():
             lid=lid_device_mac_key[0]
@@ -161,6 +163,7 @@ def get_data_per_location(cust_name ,start_date_obj ,end_date_obj):
                 data_cache['user_dist_time_slot']=time_slot_dict
             
             lid_dict[lid]=data_cache
+            print "lid_dict",lid_dict
 
         return lid_dict
 
@@ -177,10 +180,10 @@ if __name__ == '__main__':
         logging.config.fileConfig(common.LOG_CONF_PATH)
         logging.Formatter.converter = time.gmtime
         cust_name="kk"
-        start_date="24-02-2015"
+        start_date="22-05-2017"
         #To compare this date with mongo date we have converted to date_obj [string to time]
         start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
-        end_date="03-03-2017"
+        end_date="21-06-2017"
         end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
         lid_devicemac_dict = get_data_per_device(cust_name ,start_date_obj ,end_date_obj)
         #print "lid_devicemac_dict" ,lid_devicemac_dict

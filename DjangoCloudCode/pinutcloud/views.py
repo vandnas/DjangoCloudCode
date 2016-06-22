@@ -36,10 +36,10 @@ def getTotalFeedback(request):
 	if request.method == "GET":
 		logging.debug( "Inside GET request")
 		cust_name = "kk"
-		start_date="24-02-2013"
+                start_date=request.GET['startdate']
 		#To compare this date with mongo date we have converted to date_obj [string to time]
 		start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
-		end_date="03-03-2017"
+                end_date=request.GET['enddate']
 		end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
 		number_of_feedbacks = utility_script_feedback.get_total_feedback(cust_name ,start_date_obj ,end_date_obj)
                 return HttpResponse(number_of_feedbacks)
@@ -51,10 +51,10 @@ def getFeedbackRatings(request):
 	if request.method == "GET":
 		logging.debug( "Inside GET request")
 		cust_name = "kk"
-		start_date="24-02-2013"
+                start_date=request.GET['startdate']
 		#To compare this date with mongo date we have converted to date_obj [string to time]
 		start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
-		end_date="03-03-2017"
+                end_date=request.GET['enddate']
 		end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
 		feedback_ratings = utility_script_feedback.get_average_feedback(cust_name ,start_date_obj ,end_date_obj)
                 return HttpResponse(json.dumps(feedback_ratings).encode('utf-8'))
@@ -66,10 +66,10 @@ def getFeedbackContent(request):
 	if request.method == "GET":
 		logging.debug( "Inside GET request")
 		cust_name = "kk"
-		start_date="24-02-2013"
+                start_date=request.GET['startdate']
 		#To compare this date with mongo date we have converted to date_obj [string to time]
 		start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
-		end_date="03-03-2017"
+                end_date=request.GET['enddate']
 		end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
 		feedback_content = utility_script_feedback.get_feedback_content(cust_name ,start_date_obj ,end_date_obj)
                 return HttpResponse(json.dumps(feedback_content).encode('utf-8'))
@@ -80,16 +80,24 @@ def getFeedbackContent(request):
 #==========================================================================
 #USER INTRO API
 
+#def getTotalDownloads(request, startdate,enddate):
 def getTotalDownloads(request):
 	if request.method == "GET":
-		logging.debug( "Inside GET request")
+		print "Inside TOTAL DOWNLOADS request"
 		cust_name = "kk"
-		start_date="24-02-2013"
+                start_date=request.GET['startdate']
+                print "startdate",start_date
+                end_date=request.GET['enddate']
+                print "enddate",end_date
+		#start_date="24-02-2013"
 		#To compare this date with mongo date we have converted to date_obj [string to time]
 		start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
-		end_date="03-03-2017"
+                print "start_date_obj",start_date_obj
+		#end_date="03-03-2017"
 		end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
+                print "end_date_obj",end_date_obj
 		number_of_downloads = utility_script_user_intro.get_number_of_downloads(cust_name ,start_date_obj ,end_date_obj)
+                print "number_of_downloads",number_of_downloads
                 return HttpResponse(number_of_downloads)
 	else:
 		logging.debug( "Its a POST request")
@@ -100,10 +108,10 @@ def getUserIntroContent(request):
 	if request.method == "GET":
 		logging.debug( "Inside GET request")
 		cust_name = "kk"
-		start_date="24-02-2013"
+                start_date=request.GET['startdate']
 		#To compare this date with mongo date we have converted to date_obj [string to time]
 		start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
-		end_date="03-03-2017"
+                end_date=request.GET['enddate']
 		end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
 		user_intro_content = utility_script_user_intro.get_user_intro_content(cust_name, start_date_obj, end_date_obj)
                 return HttpResponse(json.dumps(user_intro_content).encode('utf-8'))
@@ -123,10 +131,10 @@ def processUserInfoMongoData(request):
 	if request.method == "GET":
 		logging.debug( "Inside GET request")
 		cust_name = "kk"
-		start_date="24-02-2013"
+                start_date=request.GET['startdate']
 		#To compare this date with mongo date we have converted to date_obj [string to time]
 		start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
-		end_date="03-03-2017"
+                end_date=request.GET['enddate']
 		end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
 		user_info_data = utility_script_user_info.get_data_per_location(cust_name ,start_date_obj ,end_date_obj)
                 print "user_info_data",user_info_data

@@ -40,3 +40,4 @@ AttributeError: 'module' object has no attribute 'exist'
 2016-06-13 11:11:52,696 - MainProcess - utility_script_feedback - DEBUG - 35 - No feedback given between your selected dates
 2016-06-13 11:12:21,542 - MainProcess - utility_script_feedback - DEBUG - 22 - No feedback given between your selected dates
 2016-06-13 11:12:21,542 - MainProcess - utility_script_feedback - DEBUG - 36 - No feedback given between your selected dates
+2016-06-22 06:47:36,777 - MainProcess - utility_script_user_intro - DEBUG - 21 - No download done between your selected dates
