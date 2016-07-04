@@ -21,6 +21,11 @@
     <!-- Custom Fonts -->
     <link href="{% static 'pinutcloud/bower_components/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
 
+    <script type="text/javascript">
+        var data_from_django = "{{ my_data }}";
+        var cust_name = data_from_django;
+    </script>
+
 <!-- ============================================================================================= -->
 
 	<script type="text/javascript">
@@ -92,25 +97,25 @@
     <!--  Calendar Program Ends -->
 <!-- ============================================================================================= -->
 	<script type="text/javascript">
-		function call_python_api(startdate,enddate){
-			totaldownloads(startdate,enddate);
-			totalfeedbacks(startdate,enddate);
-                        processuserinfodata(startdate,enddate);
-                        feedbackrating(startdate,enddate);
-                        registrationcontent(startdate,enddate);
-                        feedbackcontent(startdate,enddate);
+		function call_python_api(cust_name, startdate, enddate){
+			totaldownloads(cust_name, startdate, enddate);
+			totalfeedbacks(cust_name, startdate, enddate);
+                        processuserinfodata(cust_name, startdate, enddate);
+                        feedbackrating(cust_name, startdate, enddate);
+                        registrationcontent(cust_name, startdate, enddate);
+                        feedbackcontent(cust_name, startdate, enddate);
 		}
         </script>
 <!-- ============================================================================================= -->
 
     <!--Total Downloads Widget Javascript Start -->
 	<script type="text/javascript">
-		function totaldownloads(startdate,enddate) {
+		function totaldownloads(cust_name, startdate, enddate) {
 			var $j = jQuery.noConflict();
 			var promise = $j.ajax({
 			    url: 'http://54.169.232.88:8080/pinutcloud/getTotalDownloads/',
 			    type: 'GET',
-			    data: {"startdate": startdate,"enddate": enddate},
+			    data: {"cust_name": cust_name, "startdate": startdate,"enddate": enddate},
 			    dataType: 'json',
 			   async: false
 			});
@@ -128,12 +133,12 @@
 
     <!--Total FeedBacks Widget Javascript Start -->
 	<script type="text/javascript">
-		function totalfeedbacks(startdate,enddate) {
+		function totalfeedbacks(cust_name, startdate, enddate) {
 			var $j = jQuery.noConflict();
 			var promise = $j.ajax({
 			url: 'http://54.169.232.88:8080/pinutcloud/getTotalFeedback/',
 			type: 'GET',
-			data: {"startdate": startdate,"enddate": enddate},
+			data: {"cust_name": cust_name, "startdate": startdate,"enddate": enddate},
 			dataType: 'json',
 			async: false
 			});
@@ -151,12 +156,12 @@
 <!--User Info Data Processing -equivalent to 4 API's-->
 <!-- Popular Movies Pie Chart , User Dist Time Slot Pie Chart , Pinut Travellers Widget, Pinut Devices Widget -->
 	<script type="text/javascript">
-		function processuserinfodata(startdate,enddate) {
+		function processuserinfodata(cust_name, startdate, enddate) {
 			var $j = jQuery.noConflict();
 			var promise = $j.ajax({
 			    url: 'http://54.169.232.88:8080/pinutcloud/processUserInfoMongoData/',
 			    type: 'GET',
-			    data: {"startdate": startdate,"enddate": enddate},
+			    data: {"cust_name": cust_name, "startdate": startdate,"enddate": enddate},
 			    dataType: 'json',
 			    async: false
 			});
@@ -260,12 +265,12 @@
 
 	<!-- HighChart : FeedBack Ratings Script Start-->
 	<script type="text/javascript">
-		function feedbackrating(startdate,enddate) {
+		function feedbackrating(cust_name, startdate, enddate) {
 			var $j = jQuery.noConflict();
 			var promise = $j.ajax({
 			    url: 'http://54.169.232.88:8080/pinutcloud/getFeedbackRatings/',
 			    type: 'GET',
-			    data: {"startdate": startdate,"enddate": enddate},
+			    data: {"cust_name": cust_name, "startdate": startdate,"enddate": enddate},
 			    dataType: 'json',
 			   async: false
 			});
@@ -339,13 +344,13 @@
 
         <script type="text/javascript">
 
-        function registrationcontent(startdate,enddate) {
+        function registrationcontent(cust_name, startdate, enddate) {
         var responseJson;
 		var $t = jQuery.noConflict();
                 var promise = $t.ajax({
                     url: 'http://54.169.232.88:8080/pinutcloud/getUserIntroContent/',
                     type: 'GET',
-		    data: {"startdate": startdate,"enddate": enddate},
+		    data: {"cust_name": cust_name, "startdate": startdate,"enddate": enddate},
                     dataType: 'json',
                    async: false
 		});
@@ -410,13 +415,13 @@
 
 	<script type="text/javascript">
 
-	function feedbackcontent(startdate,enddate) {
+	function feedbackcontent(cust_name, startdate, enddate) {
 		var responseJson;
 		var $r = jQuery.noConflict();
 		var promise = $r.ajax({
 		    url: 'http://54.169.232.88:8080/pinutcloud/getFeedbackContent/',
 		    type: 'GET',
-          	    data: {"startdate": startdate,"enddate": enddate},
+          	    data: {"cust_name": cust_name, "startdate": startdate,"enddate": enddate},
 		    dataType: 'json',
 		   async: false
 		});
@@ -560,7 +565,7 @@
 						    var $j = jQuery.noConflict();
 						    var start_date=$j("#start_datepicker").val();
 						    var end_date=$j("#end_datepicker").val();
-						    call_python_api(start_date,end_date);
+						    call_python_api(cust_name, start_date, end_date);
 						}
 					</script>
 				</div>
@@ -790,7 +795,7 @@
 
 
 <script type="text/javascript">
-	call_python_api(last_month_date, current_date);
+	call_python_api(cust_name, last_month_date, current_date);
 </script>
 
 </body>

@@ -37434,3 +37434,379 @@ VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <Regex
 [22/Jun/2016 09:50:37] DEBUG [pinutcloud.views:52] Inside GET request
 [22/Jun/2016 09:50:38] DEBUG [pinutcloud.views:109] Inside GET request
 [22/Jun/2016 09:50:38] DEBUG [pinutcloud.views:67] Inside GET request
+[22/Jun/2016 10:01:57] DEBUG [pinutcloud.views:37] Inside GET request
+[22/Jun/2016 10:01:58] DEBUG [pinutcloud.views:130] Inside processmongodata
+[22/Jun/2016 10:01:58] DEBUG [pinutcloud.views:132] Inside GET request
+[22/Jun/2016 10:01:58] DEBUG [pinutcloud.views:52] Inside GET request
+[22/Jun/2016 10:01:58] DEBUG [pinutcloud.views:109] Inside GET request
+[22/Jun/2016 10:01:58] DEBUG [pinutcloud.views:67] Inside GET request
+[22/Jun/2016 10:02:17] DEBUG [pinutcloud.views:37] Inside GET request
+[22/Jun/2016 10:02:17] DEBUG [pinutcloud.views:130] Inside processmongodata
+[22/Jun/2016 10:02:17] DEBUG [pinutcloud.views:132] Inside GET request
+[22/Jun/2016 10:02:18] DEBUG [pinutcloud.views:52] Inside GET request
+[22/Jun/2016 10:02:18] DEBUG [pinutcloud.views:109] Inside GET request
+[22/Jun/2016 10:02:18] DEBUG [pinutcloud.views:67] Inside GET request
+[22/Jun/2016 10:02:20] DEBUG [pinutcloud.views:37] Inside GET request
+[22/Jun/2016 10:02:20] DEBUG [pinutcloud.views:130] Inside processmongodata
+[22/Jun/2016 10:02:20] DEBUG [pinutcloud.views:132] Inside GET request
+[22/Jun/2016 10:02:20] DEBUG [pinutcloud.views:52] Inside GET request
+[22/Jun/2016 10:02:20] DEBUG [pinutcloud.views:109] Inside GET request
+[22/Jun/2016 10:02:20] DEBUG [pinutcloud.views:67] Inside GET request
+[22/Jun/2016 10:02:26] DEBUG [pinutcloud.views:37] Inside GET request
+[22/Jun/2016 10:02:26] DEBUG [pinutcloud.views:130] Inside processmongodata
+[22/Jun/2016 10:02:26] DEBUG [pinutcloud.views:132] Inside GET request
+[22/Jun/2016 10:02:26] DEBUG [pinutcloud.views:52] Inside GET request
+[22/Jun/2016 10:02:26] DEBUG [pinutcloud.views:109] Inside GET request
+[22/Jun/2016 10:02:26] DEBUG [pinutcloud.views:67] Inside GET request
+[22/Jun/2016 10:02:27] DEBUG [pinutcloud.views:37] Inside GET request
+[22/Jun/2016 10:02:27] DEBUG [pinutcloud.views:130] Inside processmongodata
+[22/Jun/2016 10:02:27] DEBUG [pinutcloud.views:132] Inside GET request
+[22/Jun/2016 10:02:28] DEBUG [pinutcloud.views:52] Inside GET request
+[22/Jun/2016 10:02:28] DEBUG [pinutcloud.views:109] Inside GET request
+[22/Jun/2016 10:02:28] DEBUG [pinutcloud.views:67] Inside GET request
+[22/Jun/2016 10:02:32] DEBUG [pinutcloud.views:37] Inside GET request
+[22/Jun/2016 10:02:32] DEBUG [pinutcloud.views:130] Inside processmongodata
+[22/Jun/2016 10:02:32] DEBUG [pinutcloud.views:132] Inside GET request
+[22/Jun/2016 10:02:32] DEBUG [pinutcloud.views:52] Inside GET request
+[22/Jun/2016 10:02:33] DEBUG [pinutcloud.views:109] Inside GET request
+[22/Jun/2016 10:02:33] DEBUG [pinutcloud.views:67] Inside GET request
+[22/Jun/2016 10:02:44] DEBUG [pinutcloud.views:37] Inside GET request
+[22/Jun/2016 10:02:44] DEBUG [pinutcloud.views:130] Inside processmongodata
+[22/Jun/2016 10:02:44] DEBUG [pinutcloud.views:132] Inside GET request
+[22/Jun/2016 10:02:44] DEBUG [pinutcloud.views:52] Inside GET request
+[22/Jun/2016 10:02:44] DEBUG [pinutcloud.views:109] Inside GET request
+[22/Jun/2016 10:02:44] DEBUG [pinutcloud.views:67] Inside GET request
+[22/Jun/2016 10:02:49] DEBUG [pinutcloud.views:37] Inside GET request
+[22/Jun/2016 10:02:49] DEBUG [pinutcloud.views:130] Inside processmongodata
+[22/Jun/2016 10:02:49] DEBUG [pinutcloud.views:132] Inside GET request
+[22/Jun/2016 10:02:49] DEBUG [pinutcloud.views:52] Inside GET request
+[22/Jun/2016 10:02:49] DEBUG [pinutcloud.views:109] Inside GET request
+[22/Jun/2016 10:02:49] DEBUG [pinutcloud.views:67] Inside GET request
+[22/Jun/2016 10:02:51] DEBUG [pinutcloud.views:37] Inside GET request
+[22/Jun/2016 10:02:51] DEBUG [pinutcloud.views:130] Inside processmongodata
+[22/Jun/2016 10:02:51] DEBUG [pinutcloud.views:132] Inside GET request
+[22/Jun/2016 10:02:52] DEBUG [pinutcloud.views:52] Inside GET request
+[22/Jun/2016 10:02:52] DEBUG [pinutcloud.views:109] Inside GET request
+[22/Jun/2016 10:02:52] DEBUG [pinutcloud.views:67] Inside GET request
+[22/Jun/2016 10:02:52] DEBUG [pinutcloud.views:37] Inside GET request
+[22/Jun/2016 10:02:52] DEBUG [pinutcloud.views:130] Inside processmongodata
+[22/Jun/2016 10:02:52] DEBUG [pinutcloud.views:132] Inside GET request
+[22/Jun/2016 10:02:53] DEBUG [pinutcloud.views:52] Inside GET request
+[22/Jun/2016 10:02:53] DEBUG [pinutcloud.views:109] Inside GET request
+[22/Jun/2016 10:02:53] DEBUG [pinutcloud.views:67] Inside GET request
+[22/Jun/2016 10:03:00] DEBUG [pinutcloud.views:37] Inside GET request
+[22/Jun/2016 10:03:00] DEBUG [pinutcloud.views:130] Inside processmongodata
+[22/Jun/2016 10:03:00] DEBUG [pinutcloud.views:132] Inside GET request
+[22/Jun/2016 10:03:00] DEBUG [pinutcloud.views:52] Inside GET request
+[22/Jun/2016 10:03:01] DEBUG [pinutcloud.views:109] Inside GET request
+[22/Jun/2016 10:03:01] DEBUG [pinutcloud.views:67] Inside GET request
+[22/Jun/2016 11:33:35] WARNING [django.request:182] Not Found: /
+[22/Jun/2016 11:33:35] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[22/Jun/2016 11:33:35] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[22/Jun/2016 11:33:36] WARNING [django.request:182] Not Found: /HNAP1/
+[22/Jun/2016 11:33:36] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[22/Jun/2016 11:33:36] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[22/Jun/2016 11:34:32] WARNING [django.request:182] Not Found: /http:/dhg.pisz.pl/httptest.php
+[22/Jun/2016 11:44:22] WARNING [django.request:182] Not Found: /manager/html
+[22/Jun/2016 11:44:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[22/Jun/2016 11:44:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[04/Jul/2016 06:42:02] DEBUG [django.db.backends:89] (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 06:42:02] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 06:43:50] DEBUG [pinutcloud.views:37] Inside GET request
+[04/Jul/2016 06:43:50] DEBUG [pinutcloud.views:130] Inside processmongodata
+[04/Jul/2016 06:43:50] DEBUG [pinutcloud.views:132] Inside GET request
+[04/Jul/2016 06:43:50] DEBUG [pinutcloud.views:52] Inside GET request
+[04/Jul/2016 06:43:50] DEBUG [pinutcloud.views:109] Inside GET request
+[04/Jul/2016 06:43:51] DEBUG [pinutcloud.views:67] Inside GET request
+[04/Jul/2016 06:44:05] DEBUG [pinutcloud.views:37] Inside GET request
+[04/Jul/2016 06:44:05] DEBUG [pinutcloud.views:130] Inside processmongodata
+[04/Jul/2016 06:44:05] DEBUG [pinutcloud.views:132] Inside GET request
+[04/Jul/2016 06:44:05] DEBUG [pinutcloud.views:52] Inside GET request
+[04/Jul/2016 06:44:06] DEBUG [pinutcloud.views:109] Inside GET request
+[04/Jul/2016 06:44:06] DEBUG [pinutcloud.views:67] Inside GET request
+[04/Jul/2016 06:44:12] DEBUG [pinutcloud.views:37] Inside GET request
+[04/Jul/2016 06:44:12] DEBUG [pinutcloud.views:130] Inside processmongodata
+[04/Jul/2016 06:44:12] DEBUG [pinutcloud.views:132] Inside GET request
+[04/Jul/2016 06:44:12] DEBUG [pinutcloud.views:52] Inside GET request
+[04/Jul/2016 06:44:12] DEBUG [pinutcloud.views:109] Inside GET request
+[04/Jul/2016 06:44:13] DEBUG [pinutcloud.views:67] Inside GET request
+[04/Jul/2016 07:17:01] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 07:17:01] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 07:17:58] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/Invalid credentials!
+[04/Jul/2016 07:17:58] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[04/Jul/2016 07:17:58] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[04/Jul/2016 07:18:11] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/Invalid credentials!
+[04/Jul/2016 07:18:11] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[04/Jul/2016 07:18:11] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[04/Jul/2016 07:19:02] DEBUG [pinutcloud.views:37] Inside GET request
+[04/Jul/2016 07:19:02] DEBUG [pinutcloud.views:130] Inside processmongodata
+[04/Jul/2016 07:19:02] DEBUG [pinutcloud.views:132] Inside GET request
+[04/Jul/2016 07:19:02] DEBUG [pinutcloud.views:52] Inside GET request
+[04/Jul/2016 07:19:02] DEBUG [pinutcloud.views:109] Inside GET request
+[04/Jul/2016 07:19:03] DEBUG [pinutcloud.views:67] Inside GET request
+[04/Jul/2016 07:19:10] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 07:19:10] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 07:20:14] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 07:20:14] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 07:20:16] WARNING [django.request:182] Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[04/Jul/2016 07:22:52] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 07:22:52] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 07:23:22] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 07:23:22] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 07:27:17] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 07:27:17] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 07:30:52] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 07:30:52] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 07:32:13] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 07:32:13] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 07:35:46] DEBUG [pinutcloud.views:37] Inside GET request
+[04/Jul/2016 07:35:47] DEBUG [pinutcloud.views:130] Inside processmongodata
+[04/Jul/2016 07:35:47] DEBUG [pinutcloud.views:132] Inside GET request
+[04/Jul/2016 07:35:47] DEBUG [pinutcloud.views:52] Inside GET request
+[04/Jul/2016 07:35:47] DEBUG [pinutcloud.views:109] Inside GET request
+[04/Jul/2016 07:35:47] DEBUG [pinutcloud.views:67] Inside GET request
+[04/Jul/2016 07:36:03] DEBUG [pinutcloud.views:37] Inside GET request
+[04/Jul/2016 07:36:03] DEBUG [pinutcloud.views:130] Inside processmongodata
+[04/Jul/2016 07:36:03] DEBUG [pinutcloud.views:132] Inside GET request
+[04/Jul/2016 07:36:04] DEBUG [pinutcloud.views:52] Inside GET request
+[04/Jul/2016 07:36:04] DEBUG [pinutcloud.views:109] Inside GET request
+[04/Jul/2016 07:36:04] DEBUG [pinutcloud.views:67] Inside GET request
+[04/Jul/2016 07:36:57] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 07:36:57] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 07:37:14] DEBUG [pinutcloud.views:37] Inside GET request
+[04/Jul/2016 07:37:14] DEBUG [pinutcloud.views:130] Inside processmongodata
+[04/Jul/2016 07:37:14] DEBUG [pinutcloud.views:132] Inside GET request
+[04/Jul/2016 07:37:15] DEBUG [pinutcloud.views:52] Inside GET request
+[04/Jul/2016 07:37:15] DEBUG [pinutcloud.views:109] Inside GET request
+[04/Jul/2016 07:37:15] DEBUG [pinutcloud.views:67] Inside GET request
+[04/Jul/2016 07:45:37] DEBUG [pinutcloud.views:37] Inside GET request
+[04/Jul/2016 07:45:37] DEBUG [pinutcloud.views:130] Inside processmongodata
+[04/Jul/2016 07:45:37] DEBUG [pinutcloud.views:132] Inside GET request
+[04/Jul/2016 07:45:38] DEBUG [pinutcloud.views:52] Inside GET request
+[04/Jul/2016 07:45:38] DEBUG [pinutcloud.views:109] Inside GET request
+[04/Jul/2016 07:45:38] DEBUG [pinutcloud.views:67] Inside GET request
+[04/Jul/2016 08:50:41] DEBUG [pinutcloud.views:37] Inside GET request
+[04/Jul/2016 08:50:41] DEBUG [pinutcloud.views:130] Inside processmongodata
+[04/Jul/2016 08:50:41] DEBUG [pinutcloud.views:132] Inside GET request
+[04/Jul/2016 08:50:42] DEBUG [pinutcloud.views:52] Inside GET request
+[04/Jul/2016 08:50:42] DEBUG [pinutcloud.views:109] Inside GET request
+[04/Jul/2016 08:50:42] DEBUG [pinutcloud.views:67] Inside GET request
+[04/Jul/2016 08:51:36] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 08:51:36] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 08:51:45] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 08:51:45] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 08:54:22] DEBUG [pinutcloud.views:37] Inside GET request
+[04/Jul/2016 08:54:23] DEBUG [pinutcloud.views:130] Inside processmongodata
+[04/Jul/2016 08:54:23] DEBUG [pinutcloud.views:132] Inside GET request
+[04/Jul/2016 08:54:23] DEBUG [pinutcloud.views:52] Inside GET request
+[04/Jul/2016 08:54:23] DEBUG [pinutcloud.views:109] Inside GET request
+[04/Jul/2016 08:54:23] DEBUG [pinutcloud.views:67] Inside GET request
+[04/Jul/2016 08:57:12] DEBUG [pinutcloud.views:37] Inside GET request
+[04/Jul/2016 08:57:12] DEBUG [pinutcloud.views:130] Inside processmongodata
+[04/Jul/2016 08:57:12] DEBUG [pinutcloud.views:132] Inside GET request
+[04/Jul/2016 08:57:12] DEBUG [pinutcloud.views:52] Inside GET request
+[04/Jul/2016 08:57:12] DEBUG [pinutcloud.views:109] Inside GET request
+[04/Jul/2016 08:57:13] DEBUG [pinutcloud.views:67] Inside GET request
+[04/Jul/2016 08:58:25] DEBUG [pinutcloud.views:37] Inside GET request
+[04/Jul/2016 08:58:25] DEBUG [pinutcloud.views:130] Inside processmongodata
+[04/Jul/2016 08:58:25] DEBUG [pinutcloud.views:132] Inside GET request
+[04/Jul/2016 08:58:25] DEBUG [pinutcloud.views:52] Inside GET request
+[04/Jul/2016 08:58:25] DEBUG [pinutcloud.views:109] Inside GET request
+[04/Jul/2016 08:58:26] DEBUG [pinutcloud.views:67] Inside GET request
+[04/Jul/2016 09:05:52] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 09:05:52] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 09:06:48] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 09:06:48] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 09:07:23] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 09:07:23] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 09:07:42] DEBUG [pinutcloud.views:37] Inside GET request
+[04/Jul/2016 09:07:42] DEBUG [pinutcloud.views:130] Inside processmongodata
+[04/Jul/2016 09:07:42] DEBUG [pinutcloud.views:132] Inside GET request
+[04/Jul/2016 09:07:42] DEBUG [pinutcloud.views:52] Inside GET request
+[04/Jul/2016 09:07:43] DEBUG [pinutcloud.views:109] Inside GET request
+[04/Jul/2016 09:07:43] DEBUG [pinutcloud.views:67] Inside GET request
+[04/Jul/2016 09:08:09] DEBUG [pinutcloud.views:37] Inside GET request
+[04/Jul/2016 09:08:09] DEBUG [pinutcloud.views:130] Inside processmongodata
+[04/Jul/2016 09:08:09] DEBUG [pinutcloud.views:132] Inside GET request
+[04/Jul/2016 09:08:09] DEBUG [pinutcloud.views:52] Inside GET request
+[04/Jul/2016 09:08:10] DEBUG [pinutcloud.views:109] Inside GET request
+[04/Jul/2016 09:08:10] DEBUG [pinutcloud.views:67] Inside GET request
+[04/Jul/2016 09:08:22] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 09:08:22] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 09:08:34] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 09:08:34] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 09:09:46] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 09:09:46] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 09:10:11] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 09:10:11] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 09:10:16] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 09:10:16] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 09:10:44] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 09:10:44] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 09:11:22] DEBUG [pinutcloud.views:37] Inside GET request
+[04/Jul/2016 09:11:22] DEBUG [pinutcloud.views:130] Inside processmongodata
+[04/Jul/2016 09:11:22] DEBUG [pinutcloud.views:132] Inside GET request
+[04/Jul/2016 09:11:22] DEBUG [pinutcloud.views:52] Inside GET request
+[04/Jul/2016 09:11:23] DEBUG [pinutcloud.views:109] Inside GET request
+[04/Jul/2016 09:11:23] DEBUG [pinutcloud.views:67] Inside GET request
+[04/Jul/2016 09:11:37] DEBUG [pinutcloud.views:37] Inside GET request
+[04/Jul/2016 09:11:37] DEBUG [pinutcloud.views:130] Inside processmongodata
+[04/Jul/2016 09:11:37] DEBUG [pinutcloud.views:132] Inside GET request
+[04/Jul/2016 09:11:37] DEBUG [pinutcloud.views:52] Inside GET request
+[04/Jul/2016 09:11:37] DEBUG [pinutcloud.views:109] Inside GET request
+[04/Jul/2016 09:11:38] DEBUG [pinutcloud.views:67] Inside GET request
+[04/Jul/2016 09:11:48] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 09:11:48] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 09:12:39] WARNING [django.request:182] Not Found: /pinutcloud/dashboard/Invalid credentials!
+[04/Jul/2016 09:12:39] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[04/Jul/2016 09:12:39] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[04/Jul/2016 09:14:14] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 09:14:14] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 09:17:12] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 09:17:12] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 09:23:22] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 09:23:22] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 09:23:48] ERROR [pinutcloud.views:248] Exception : 'module' object has no attribute 'ValidationError' 
+[04/Jul/2016 09:24:17] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 09:24:17] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 09:27:11] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 09:27:11] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 09:27:53] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Jul/2016 09:27:53] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Jul/2016 09:30:16] DEBUG [django.template:927] Exception while resolving variable 'my_data' in template 'pinutcloud/pages/login.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [my_data] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x7f308c553ed8>>, 'user': <SimpleLazyObject: <function <lambda> at 0x7f308d1c90c8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f308c562390>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f308c535850>, u'request': <WSGIRequest: POST '/pinutcloud/dashboard/'>}, {}, {'login_message': 'Enter the username and password correctly', 'form': <NameForm bound=True, valid=True, fields=(email;password)>}]"

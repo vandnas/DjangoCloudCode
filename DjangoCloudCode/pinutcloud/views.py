@@ -8,7 +8,7 @@ import json
 import os
 import datetime
 import zipfile
-from pinutcloud.analytics import utility_script_user_info, utility_script_user_intro, utility_script_feedback
+from pinutcloud.analytics import common, utility_script_user_info, utility_script_user_intro, utility_script_feedback
 import shutil
 import sys
 import logging
@@ -35,7 +35,7 @@ def byteify(input):
 def getTotalFeedback(request):
 	if request.method == "GET":
 		logging.debug( "Inside GET request")
-		cust_name = "kk"
+                cust_name=request.GET['cust_name']
                 start_date=request.GET['startdate']
 		#To compare this date with mongo date we have converted to date_obj [string to time]
 		start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
@@ -50,7 +50,7 @@ def getTotalFeedback(request):
 def getFeedbackRatings(request):
 	if request.method == "GET":
 		logging.debug( "Inside GET request")
-		cust_name = "kk"
+                cust_name=request.GET['cust_name']
                 start_date=request.GET['startdate']
 		#To compare this date with mongo date we have converted to date_obj [string to time]
 		start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
@@ -65,7 +65,7 @@ def getFeedbackRatings(request):
 def getFeedbackContent(request):
 	if request.method == "GET":
 		logging.debug( "Inside GET request")
-		cust_name = "kk"
+                cust_name=request.GET['cust_name']
                 start_date=request.GET['startdate']
 		#To compare this date with mongo date we have converted to date_obj [string to time]
 		start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
@@ -84,7 +84,7 @@ def getFeedbackContent(request):
 def getTotalDownloads(request):
 	if request.method == "GET":
 		print "Inside TOTAL DOWNLOADS request"
-		cust_name = "kk"
+                cust_name=request.GET['cust_name']
                 start_date=request.GET['startdate']
                 print "startdate",start_date
                 end_date=request.GET['enddate']
@@ -107,7 +107,7 @@ def getTotalDownloads(request):
 def getUserIntroContent(request):
 	if request.method == "GET":
 		logging.debug( "Inside GET request")
-		cust_name = "kk"
+                cust_name=request.GET['cust_name']
                 start_date=request.GET['startdate']
 		#To compare this date with mongo date we have converted to date_obj [string to time]
 		start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
@@ -130,7 +130,7 @@ def processUserInfoMongoData(request):
 	logging.debug( "Inside processmongodata")
 	if request.method == "GET":
 		logging.debug( "Inside GET request")
-		cust_name = "kk"
+                cust_name=request.GET['cust_name']
                 start_date=request.GET['startdate']
 		#To compare this date with mongo date we have converted to date_obj [string to time]
 		start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
@@ -223,27 +223,25 @@ def validatelogin(request):
             print "INSIDE POST REQUEST"
             # create a form instance and populate it with data from the request:
             form = forms.NameForm(request.POST)
-            print "form",form
             # check whether it's valid:
             if form.is_valid():
-                print "form is valid"
-                print form.cleaned_data
+                #form is valid
                 # process the data in form.cleaned_data as required
                 email = form.cleaned_data['email']
-                print "email",email
                 password = form.cleaned_data['password']
-                print "password",password
-                # redirect to a new URL:
-                #return HttpResponseRedirect('/thanks/')
-                return render(request, "pinutcloud/pages/index.html")
-            else:
-                print "form is invalid"
+                try:
+                    cust_name = common.login_validation(email,password)
+                    # redirect to a new URL:
+                    #return HttpResponseRedirect('/thanks/')
+                    #We send customer name from django to html page(javascript). This customer name will be used by all the API's.
+                    return render(request, "pinutcloud/pages/index.html", {"my_data": str(cust_name)})
+                except Exception, e:
+                    #raise forms.ValidationError("Sorry, that login was invalid. Please try again.")
+                    return render(request, 'pinutcloud/pages/login.html', {'form': form, 'login_message' : 'Enter the username and password correctly'})
 
         # if a GET (or any other method) we'll create a blank form
         else:
-            print "INSIDE GET REQUEST"
             form = forms.NameForm()
-            print "form",form
 
         return render(request, 'pinutcloud/pages/login.html', {'form': form})
     except Exception, e:
