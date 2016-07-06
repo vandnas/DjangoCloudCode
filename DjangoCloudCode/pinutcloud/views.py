@@ -219,31 +219,36 @@ def uploadjsonfiles(request):
 def validatelogin(request):
     try:
         # if this is a POST request we need to process the form data
-        if request.method == 'POST':
+        if request.method == 'GET':
             print "INSIDE POST REQUEST"
             # create a form instance and populate it with data from the request:
-            form = forms.NameForm(request.POST)
-            # check whether it's valid:
-            if form.is_valid():
-                #form is valid
-                # process the data in form.cleaned_data as required
-                email = form.cleaned_data['email']
-                password = form.cleaned_data['password']
-                try:
-                    cust_name = common.login_validation(email,password)
-                    # redirect to a new URL:
-                    #return HttpResponseRedirect('/thanks/')
-                    #We send customer name from django to html page(javascript). This customer name will be used by all the API's.
-                    return render(request, "pinutcloud/pages/index.html", {"my_data": str(cust_name)})
-                except Exception, e:
-                    #raise forms.ValidationError("Sorry, that login was invalid. Please try again.")
-                    return render(request, 'pinutcloud/pages/login.html', {'form': form, 'login_message' : 'Enter the username and password correctly'})
+            email=request.GET['email']
+            print ("email : %s" % email)
+            password = request.GET['password']
+            print ("password : %s" % password)
+            try:
+                customer_info={}
+                cust_name, loc_name = common.login_validation(email,password)
+                customer_info['cust_name'] = cust_name
+                customer_info['loc_name'] = loc_name
+
+                # redirect to a new URL:
+                #return HttpResponseRedirect('/thanks/')
+                #We send customer name from django to html page(javascript). This customer name will be used by all the API's.
+                #return render(request, "pinutcloud/pages/index.html", {"my_data": str(cust_name)})
+                print("returning customer info: %s" % customer_info)
+                return HttpResponse(json.dumps(customer_info).encode('utf-8'))
+            except Exception, e:
+                #raise forms.ValidationError("Sorry, that login was invalid. Please try again.")
+                #return render(request, 'pinutcloud/pages/login.html', {'form': form, 'login_message' : 'Enter the username and password correctly'})
+                print "returning 0"
+                return HttpResponse("0")
 
         # if a GET (or any other method) we'll create a blank form
-        else:
-            form = forms.NameForm()
+        #else:
+        #    form = forms.NameForm()
 
-        return render(request, 'pinutcloud/pages/login.html', {'form': form})
+        #return render(request, 'pinutcloud/pages/login.html', {'form': form})
     except Exception, e:
         logging.error("Exception : %s " % e)
         return HttpResponse(status=500)

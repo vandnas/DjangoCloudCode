@@ -52,9 +52,11 @@ PROCESSED_CONNECTION_FILE_PATH=PROCESSED_JSON_PATH+"/"+"PinutConnectionFiles"
 #===========================================================
 
 #Queries:
-GET_CUSTID_LOCID_CONTENTVERSION_FROM_PINUT_MAC="SELECT cid,lid,content_version from pinut_devices where pinut_mac=%s"
-GET_CUST_NAME_FROM_CID="SELECT cust_name from customer where cid=%s"
-CHECK_EMAIL_PASSWORD_IN_LOGIN_TABLE = "SELECT * from login_validation where email=%s and password=%s;"
+GET_CUSTID_LOCID_CONTENTVERSION_FROM_PINUT_MAC = "SELECT cid,lid,content_version from pinut_devices where pinut_mac=%s"
+GET_CUST_NAME_FROM_CID = "SELECT cust_name from customer where cid=%s"
+CHECK_EMAIL_PASSWORD_IN_LOGIN_TABLE = "SELECT * from login_validation where email=%s and password=%s"
+GET_LOC_ID_FROM_CID = "SELECT distinct(lid) from pinut_devices where cid=%s"
+GET_LOC_NAME_FROM_LID = "SELECT location from location where lid=%s"
 
 
 def mkgmtime(x):
@@ -168,6 +170,29 @@ def get_cust_name_from_cid(cid):
 		if db_obj:
 			db_obj.close_connection()
 
+def get_location_name_from_cid(cid):
+	db_obj=None
+	try:
+		db_obj = DB_Analytics()
+		pinut_rows = db_obj.select_query(GET_LOC_ID_FROM_CID, int(cid))
+		for pinut_row in pinut_rows:
+			lid = str(pinut_row['lid'])
+		lid_rows = db_obj.select_query(GET_LOC_NAME_FROM_LID, int(lid))
+                for lid_row in lid_rows:
+                    loc_name = str(lid_row['location'])
+		return loc_name
+	except db_analytics.Query_Error, e:
+		logging.exception("Error in query:%s"% e)
+		raise
+	except db_analytics.No_Data_Found, e:
+		logging.exception("No data found for query:%s"% e)
+		raise
+	except Exception, e:
+		logging.exception("Exception [%s] in getting location_name from cid[%s] ", e, cid)
+		raise
+	finally:
+		if db_obj:
+			db_obj.close_connection()
 
 def login_validation(email, password):
 	db_obj=None
@@ -177,7 +202,8 @@ def login_validation(email, password):
 		for pinut_row in pinut_rows:
 			cid = str(pinut_row['cid'])
                 cust_name = get_cust_name_from_cid(cid)
-		return cust_name
+                loc_name = get_location_name_from_cid(cid)
+		return cust_name, loc_name
 	except db_analytics.Query_Error, e:
 		logging.exception("Error in query:%s"% e)
 		raise

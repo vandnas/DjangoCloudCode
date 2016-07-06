@@ -11,19 +11,26 @@
 
     <title>Pinut</title>
 
-    {% load staticfiles %}
     <!-- Bootstrap Core CSS -->
-    <link href="{% static 'pinutcloud/bower_components/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="/pinut/static/pinutcloud/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
     <!-- Custom CSS -->
-    <link href="{% static 'pinutcloud/dist/css/sb-admin-2.css' %}" rel="stylesheet">
+    <link href="/pinut/static/pinutcloud/dist/css/sb-admin-2.css" rel="stylesheet" type="text/css"/>
 
     <!-- Custom Fonts -->
-    <link href="{% static 'pinutcloud/bower_components/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="/pinut/static/pinutcloud/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
     <script type="text/javascript">
-        var data_from_django = "{{ my_data }}";
-        var cust_name = data_from_django;
+        var url = location.search;
+        var qs = url.substring(url.indexOf('?') + 1).split('&');
+        for(var i = 0, result = {}; i < qs.length; i++){
+                qs[i] = qs[i].split('=');                
+                result[qs[i][0]] = decodeURIComponent(qs[i][1]);        
+        }
+        var cust_info_string = result['cust_info'];
+        var cust_info_array = JSON.parse(cust_info_string);
+        var cust_name = cust_info_array['cust_name'];
+        var location_name = cust_info_array['loc_name'];
     </script>
 
 <!-- ============================================================================================= -->
@@ -785,13 +792,13 @@
 
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="{% static 'pinutcloud/bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <script src="/pinut/static/pinutcloud/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
     <!--Highcharts Javascript-->
-    <script src="{% static 'pinutcloud/js_packages/highcharts.js' %}"></script>
-    <script src="{% static 'pinutcloud/js_packages/highcharts-3d.js' %}"></script>
-    <script src="{% static 'pinutcloud/js_packages/exporting.js' %}"></script>
+    <script src="/pinut/static/pinutcloud/js_packages/highcharts.js"></script>
+    <script src="/pinut/static/pinutcloud/js_packages/highcharts-3d.js"></script>
+    <script src="/pinut/static/pinutcloud/js_packages/exporting.js"></script>
 
 
 <script type="text/javascript">

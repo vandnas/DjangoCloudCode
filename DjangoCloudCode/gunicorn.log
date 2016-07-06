@@ -505,3 +505,72 @@ ImportError: No module named DjangoCloudCode.wsgi
 [2016-06-21 12:26:47 +0000] [3896] [INFO] Booting worker with pid: 3896
 [2016-06-21 12:26:47 +0000] [3888] [INFO] Worker exiting (pid: 3888)
 [2016-06-21 12:26:47 +0000] [3889] [INFO] Worker exiting (pid: 3889)
+[2016-07-04 09:44:18 +0000] [4996] [INFO] Starting gunicorn 19.4.5
+[2016-07-04 09:44:18 +0000] [4996] [INFO] Listening at: unix:/home/ec2-user/Virtual_Env/DjangoCloudCode/test.sock (4996)
+[2016-07-04 09:44:18 +0000] [4996] [INFO] Using worker: sync
+[2016-07-04 09:44:18 +0000] [5001] [INFO] Booting worker with pid: 5001
+[2016-07-04 09:44:18 +0000] [5004] [INFO] Booting worker with pid: 5004
+[2016-07-04 09:44:18 +0000] [5005] [INFO] Booting worker with pid: 5005
+[2016-07-04 10:24:51 +0000] [5597] [INFO] Starting gunicorn 19.4.5
+[2016-07-04 10:24:51 +0000] [5597] [INFO] Listening at: unix:/home/ec2-user/Virtual_Env/DjangoCloudCode/test.sock (5597)
+[2016-07-04 10:24:51 +0000] [5597] [INFO] Using worker: sync
+[2016-07-04 10:24:51 +0000] [5602] [INFO] Booting worker with pid: 5602
+[2016-07-04 10:24:51 +0000] [5603] [INFO] Booting worker with pid: 5603
+[2016-07-04 10:24:51 +0000] [5608] [INFO] Booting worker with pid: 5608
+[2016-07-04 10:54:28 +0000] [6076] [INFO] Starting gunicorn 19.4.5
+[2016-07-04 10:54:28 +0000] [6076] [INFO] Listening at: unix:/home/ec2-user/Virtual_Env/DjangoCloudCode/test.sock (6076)
+[2016-07-04 10:54:28 +0000] [6076] [INFO] Using worker: sync
+[2016-07-04 10:54:28 +0000] [6081] [INFO] Booting worker with pid: 6081
+[2016-07-04 10:54:28 +0000] [6084] [INFO] Booting worker with pid: 6084
+[2016-07-04 10:54:28 +0000] [6085] [INFO] Booting worker with pid: 6085
+[2016-07-04 10:56:36 +0000] [6119] [INFO] Starting gunicorn 19.4.5
+[2016-07-04 10:56:36 +0000] [6119] [INFO] Listening at: unix:/home/ec2-user/Virtual_Env/DjangoCloudCode/test.sock (6119)
+[2016-07-04 10:56:36 +0000] [6119] [INFO] Using worker: sync
+[2016-07-04 10:56:36 +0000] [6124] [INFO] Booting worker with pid: 6124
+[2016-07-04 10:56:36 +0000] [6125] [INFO] Booting worker with pid: 6125
+[2016-07-04 10:56:36 +0000] [6128] [INFO] Booting worker with pid: 6128
+[2016-07-06 08:47:47 +0000] [23191] [INFO] Starting gunicorn 19.4.5
+[2016-07-06 08:47:47 +0000] [23191] [INFO] Listening at: unix:/home/ec2-user/Virtual_Env/DjangoCloudCode/test.sock (23191)
+[2016-07-06 08:47:47 +0000] [23191] [INFO] Using worker: sync
+[2016-07-06 08:47:47 +0000] [23196] [INFO] Booting worker with pid: 23196
+[2016-07-06 08:47:47 +0000] [23199] [INFO] Booting worker with pid: 23199
+[2016-07-06 08:47:47 +0000] [23200] [INFO] Booting worker with pid: 23200
+[2016-07-06 08:52:59 +0000] [23253] [INFO] Starting gunicorn 19.4.5
+[2016-07-06 08:52:59 +0000] [23253] [INFO] Listening at: unix:/home/ec2-user/Virtual_Env/DjangoCloudCode/test.sock (23253)
+[2016-07-06 08:52:59 +0000] [23253] [INFO] Using worker: sync
+[2016-07-06 08:52:59 +0000] [23258] [INFO] Booting worker with pid: 23258
+[2016-07-06 08:52:59 +0000] [23259] [INFO] Booting worker with pid: 23259
+[2016-07-06 08:52:59 +0000] [23260] [INFO] Booting worker with pid: 23260
+[2016-07-06 10:46:12 +0000] [23898] [INFO] Starting gunicorn 19.4.5
+[2016-07-06 10:46:12 +0000] [23898] [INFO] Listening at: unix:/home/ec2-user/Virtual_Env/DjangoCloudCode/test.sock (23898)
+[2016-07-06 10:46:12 +0000] [23898] [INFO] Using worker: sync
+[2016-07-06 10:46:12 +0000] [23903] [INFO] Booting worker with pid: 23903
+[2016-07-06 10:46:12 +0000] [23906] [INFO] Booting worker with pid: 23906
+[2016-07-06 10:46:12 +0000] [23907] [INFO] Booting worker with pid: 23907
+[2016-07-06 11:10:53 +0000] [24076] [INFO] Starting gunicorn 19.4.5
+[2016-07-06 11:10:53 +0000] [24076] [INFO] Listening at: unix:/home/ec2-user/Virtual_Env/DjangoCloudCode/test.sock (24076)
+[2016-07-06 11:10:53 +0000] [24076] [INFO] Using worker: sync
+[2016-07-06 11:10:53 +0000] [24081] [INFO] Booting worker with pid: 24081
+[2016-07-06 11:10:53 +0000] [24082] [INFO] Booting worker with pid: 24082
+[2016-07-06 11:10:53 +0000] [24087] [INFO] Booting worker with pid: 24087
+[2016-07-06 13:46:34 +0000] [24076] [INFO] Handling signal: hup
+[2016-07-06 13:46:34 +0000] [24076] [INFO] Hang up: Master
+[2016-07-06 13:46:34 +0000] [25023] [INFO] Booting worker with pid: 25023
+[2016-07-06 13:46:34 +0000] [25024] [INFO] Booting worker with pid: 25024
+[2016-07-06 13:46:34 +0000] [25025] [INFO] Booting worker with pid: 25025
+[2016-07-06 13:46:34 +0000] [25026] [INFO] Booting worker with pid: 25026
+[2016-07-06 13:46:35 +0000] [25023] [INFO] Worker exiting (pid: 25023)
+[2016-07-06 14:05:51 +0000] [25145] [INFO] Starting gunicorn 19.4.5
+[2016-07-06 14:05:51 +0000] [25145] [INFO] Listening at: unix:/home/ec2-user/Virtual_Env/DjangoCloudCode/test.sock (25145)
+[2016-07-06 14:05:51 +0000] [25145] [INFO] Using worker: sync
+[2016-07-06 14:05:51 +0000] [25150] [INFO] Booting worker with pid: 25150
+[2016-07-06 14:05:51 +0000] [25153] [INFO] Booting worker with pid: 25153
+[2016-07-06 14:05:51 +0000] [25154] [INFO] Booting worker with pid: 25154
+[2016-07-06 14:09:39 +0000] [25154] [INFO] Parent changed, shutting down: <Worker 25154>
+[2016-07-06 14:09:39 +0000] [25154] [INFO] Worker exiting (pid: 25154)
+[2016-07-06 14:10:18 +0000] [25263] [INFO] Starting gunicorn 19.4.5
+[2016-07-06 14:10:18 +0000] [25263] [INFO] Listening at: unix:/home/ec2-user/Virtual_Env/DjangoCloudCode/test.sock (25263)
+[2016-07-06 14:10:18 +0000] [25263] [INFO] Using worker: sync
+[2016-07-06 14:10:18 +0000] [25269] [INFO] Booting worker with pid: 25269
+[2016-07-06 14:10:18 +0000] [25278] [INFO] Booting worker with pid: 25278
+[2016-07-06 14:10:18 +0000] [25279] [INFO] Booting worker with pid: 25279
