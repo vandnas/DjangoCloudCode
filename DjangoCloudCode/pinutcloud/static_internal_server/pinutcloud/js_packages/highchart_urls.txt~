@@ -1,7 +1,0 @@
-The files query.js,highcharts.js,highcharts-3d.js,exporting.js
-which are included in chart.html are created from below links
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.js"></script>
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/highcharts-3d.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
