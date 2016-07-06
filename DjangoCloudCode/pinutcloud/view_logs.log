@@ -1222,3 +1222,308 @@ MultiValueDictKeyError: "'cust_name'"
 [06/Jul/2016 14:57:47] DEBUG [pinutcloud.views:52] Inside GET request
 [06/Jul/2016 14:57:48] DEBUG [pinutcloud.views:109] Inside GET request
 [06/Jul/2016 14:57:48] DEBUG [pinutcloud.views:67] Inside GET request
+[06/Jul/2016 15:14:16] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[06/Jul/2016 15:14:16] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[06/Jul/2016 15:14:34] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[06/Jul/2016 15:14:34] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[06/Jul/2016 15:14:45] WARNING [django.request:182] Not Found: /pinut/templates/pinutcloud/pages/login.html
+[06/Jul/2016 15:14:45] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'pinutcloud.urls' from '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/urls.pyc'> (None:pinutcloud) ^pinutcloud/>"
+[06/Jul/2016 15:14:45] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[06/Jul/2016 15:14:55] ERROR [pinutcloud.views:253] Exception : "'email'" 
+[06/Jul/2016 15:16:20] ERROR [pinutcloud.views:253] Exception : "'email'" 
+[06/Jul/2016 15:16:43] DEBUG [pinutcloud.views:37] Inside GET request
+[06/Jul/2016 15:16:43] DEBUG [pinutcloud.views:130] Inside processmongodata
+[06/Jul/2016 15:16:43] DEBUG [pinutcloud.views:132] Inside GET request
+[06/Jul/2016 15:16:44] DEBUG [pinutcloud.views:52] Inside GET request
+[06/Jul/2016 15:16:44] DEBUG [pinutcloud.views:109] Inside GET request
+[06/Jul/2016 15:16:44] DEBUG [pinutcloud.views:67] Inside GET request
+[06/Jul/2016 15:16:56] DEBUG [pinutcloud.views:37] Inside GET request
+[06/Jul/2016 15:16:57] DEBUG [pinutcloud.views:130] Inside processmongodata
+[06/Jul/2016 15:16:57] DEBUG [pinutcloud.views:132] Inside GET request
+[06/Jul/2016 15:16:57] DEBUG [pinutcloud.views:52] Inside GET request
+[06/Jul/2016 15:16:57] DEBUG [pinutcloud.views:109] Inside GET request
+[06/Jul/2016 15:16:58] DEBUG [pinutcloud.views:67] Inside GET request
+[06/Jul/2016 15:16:58] DEBUG [pinutcloud.views:37] Inside GET request
+[06/Jul/2016 15:16:58] DEBUG [pinutcloud.views:130] Inside processmongodata
+[06/Jul/2016 15:16:58] DEBUG [pinutcloud.views:132] Inside GET request
+[06/Jul/2016 15:16:59] DEBUG [pinutcloud.views:52] Inside GET request
+[06/Jul/2016 15:16:59] DEBUG [pinutcloud.views:109] Inside GET request
+[06/Jul/2016 15:16:59] DEBUG [pinutcloud.views:67] Inside GET request
+[06/Jul/2016 15:20:29] DEBUG [pinutcloud.views:37] Inside GET request
+[06/Jul/2016 15:20:29] DEBUG [pinutcloud.views:130] Inside processmongodata
+[06/Jul/2016 15:20:29] DEBUG [pinutcloud.views:132] Inside GET request
+[06/Jul/2016 15:20:29] DEBUG [pinutcloud.views:52] Inside GET request
+[06/Jul/2016 15:20:30] DEBUG [pinutcloud.views:109] Inside GET request
+[06/Jul/2016 15:20:30] DEBUG [pinutcloud.views:67] Inside GET request
+[06/Jul/2016 15:34:07] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:34:07] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:34:07] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:34:15] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:34:15] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:34:16] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:42:37] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:42:37] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:42:37] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:42:43] ERROR [django.request:284] Internal Server Error: /pinutcloud/getTotalDownloads/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 78, in getTotalDownloads
+    cust_name=request.GET['cust_name']
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'cust_name'"
+[06/Jul/2016 15:42:44] ERROR [django.request:284] Internal Server Error: /pinutcloud/getTotalFeedback/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 35, in getTotalFeedback
+    cust_name=request.GET['cust_name']
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'cust_name'"
+[06/Jul/2016 15:42:44] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:42:44] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:42:44] ERROR [django.request:284] Internal Server Error: /pinutcloud/processUserInfoMongoData/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 118, in processUserInfoMongoData
+    cust_name=request.GET['cust_name']
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'cust_name'"
+[06/Jul/2016 15:42:44] ERROR [django.request:284] Internal Server Error: /pinutcloud/getFeedbackRatings/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 48, in getFeedbackRatings
+    cust_name=request.GET['cust_name']
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'cust_name'"
+[06/Jul/2016 15:42:45] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:42:45] ERROR [django.request:284] Internal Server Error: /pinutcloud/getUserIntroContent/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 95, in getUserIntroContent
+    cust_name=request.GET['cust_name']
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'cust_name'"
+[06/Jul/2016 15:42:45] ERROR [django.request:284] Internal Server Error: /pinutcloud/getFeedbackContent/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 61, in getFeedbackContent
+    cust_name=request.GET['cust_name']
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'cust_name'"
+[06/Jul/2016 15:43:19] ERROR [django.request:284] Internal Server Error: /pinutcloud/getTotalDownloads/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 78, in getTotalDownloads
+    cust_name=request.GET['cust_name']
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'cust_name'"
+[06/Jul/2016 15:43:19] ERROR [django.request:284] Internal Server Error: /pinutcloud/getTotalFeedback/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 35, in getTotalFeedback
+    cust_name=request.GET['cust_name']
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'cust_name'"
+[06/Jul/2016 15:43:19] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:43:19] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:43:19] ERROR [django.request:284] Internal Server Error: /pinutcloud/processUserInfoMongoData/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 118, in processUserInfoMongoData
+    cust_name=request.GET['cust_name']
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'cust_name'"
+[06/Jul/2016 15:43:20] ERROR [django.request:284] Internal Server Error: /pinutcloud/getFeedbackRatings/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 48, in getFeedbackRatings
+    cust_name=request.GET['cust_name']
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'cust_name'"
+[06/Jul/2016 15:43:20] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:43:20] ERROR [django.request:284] Internal Server Error: /pinutcloud/getUserIntroContent/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 95, in getUserIntroContent
+    cust_name=request.GET['cust_name']
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'cust_name'"
+[06/Jul/2016 15:43:20] ERROR [django.request:284] Internal Server Error: /pinutcloud/getFeedbackContent/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 61, in getFeedbackContent
+    cust_name=request.GET['cust_name']
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'cust_name'"
+[06/Jul/2016 15:43:36] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:43:36] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:43:36] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:44:19] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:44:19] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:44:20] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:44:30] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:44:30] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:44:31] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:44:53] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:44:53] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:44:53] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:45:08] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:45:08] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:45:09] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:52:55] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:52:55] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:52:56] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:55:39] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:55:39] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:55:39] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:55:48] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:55:48] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:55:51] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:55:56] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:55:56] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:55:58] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:56:00] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:56:00] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:56:00] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:56:03] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:56:03] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:56:04] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:56:05] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:56:05] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:56:06] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:56:56] ERROR [django.request:284] Internal Server Error: /pinutcloud/getTotalDownloads/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 78, in getTotalDownloads
+    cust_name=request.GET['cust_name']
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'cust_name'"
+[06/Jul/2016 15:56:57] ERROR [django.request:284] Internal Server Error: /pinutcloud/getTotalFeedback/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 35, in getTotalFeedback
+    cust_name=request.GET['cust_name']
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'cust_name'"
+[06/Jul/2016 15:56:57] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:56:57] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:56:57] ERROR [django.request:284] Internal Server Error: /pinutcloud/processUserInfoMongoData/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 118, in processUserInfoMongoData
+    cust_name=request.GET['cust_name']
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'cust_name'"
+[06/Jul/2016 15:56:57] ERROR [django.request:284] Internal Server Error: /pinutcloud/getFeedbackRatings/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 48, in getFeedbackRatings
+    cust_name=request.GET['cust_name']
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'cust_name'"
+[06/Jul/2016 15:56:57] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:56:57] ERROR [django.request:284] Internal Server Error: /pinutcloud/getUserIntroContent/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 95, in getUserIntroContent
+    cust_name=request.GET['cust_name']
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'cust_name'"
+[06/Jul/2016 15:56:58] ERROR [django.request:284] Internal Server Error: /pinutcloud/getFeedbackContent/
+Traceback (most recent call last):
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/views.py", line 61, in getFeedbackContent
+    cust_name=request.GET['cust_name']
+  File "/home/ec2-user/Virtual_Env/pinut_env/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'cust_name'"
+[06/Jul/2016 15:57:54] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:57:54] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:57:54] DEBUG [pinutcloud.views:94] Inside GET request
+[06/Jul/2016 15:58:01] DEBUG [pinutcloud.views:115] Inside processmongodata
+[06/Jul/2016 15:58:01] DEBUG [pinutcloud.views:117] Inside GET request
+[06/Jul/2016 15:58:01] DEBUG [pinutcloud.views:94] Inside GET request

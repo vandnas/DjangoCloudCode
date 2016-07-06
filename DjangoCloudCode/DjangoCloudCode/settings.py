@@ -137,24 +137,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.9/howto/static-files/
-#STATIC_ROOT = '/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/static'
-
-#STATICFILES_DIRS = (
-#'/home/ec2-user/Virtual_Env/DjangoCloudCode/DjangoCloudCode/pinutcloud/static',
-#)
-
 STATIC_URL = '/static/'
-#STATIC_URL = 'http://54.169.232.88:8080/static/'
-#STATIC_ROOT = '/tmp/static'
-
-#STATICFILES_FINDERS = (
-#'django.contrib.staticfiles.finders.FileSystemFinder',
-#'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-#'django.contrib.staticfiles.finders.DefaultStorageFinder',
-#)
 
 LOGGING = {
     'version': 1,

@@ -12,8 +12,6 @@ from pinutcloud.analytics import common, utility_script_user_info, utility_scrip
 import shutil
 import sys
 import logging
-from pinutcloud.dashboard import forms
-#from forms import NameForm
 
 logging = logging.getLogger(__name__)
 
@@ -34,7 +32,6 @@ def byteify(input):
 
 def getTotalFeedback(request):
 	if request.method == "GET":
-		logging.debug( "Inside GET request")
                 cust_name=request.GET['cust_name']
                 start_date=request.GET['startdate']
 		#To compare this date with mongo date we have converted to date_obj [string to time]
@@ -44,12 +41,10 @@ def getTotalFeedback(request):
 		number_of_feedbacks = utility_script_feedback.get_total_feedback(cust_name ,start_date_obj ,end_date_obj)
                 return HttpResponse(number_of_feedbacks)
 	else:
-		logging.debug( "Its a POST request")
 		return HttpResponse("You're in POST request.")
 
 def getFeedbackRatings(request):
 	if request.method == "GET":
-		logging.debug( "Inside GET request")
                 cust_name=request.GET['cust_name']
                 start_date=request.GET['startdate']
 		#To compare this date with mongo date we have converted to date_obj [string to time]
@@ -59,12 +54,10 @@ def getFeedbackRatings(request):
 		feedback_ratings = utility_script_feedback.get_average_feedback(cust_name ,start_date_obj ,end_date_obj)
                 return HttpResponse(json.dumps(feedback_ratings).encode('utf-8'))
 	else:
-		logging.debug( "Its a POST request")
 		return HttpResponse("You're in POST request.")
 
 def getFeedbackContent(request):
 	if request.method == "GET":
-		logging.debug( "Inside GET request")
                 cust_name=request.GET['cust_name']
                 start_date=request.GET['startdate']
 		#To compare this date with mongo date we have converted to date_obj [string to time]
@@ -74,7 +67,6 @@ def getFeedbackContent(request):
 		feedback_content = utility_script_feedback.get_feedback_content(cust_name ,start_date_obj ,end_date_obj)
                 return HttpResponse(json.dumps(feedback_content).encode('utf-8'))
 	else:
-		logging.debug( "Its a POST request")
 		return HttpResponse("You're in POST request.")
 
 #==========================================================================
@@ -83,24 +75,17 @@ def getFeedbackContent(request):
 #def getTotalDownloads(request, startdate,enddate):
 def getTotalDownloads(request):
 	if request.method == "GET":
-		print "Inside TOTAL DOWNLOADS request"
                 cust_name=request.GET['cust_name']
                 start_date=request.GET['startdate']
-                print "startdate",start_date
                 end_date=request.GET['enddate']
-                print "enddate",end_date
 		#start_date="24-02-2013"
 		#To compare this date with mongo date we have converted to date_obj [string to time]
 		start_date_obj = datetime.datetime.strptime(start_date, "%d-%m-%Y")
-                print "start_date_obj",start_date_obj
 		#end_date="03-03-2017"
 		end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
-                print "end_date_obj",end_date_obj
 		number_of_downloads = utility_script_user_intro.get_number_of_downloads(cust_name ,start_date_obj ,end_date_obj)
-                print "number_of_downloads",number_of_downloads
                 return HttpResponse(number_of_downloads)
 	else:
-		logging.debug( "Its a POST request")
 		return HttpResponse("You're in POST request.")
 
 
@@ -138,7 +123,7 @@ def processUserInfoMongoData(request):
 		end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
 		user_info_data = utility_script_user_info.get_data_per_location(cust_name ,start_date_obj ,end_date_obj)
                 print "user_info_data",user_info_data
-		#return HttpResponse("User Info data written to json file successfully")
+		#User Info data written to json file successfully
                 return HttpResponse(json.dumps(user_info_data).encode('utf-8'))
 	else:
 		logging.debug( "Its a POST request")
@@ -218,49 +203,22 @@ def uploadjsonfiles(request):
 #==========================================================================
 def validatelogin(request):
     try:
-        # if this is a POST request we need to process the form data
+        # Validate login form data
         if request.method == 'GET':
-            print "INSIDE POST REQUEST"
             # create a form instance and populate it with data from the request:
             email=request.GET['email']
-            print ("email : %s" % email)
             password = request.GET['password']
-            print ("password : %s" % password)
             try:
                 customer_info={}
                 cust_name, loc_name = common.login_validation(email,password)
                 customer_info['cust_name'] = cust_name
                 customer_info['loc_name'] = loc_name
-
-                # redirect to a new URL:
-                #return HttpResponseRedirect('/thanks/')
-                #We send customer name from django to html page(javascript). This customer name will be used by all the API's.
-                #return render(request, "pinutcloud/pages/index.html", {"my_data": str(cust_name)})
-                print("returning customer info: %s" % customer_info)
                 return HttpResponse(json.dumps(customer_info).encode('utf-8'))
             except Exception, e:
-                #raise forms.ValidationError("Sorry, that login was invalid. Please try again.")
-                #return render(request, 'pinutcloud/pages/login.html', {'form': form, 'login_message' : 'Enter the username and password correctly'})
-                print "returning 0"
                 return HttpResponse("0")
 
-        # if a GET (or any other method) we'll create a blank form
-        #else:
-        #    form = forms.NameForm()
-
-        #return render(request, 'pinutcloud/pages/login.html', {'form': form})
     except Exception, e:
         logging.error("Exception : %s " % e)
         return HttpResponse(status=500)
 #=================================================================
-def renderloginpage(request):
-    return render(request, "pinutcloud/pages/login.html")
-
-def renderindexpage(request):
-    return render(request, "pinutcloud/pages/index.html")
-
-def rendercalendarpage(request):
-    return render(request, "pinutcloud/pages/calendar.html")
-
-#===============================================
 
