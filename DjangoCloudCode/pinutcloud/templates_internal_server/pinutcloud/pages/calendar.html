@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+{% load staticfiles %}
+    <!-- Bootstrap Core CSS -->
+<link href="{% static 'pinutcloud/bower_components/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
+  <script>
+  $(document).ready(function() {
+    $("#start_datepicker").datepicker();
+    $("#end_datepicker").datepicker();
+  });
+  </script>
+</head>
+<body>
+<div class="panel-body">
+	<form role="form" action="/pinutcloud/dashboard/" method="post">
+	    {% csrf_token %}
+	    <fieldset>
+		<div class="form-group">
+		    <input id="start_datepicker" placeholder="Start Date:" name="startdate" type="text" autofocus>
+		</div>
+		<div class="form-group">
+		    <input id="end_datepicker" placeholder="End Date:" name="enddate" type="text" value="">
+		</div>
+		<!-- Change this to a button or input when using this as a form -->
+		<button type="submit" style="font-size:12pt;color:white;background-color:green;border:2px solid #336600;padding:2px;width:170px;">OK</button>
+	    </fieldset>
+	</form>
+</div>
+</body>
+</html>
+~        
