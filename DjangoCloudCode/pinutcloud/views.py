@@ -39,6 +39,7 @@ def getTotalFeedback(request):
                 end_date=request.GET['enddate']
 		end_date_obj = datetime.datetime.strptime(end_date, "%d-%m-%Y")
 		number_of_feedbacks = utility_script_feedback.get_total_feedback(cust_name ,start_date_obj ,end_date_obj)
+                print "number_of_feedbacks",number_of_feedbacks
                 return HttpResponse(number_of_feedbacks)
 	else:
 		return HttpResponse("You're in POST request.")
@@ -103,6 +104,32 @@ def getUserIntroContent(request):
 	else:
 		logging.debug( "Its a POST request")
 		return HttpResponse("You're in POST request.")
+
+
+#==========================================================================
+#CAPTIVE PORTAL API
+#Raspberry Pi will be sending some information (like how many downloads, how many people opened captive portal) to AWS (Cloud). Cloud will dump
+#all this information in a file
+
+
+def captivedata(request):
+    if request.method == "POST":
+        pinut_captive_data_dict={}
+        #Get body from post request
+        msg=request.body
+        #Decode it
+        string_msg=msg.decode("utf-8")
+        #Load into Json format
+        json_data=json.loads(string_msg);
+        captive_data_filename = json_data['filename']
+        captive_data = json_data['data']
+        #Byteify it
+        pinut_captive_data_dict = byteify(captive_data)
+        with open(common.PINUT_CAPTIVE_DATA_FILE_PATH + "/" + captive_data_filename, 'w') as fp:
+            json.dump(captive_data, fp)
+        return HttpResponse("You're in POST request.")
+    else:
+        return HttpResponse("You're in GET request.")
 
 
 #==========================================================================

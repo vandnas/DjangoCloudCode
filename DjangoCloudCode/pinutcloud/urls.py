@@ -13,6 +13,8 @@ urlpatterns = [
     url(r'^getFeedbackRatings/$', 'pinutcloud.views.getFeedbackRatings'),
     url(r'^getFeedbackContent/$', 'pinutcloud.views.getFeedbackContent'),
 #=============================================================================================
+    url(r'^uploadcaptivedata/$', 'pinutcloud.views.captivedata'),
+#=============================================================================================
     url(r'^dashboard/$', 'pinutcloud.views.validatelogin'),
     url(r'^uploadjsonfiles/$', 'pinutcloud.views.uploadjsonfiles'),
     url(r'^admin/', admin.site.urls),

@@ -39,6 +39,8 @@ PINUT_FEEDBACK_FILE_NAME="PinutFeedback"
 #{c1:f5:c6:0c:b9:ef:{"connection":1}}
 PINUT_CONNECTION_FILE_PATH=JSON_PATH+"/"+"PinutConnectionFiles"
 PINUT_CONNECTION_FILE_NAME="PinutConnection"
+
+PINUT_CAPTIVE_DATA_FILE_PATH = JSON_PATH + "/" + "PinutCaptiveDataFiles"
 #=========================================================
 
 #PROCESSED USER FILE (After the files will be processed, they'll be moved from PinutJsonFiles folder to ProcessedJsonFiles folder)
